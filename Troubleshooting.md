@@ -4,7 +4,7 @@ Troubleshooting guide for Moonlight issues. Look at the troubleshooting steps fo
 * [Can't pair or stream at all](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#cant-pair-or-stream-at-all)
 * [No video displayed on device](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#no-video-displayed-on-device)
 * [Video is choppy or laggy](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#video-is-choppy-or-laggy)
-* [Apps crash when launched by Moonlight](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#apps-crash-when-launched-by-moonlight)
+* [Apps crash or don't start when launched by Moonlight](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#apps-crash-or-dont-start-when-launched-by-moonlight)
 * [Bluetooth-related streaming issues](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#bluetooth-related-streaming-issues)
 
 ### Known application compatibility issues
