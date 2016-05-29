@@ -6,7 +6,6 @@ Troubleshooting guide for Moonlight issues. Look at the troubleshooting steps fo
 * [Video is choppy or laggy](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#video-is-choppy-or-laggy)
 * [Apps crash when launched by Moonlight](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#apps-crash-when-launched-by-moonlight)
 * [Bluetooth-related streaming issues](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#bluetooth-related-streaming-issues)
-* [Nvidia stream is showing but game is not loading](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#Nvidia-stream-is-showing-but-game-is-not-loading)
 
 ### Known application compatibility issues
 * 3rd party firewalls (known issues with McAfee and Kaspersky)
