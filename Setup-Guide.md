@@ -79,7 +79,7 @@ Apple devices only natively support MFi controllers. We recommend the "extended 
 
 4. On your PC, enter the PIN displayed in Moonlight and accept the pairing dialog. If you don't see a pairing dialog, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
-5. Choose your PC in the PC list and the app list will be displayed where you can select a game to stream.
+5. Try streaming a game or app to make sure everything is working. If you can't successfully stream, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
 ##Touchscreen Controls for Android or iOS
 
