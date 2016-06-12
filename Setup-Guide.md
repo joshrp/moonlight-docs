@@ -12,7 +12,7 @@ In this guide:
 ##Prerequisites
 **PC Requirements** 
 
-* NVIDIA GeForce GTX 600/700/800/900 series or GTX 600M/700M/800M series GPU (GT-series GPUs won't work)
+* NVIDIA GeForce GTX 600+ series GPU (GT-series and AMD GPUs aren't support by NVIDIA GameStream)
 * NVIDIA GeForce Experience (GFE) 2.1.1 or higher
 
 In addition, NVIDIA suggests the following for your PC server (http://www.geforce.com/geforce-experience/system-requirements)
@@ -33,7 +33,9 @@ In addition, NVIDIA suggests the following for your PC server (http://www.geforc
 
 * iOS: An iOS device running iOS 8.0 or later.
 
-* PC: The PC client is currently in a beta status, and can't yet take advantage of the ability to process the video using the video card's hardware, so the client PC should have a relatively powerful CPU. Your client PC must have Java 8 installed.
+* PC (Chrome): Your PC should be new enough that it supports hardware-accelerated H.264 decoding, otherwise it will have to use CPU decoding. It must have the latest version of Google Chrome or Chromium installed. Chrome OS devices are supported.
+
+* PC (Java): The Java client requires a fairly powerful CPU since it does video decoding on the CPU. You must also have Java 8 or higher installed.
 
 **Internet and Network Requirements**
 
@@ -41,7 +43,9 @@ To have a good experience, you need a mid to high-end wireless router with a goo
 
 **Controls for Android devices**
 
-Using an external mouse as a relative input on Android requires a rooted device. If you want to use an external mouse on your rooted device, you should download "Moonlight for Rooted Devices" on the Play Store or app-root-release.apk from releases.
+For non-SHIELD devices running an OS prior to Android N, using an external mouse with proper mouse capture on Android requires a rooted device. If you want to use an external mouse on your rooted device, you should download "Moonlight for Rooted Devices" on the Play Store or app-root-release.apk from releases. NVIDIA SHIELD devices and devices running Android N have mouse capturing built-in that Moonlight uses without needing root. 
+
+To toggle capturing the mouse cursor, press Ctrl+Alt+Z.
 
 Most controllers will work just fine, but the following have been tested:
 * Xbox 360 wired/wireless
@@ -61,6 +65,12 @@ Use SixAxis in "Native Gamepad" mode. The default button mapping needs to be adj
 **Controls for iOS devices**
 
 Apple devices only natively support MFi controllers. We recommend the "extended layout" controllers which have most buttons present on a typical Xbox 360 controller. Notably lacking are the L3 and R3 buttons and the select button. When using the Auto setting for on-screen controls, an overlay will be displayed containing the buttons that your physical controller is missing.
+
+**Controls for PC clients**
+
+PC clients support keyboard/mouse input and up to 4 game controllers. On Windows, XInput-compatible gamepads will be mapped automatically. On other systems, you may need to map the controller manually. 
+
+To free the mouse cursor from the Moonlight window, press Ctrl+Alt+Shift. To quit streaming, press Ctrl+Alt+Shift+Q.
 
 ##Quick Setup Instructions
 1. On the server, download the GeForce Experience software from http://www.geforce.com/geforce-experience/download and install it. The server may need a reboot after installation to finish setup. Make sure GeForce Experience is open, updated, and that you've scanned for games. You should see the NVIDIA icon in your system tray. If you don't, try rebooting your machine or reinstalling GeForce Experience. Moonlight may not be able to pair if the NVIDIA icon isn't shown.
@@ -93,7 +103,7 @@ Moonlight for Android and iOS use the touch screen as a way of controlling the m
 
 ##Streaming over the Internet
 
-NVIDIA has disabled UPnP support in GFE 2.4.1, so it is necessary to forward ports manually if you're behind a router. Forwarding ports is only required to stream from outside your network. The following ports must be forwarded for streaming to work with the latest version of GeForce Experience:
+The following ports must be forwarded through your router for streaming to work with the latest version of GeForce Experience:
 * TCP 47984, 47989
 * UDP 47998, 47999, 48000, 48010
 
