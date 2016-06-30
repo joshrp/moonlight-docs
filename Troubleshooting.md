@@ -32,6 +32,11 @@ Troubleshooting guide for Moonlight issues. Look at the troubleshooting steps fo
 7. Uninstall GeForce Experience, reboot, clean install GeForce Experience, and reboot again.
 8. [Send us an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch)
 
+### Games are missing from Moonlight
+1. If nothing appears at all (not even Steam), try restarting your PC. If that doesn't work, uninstall GeForce Experience, reboot your PC, then reinstall GeForce Experience again and scan for games.
+2. Make sure the folder where your games are installed is listed in GeForce Experience. Add it by opening GeForce Experience, clicking on the Preferences tab, then clicking the + button and navigating to the correct folder.
+3. You can add games manually that aren't detected as streamable by GeForce Experience [using this guide](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#adding-custom-programs-that-are-not-automatically-found)
+
 ### No video displayed on device
 1. Make sure a monitor is connected to your PC and turned on.
 2. Reboot your PC and device.
@@ -53,6 +58,10 @@ Troubleshooting guide for Moonlight issues. Look at the troubleshooting steps fo
 2. Try launching them through Steam.
 3. Uninstall GeForce drivers, reboot, clean install GeForce drivers, and reboot again.
 4. [Send us an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch)
+
+### Controller input doesn't work when streaming
+1. Try a different game or Steam Big Picture
+2. If you're using a controller directly connected to your GeForce PC, you may need to follow an extra step to prevent the local controller from being overridden. Follow [the steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-a-gamepad-connected-to-the-pc-instead-of-the-streaming-device).
 
 ### Bluetooth-related streaming issues
 Depending on your phone/tablet, you may have a bad streaming experience if Bluetooth is active while streaming. This is a hardware issue due to the antenna wiring. If you experience this, you can [try this](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-a-gamepad-connected-to-the-pc-instead-of-the-streaming-device) as a workaround.
