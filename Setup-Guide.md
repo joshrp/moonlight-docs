@@ -47,8 +47,9 @@ For non-SHIELD devices, using an external mouse with proper mouse capture on And
 
 To toggle capturing the mouse cursor, press Ctrl+Alt+Z.
 
-_Mouse emulation_
-If you don't have a mouse connected to your Android device, you can emulate one using the gamepad. Press and hold the Start button to toggle mouse emulation. When mouse emulation is one, you can use either analog stick to move the cursor. The A button left clicks and the B button right clicks.
+**Mouse emulation**
+
+If you don't have a mouse connected to your Android device, you can emulate one using a game controller. Press and hold the Start button to toggle mouse emulation. When mouse emulation is on, you can use either analog stick to move the cursor. The A button left clicks and the B button right clicks.
 
 Most controllers will work just fine, but the following have been tested:
 * Xbox 360 wired/wireless
