@@ -43,9 +43,12 @@ To have a good experience, you need a mid to high-end wireless router with a goo
 
 **Controls for Android devices**
 
-For non-SHIELD devices running an OS prior to Android N, using an external mouse with proper mouse capture on Android requires a rooted device. If you want to use an external mouse on your rooted device, you should download "Moonlight for Rooted Devices" on the Play Store or app-root-release.apk from releases. NVIDIA SHIELD devices and devices running Android N have mouse capturing built-in that Moonlight uses without needing root. 
+For non-SHIELD devices, using an external mouse with proper mouse capture on Android requires a rooted device. If you want to use an external mouse on your rooted device, you should download "Moonlight for Rooted Devices" on the Play Store or app-root-release.apk from releases. NVIDIA SHIELD devices has mouse capturing built-in that Moonlight uses without needing root.
 
 To toggle capturing the mouse cursor, press Ctrl+Alt+Z.
+
+_Mouse emulation_
+If you don't have a mouse connected to your Android device, you can emulate one using the gamepad. Press and hold the Start button to toggle mouse emulation. When mouse emulation is one, you can use either analog stick to move the cursor. The A button left clicks and the B button right clicks.
 
 Most controllers will work just fine, but the following have been tested:
 * Xbox 360 wired/wireless
