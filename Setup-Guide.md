@@ -17,7 +17,7 @@ In this guide:
 
 In addition, NVIDIA suggests the following for your PC server (http://www.geforce.com/geforce-experience/system-requirements)
 
-* Operating System: Windows 7 or newer
+* Operating System: Windows 7 or newer (Windows Server requires installing the qWave service)
 
 * A CPU of reasonable newness (Intel Pentium G Series, Core 2 Duo, Quad Core i3, i5, i7, or an AMD Phenom II, Athlon II, Phenom X4, FX, or any newer, higher speed processor from either of those manufacturers)
 
