@@ -2,6 +2,7 @@ Troubleshooting guide for Moonlight issues. Look at the troubleshooting steps fo
 
 * [Known application compatibility issues](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#known-application-compatibility-issues)
 * [Moonlight crashes](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#moonlight-crashes)
+* [Pairing dialog won't show up on PC](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#pairing-dialog-wont-show-up-on-pc)
 * [Can't pair or stream at all](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#cant-pair-or-stream-at-all)
 * [Games are missing from Moonlight](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#games-are-missing-from-moonlight)
 * [No video displayed on device](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#no-video-displayed-on-device)
@@ -25,13 +26,20 @@ Troubleshooting guide for Moonlight issues. Look at the troubleshooting steps fo
 ### Moonlight crashes
 1. Please [send an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch) with details about the crash.
 
+### Pairing dialog won't show up on PC
+1. Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
+2. Reboot your PC
+3. Delete the following registry value (if present): HKEY_LOCAL_MACHINE\SOFTWARE\NVIDIA Corporation\NvTray\ShowInSedona
+4. Open the NVIDIA Control Panel, select the "Desktop" menu at the top, and check "Show Notification Tray Icon".
+5. Uninstall GeForce Experience, reboot, clean install GeForce Experience, and reboot again.
+
 ### Can't pair or stream at all
-1. Make sure a monitor is connected to your PC and turned on.
-2. Reboot your PC and device.
+1. Make sure a monitor is connected to your PC and turned on, and you are logged in.
+2. Reboot your PC and client device.
 3. Disable your PC's firewall and anti-virus, and reboot again.
 4. Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
-5. Make sure the NVIDIA Streaming Service is enabled and running.
-6. Make sure the NVIDIA tray icon is visible. If it isn't, run "%ProgramFiles%\NVIDIA Corporation\Display\nvtray.exe"
+5. If your PC is running Windows Server, install the qWave service.
+6. Make sure the NVIDIA Streaming Service is enabled and running.
 7. Uninstall GeForce Experience, reboot, clean install GeForce Experience, and reboot again.
 8. [Send us an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch)
 
