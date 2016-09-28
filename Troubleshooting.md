@@ -1,4 +1,6 @@
-Troubleshooting guide for Moonlight issues. Look at the troubleshooting steps for each of the following issues: 
+_These troubleshooting checklists contain various suggestions to solve each potential issue. They are generally meant to be done in the order the steps are listed, however the list doesn't need to be fully completed if issue goes away during the process of troubleshooting._
+
+Look at the troubleshooting steps for each of the following issues: 
 
 * [Known application compatibility issues](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#known-application-compatibility-issues)
 * [Moonlight crashes](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#moonlight-crashes)
@@ -24,56 +26,56 @@ Troubleshooting guide for Moonlight issues. Look at the troubleshooting steps fo
 * Microsoft Remote Desktop (streaming fails during and after an RDP session)
 
 ### Moonlight crashes
-1. Please [send an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch) with details about the crash.
+* Please [send an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch) with details about the crash.
 
 ### Pairing dialog won't show up on PC
-1. Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
-2. Reboot your PC
-3. Delete the following registry value (if present): HKEY_LOCAL_MACHINE\SOFTWARE\NVIDIA Corporation\NvTray\ShowInSedona
-4. Open the NVIDIA Control Panel, select the "Desktop" menu at the top, and check "Show Notification Tray Icon".
-5. Uninstall GeForce Experience, reboot, clean install GeForce Experience, and reboot again.
-6. [Send us an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch)
+* Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
+* Reboot your PC
+* Delete the following registry value (if present): HKEY_LOCAL_MACHINE\SOFTWARE\NVIDIA Corporation\NvTray\ShowInSedona
+* Open the NVIDIA Control Panel, select the "Desktop" menu at the top, and check "Show Notification Tray Icon".
+* Uninstall GeForce Experience, reboot, clean install GeForce Experience, and reboot again.
+* [Send us an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch)
 
 ### Can't pair or stream at all
-1. Make sure a monitor is connected to your PC and turned on, and you are logged in.
-2. Reboot your PC and client device.
-3. Disable your PC's firewall and anti-virus, and reboot again.
-4. Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
-5. If your PC is running Windows Server, install the qWave service.
-6. Make sure the NVIDIA Streaming Service is enabled and running.
-7. Uninstall GeForce Experience, reboot, clean install GeForce Experience, and reboot again.
-8. [Send us an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch)
+* Make sure a monitor is connected to your PC and turned on, and you are logged in.
+* Reboot your PC and client device.
+* Disable your PC's firewall and anti-virus, and reboot again.
+* Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
+* If your PC is running Windows Server, install the qWave service.
+* Make sure the NVIDIA Streaming Service is enabled and running.
+* Uninstall GeForce Experience, reboot, clean install GeForce Experience, and reboot again.
+* [Send us an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch)
 
 ### Games are missing from Moonlight
-1. If nothing appears at all (not even Steam), try restarting your PC. If that doesn't work, uninstall GeForce Experience, reboot your PC, then reinstall GeForce Experience again and scan for games.
-2. Make sure the folder where your games are installed is listed in GeForce Experience. Add it by opening GeForce Experience, clicking on the Preferences tab, then clicking the + button and navigating to the correct folder.
-3. You can add games manually that aren't detected as streamable by GeForce Experience [using this guide](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#adding-custom-programs-that-are-not-automatically-found)
+* If nothing appears at all (not even Steam), try restarting your PC. If that doesn't work, uninstall GeForce Experience, reboot your PC, then reinstall GeForce Experience again and scan for games.
+* Make sure the folder where your games are installed is listed in GeForce Experience. Add it by opening GeForce Experience, clicking on the Preferences tab, then clicking the + button and navigating to the correct folder.
+* You can add games manually that aren't detected as streamable by GeForce Experience [using this guide](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#adding-custom-programs-that-are-not-automatically-found)
 
 ### No video displayed on device
-1. Make sure a monitor is connected to your PC and turned on.
-2. Reboot your PC and device.
-3. Disable your PC's firewall and anti-virus, and reboot again.
-4. Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
-7. Uninstall GeForce Experience, reboot, clean install GeForce Experience, and reboot again.
-8. [Send us an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch)
+* Make sure a monitor is connected to your PC, turned on, and that you can see your desktop.
+* Reboot your PC and device.
+* Disable your PC's firewall and anti-virus, and reboot again.
+* Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
+* Uninstall GeForce Experience, reboot, clean install GeForce Experience, and reboot again.
+* [Send us an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch)
 
 ### Video is choppy or laggy
-1. Try streaming with Bluetooth disabled to see if your device has the Bluetooth issue detailed below.
-2. Make sure your device is connected on 5 GHz and your PC is wired to your router.
-3. Lower the bitrate slider.
-4. Try using 720p30 which has the lowest requirements.
-5. Try forcing your PC's Ethernet adapter to run at 100Mb Full Duplex in Device Manager.
-6. [Send us an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch)
+* Try streaming with Bluetooth disabled to see if your device has the Bluetooth issue detailed below.
+* Make sure your device is connected on 5 GHz and your PC is wired to your router.
+* Lower the bitrate slider.
+* Try using 720p30 which has the lowest requirements.
+* Try forcing your PC's Ethernet adapter to run at 100Mb Full Duplex in Device Manager.
+* [Send us an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch)
 
 ### Apps crash or don't start when launched by Moonlight
-1. Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
-2. Try launching them through Steam.
-3. Uninstall GeForce drivers, reboot, clean install GeForce drivers, and reboot again.
-4. [Send us an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch)
+* Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
+* Try launching them through Steam.
+* Uninstall GeForce drivers, reboot, clean install GeForce drivers, and reboot again.
+* [Send us an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch)
 
 ### Controller input doesn't work when streaming
-1. Try a different game or Steam Big Picture
-2. If you're using a controller directly connected to your GeForce PC, you may need to follow an extra step to prevent the local controller from being overridden. Follow [the steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-a-gamepad-connected-to-the-pc-instead-of-the-streaming-device).
+* Try a different game or Steam Big Picture
+* If you're using a controller directly connected to your GeForce PC, you may need to follow an extra step to prevent the local controller from being overridden. Follow [the steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-a-gamepad-connected-to-the-pc-instead-of-the-streaming-device).
 
 ### Bluetooth-related streaming issues
 Depending on your phone/tablet, you may have a bad streaming experience if Bluetooth is active while streaming. This is a hardware issue due to the antenna wiring. If you experience this, you can [try this](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-a-gamepad-connected-to-the-pc-instead-of-the-streaming-device) as a workaround.
