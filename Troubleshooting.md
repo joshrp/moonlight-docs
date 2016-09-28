@@ -32,6 +32,7 @@ Troubleshooting guide for Moonlight issues. Look at the troubleshooting steps fo
 3. Delete the following registry value (if present): HKEY_LOCAL_MACHINE\SOFTWARE\NVIDIA Corporation\NvTray\ShowInSedona
 4. Open the NVIDIA Control Panel, select the "Desktop" menu at the top, and check "Show Notification Tray Icon".
 5. Uninstall GeForce Experience, reboot, clean install GeForce Experience, and reboot again.
+6. [Send us an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch)
 
 ### Can't pair or stream at all
 1. Make sure a monitor is connected to your PC and turned on, and you are logged in.
