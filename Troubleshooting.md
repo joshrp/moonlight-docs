@@ -5,7 +5,7 @@ Look at the troubleshooting steps for each of the following issues:
 * [Known application compatibility issues](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#known-application-compatibility-issues)
 * [Moonlight crashes](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#moonlight-crashes)
 * [Pairing dialog won't show up on PC](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#pairing-dialog-wont-show-up-on-pc)
-* [SHIELD tab is missing in GeForce Experience](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#SHIELD-tab-is-missing-in-GeForce-Experience)
+* [SHIELD tab is missing in GeForce Experience](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#shield-tab-is-missing-in-geforce-experience)
 * [Can't pair or stream at all](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#cant-pair-or-stream-at-all)
 * [Games are missing from Moonlight](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#games-are-missing-from-moonlight)
 * [No video displayed on device](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#no-video-displayed-on-device)
