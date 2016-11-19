@@ -5,6 +5,7 @@ Look at the troubleshooting steps for each of the following issues:
 * [Known application compatibility issues](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#known-application-compatibility-issues)
 * [Moonlight crashes](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#moonlight-crashes)
 * [Pairing dialog won't show up on PC](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#pairing-dialog-wont-show-up-on-pc)
+* [SHIELD tab is missing in GeForce Experience](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#SHIELD-tab-is-missing-in-GeForce-Experience)
 * [Can't pair or stream at all](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#cant-pair-or-stream-at-all)
 * [Games are missing from Moonlight](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#games-are-missing-from-moonlight)
 * [No video displayed on device](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#no-video-displayed-on-device)
@@ -35,6 +36,12 @@ Look at the troubleshooting steps for each of the following issues:
 * Open the NVIDIA Control Panel, select the "Desktop" menu at the top, and check "Show Notification Tray Icon".
 * Uninstall GeForce Experience, reboot, clean install GeForce Experience, and reboot again.
 * [Send us an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch)
+
+### SHIELD tab is missing in GeForce Experience
+* Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
+* Reboot your PC
+* Install the latest GPU driver from NVIDIA's website
+* Uninstall GeForce Experience and reinstall the latest version from NVIDIA's website
 
 ### Can't pair or stream at all
 * Make sure a monitor is connected to your PC and turned on, and you are logged in.
