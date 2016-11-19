@@ -1,32 +1,55 @@
 In this guide: 
-* [Prerequisites](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#prerequisites)
 * [Quick Setup Instructions](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#quick-setup-instructions)
-* [Touchscreen Controls for Android or iOS](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#touchscreen-controls-for-android-or-iOS)
 * [Streaming over the Internet](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#streaming-over-the-internet)
+* [Moonlight Client Setup Instructions](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#moonlight-client-setup-instructions)
+* [Touchscreen Controls for Android or iOS](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#touchscreen-controls-for-android-or-iOS)
 * [Using a gamepad connected to the PC instead of the streaming device](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-a-gamepad-connected-to-the-pc-instead-of-the-streaming-device)
 * [Adding custom programs that are not automatically found](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#adding-custom-programs-that-are-not-automatically-found)
 * [Using Moonlight to stream your entire desktop](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-moonlight-to-stream-your-entire-desktop)
 
 ***
 
-##Prerequisites
 **PC Requirements** 
 
 * NVIDIA GeForce GTX 600+ series GPU (GT-series and AMD GPUs aren't support by NVIDIA GameStream)
 * NVIDIA GeForce Experience (GFE) 2.1.1 or higher
+* 720p or higher display connected to the PC
 
-In addition, NVIDIA suggests the following for your PC server (http://www.geforce.com/geforce-experience/system-requirements)
+##Quick Setup Instructions
+1. On the server, install the GeForce Experience software from [this page](http://www.geforce.com/geforce-experience/download). The server may need a reboot after installation to finish setup.
 
-* Operating System: Windows 7 or newer (Windows Server requires installing the qWave service)
+2. Start up GeForce Experience on the server and click on the **Settings "gear" button**. Then choose the **SHIELD** option. Make sure the GameStream switch is in the **"on" position (green)**. If the SHIELD tab is not present, see the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
-* A CPU of reasonable newness (Intel Pentium G Series, Core 2 Duo, Quad Core i3, i5, i7, or an AMD Phenom II, Athlon II, Phenom X4, FX, or any newer, higher speed processor from either of those manufacturers)
+3. Download, install, and start your client. In most cases, your PC server will show up automatically in the PC list. Click the entry in the PC list (PC: and then click on the **Pair** button) to start pairing. If not, click the plus button and add your PC using its local network IP address. If this doesn't work, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
-* At least 2GB RAM, more preferred
+    * Find the server's local network address
 
-* 20 MB of hard disk space for GeForce Experience, plus whatever additional hard disk space requirements are needed for the streamed game or game platform client, like Steam or Desura.
+         1. Click on the Start menu and run the command prompt (cmd.exe)
 
-* A display that can handle at least 1280x720 (720p) resolution.
+         2. Type *ipconfig /all* and press Enter/Return
 
+         3. A local network addresses usually takes the form of **192.168.x.yyy**
+
+4. On your PC, enter the PIN displayed in Moonlight and accept the pairing dialog. If you don't see a pairing dialog, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
+
+5. Use a gamepad or mouse and keyboard connected to your client device, and try streaming a game or app to make sure everything is working. If you can't successfully stream, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
+
+##Streaming over the Internet
+
+The following ports must be forwarded through your router for streaming to work with the latest version of GeForce Experience:
+* TCP 47984, 47989
+* UDP 47998, 47999, 48000, 48010
+
+If you are using an older version of GeForce Experience, you may need these additional ports:
+* TCP 35043, 47995, 47996, 48010
+
+To find the external IP address of your server, when connected to your network, use a service like http://www.whatismyip.com to determine the IP address another computer uses to talk to you.
+
+_Note:_ Some Internet Service providers change the external IP address in use by any given subscriber on a regular basis. Since Moonlight needs to connect to the right IP address, this change can cause problems for Moonlight. Using a dynamic DNS service like [No-IP](http://www.noip.com) will give Moonlight a consistent name to use for connecting, even if the IP address that's associated with that name changes a lot. 
+
+To stream over the Internet, in your client: If your PC already appears online when connecting over the Internet, you're all set. If it doesn't, tap on the add button in Moonlight, then enter in the IP address or name. If it still won't come online, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
+
+##Moonlight Client Setup Instructions
 **Client Requirements**
 
 * Android: An Android device running Android 4.1 (Jelly Bean) or newer. Newer and "flagship" devices with higher processor speeds are more likely to be able to handle Moonlight well by using the hardware video system on the device to produce smooth streaming without video stuttering or freezing.
@@ -76,25 +99,6 @@ PC clients support keyboard/mouse input and up to 4 game controllers. On Windows
 
 To free the mouse cursor from the Moonlight window, press Ctrl+Alt+Shift. To quit streaming, press Ctrl+Alt+Shift+Q.
 
-##Quick Setup Instructions
-1. On the server, download the GeForce Experience software from http://www.geforce.com/geforce-experience/download and install it. The server may need a reboot after installation to finish setup. Make sure GeForce Experience is open, updated, and that you've scanned for games. You should see the NVIDIA icon in your system tray. If you don't, try rebooting your machine or reinstalling GeForce Experience. Moonlight may not be able to pair if the NVIDIA icon isn't shown.
-
-2. Start up GeForce Experience on the server and click on the **Settings "gear" button**. Then choose the **SHIELD** option. Make sure the GameStream switch is in the **"on" position (green)**. If the SHIELD tab is not present, you may need to reinstall GeForce Experience. If that doesn't help, the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting). To set up streaming from the Internet, see [Streaming over the Internet](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#streaming-over-the-internet) later on in the guide.
-
-3. Download, install, and start your client. In most cases, your PC server will show up automatically in the PC list. Click the entry in the PC list (PC: and then click on the **Pair** button) to start pairing. If not, click the plus button and add your PC using its local network IP address. If this doesn't work, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
-
-    * Find the server's local network address
-
-         1. Click on the Start menu and run the command prompt (cmd.exe)
-
-         2. Type *ipconfig /all* and press Enter/Return
-
-         3. A local network addresses usually takes the form of **192.168.x.yyy**
-
-4. On your PC, enter the PIN displayed in Moonlight and accept the pairing dialog. If you don't see a pairing dialog, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
-
-5. Try streaming a game or app to make sure everything is working. If you can't successfully stream, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
-
 ##Touchscreen Controls for Android or iOS
 
 Moonlight for Android and iOS use the touch screen as a way of controlling the mouse cursor. Multi-touch devices can emulate more mouse functions than single-touch devices.
@@ -104,21 +108,6 @@ Moonlight for Android and iOS use the touch screen as a way of controlling the m
 * Tap and hold in the same place to start a click and drag. After a short while, swipe the finger to drag in the direction of the swipe.
 * Hold one finger down and tap a second finger to right-click.
 * Tap with three fingers to open the on-screen keyboard (Android only for now). Only some keyboards work with Moonlight for Android - the [Hacker's Keyboard](https://play.google.com/store/apps/details?id=org.pocketworkstation.pckeyboard) seems to work well for everything but the arrow keys.
-
-##Streaming over the Internet
-
-The following ports must be forwarded through your router for streaming to work with the latest version of GeForce Experience:
-* TCP 47984, 47989
-* UDP 47998, 47999, 48000, 48010
-
-If you are using an older version of GeForce Experience, you may need these additional ports:
-* TCP 35043, 47995, 47996, 48010
-
-To find the external IP address of your server, when connected to your network, use a service like http://www.whatismyip.com to determine the IP address another computer uses to talk to you.
-
-_Note:_ Some Internet Service providers change the external IP address in use by any given subscriber on a regular basis. Since Moonlight needs to connect to the right IP address, this change can cause problems for Moonlight. Using a dynamic DNS service like [No-IP](http://www.noip.com) will give Moonlight a consistent name to use for connecting, even if the IP address that's associated with that name changes a lot. 
-
-To stream over the Internet, in your client: If your PC already appears online when connecting over the Internet, you're all set. If it doesn't, tap on the add button in Moonlight, then enter in the IP address or name. If it still won't come online, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
 ##Using a gamepad connected to the PC instead of the streaming device
 Normally, Moonlight sends controller input from the streaming client which gets sent to the game by GFE. If you want to connect a controller to your PC instead of the streaming device, GFE can cause some problems because the emulated controller still appears to games as controller 1. Luckily there is a workaround for this. You'll need to rename the DLL that Nvidia is using to send controller input so it won't be used anymore. You may have to do the renaming again if GFE does an update, but it should allow you to use your controller normally on games that only support 1 controller.
