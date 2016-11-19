@@ -41,7 +41,7 @@ Look at the troubleshooting steps for each of the following issues:
 * Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
 * Reboot your PC
 * Install the latest GPU driver from NVIDIA's website
-* Uninstall GeForce Experience and reinstall the latest version from NVIDIA's website
+* Uninstall and reinstall GeForce Experience
 
 ### Can't pair or stream at all
 * Make sure a monitor is connected to your PC and turned on, and you are logged in.
