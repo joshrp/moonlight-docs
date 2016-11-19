@@ -1,7 +1,5 @@
 _These troubleshooting checklists contain various suggestions to solve each potential issue. They are generally meant to be done in the order the steps are listed, however the list doesn't need to be fully completed if issue goes away during the process of troubleshooting._
 
-**If you are running GeForce Experience 3.0.7 (latest version), you may have problems pairing to your PC. If this happens, uninstall and reinstall GeForce Experience 3.0.7 and the problem should go away.**
-
 Look at the troubleshooting steps for each of the following issues: 
 
 * [Known application compatibility issues](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#known-application-compatibility-issues)
@@ -31,7 +29,6 @@ Look at the troubleshooting steps for each of the following issues:
 * Please [send an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch) with details about the crash.
 
 ### Pairing dialog won't show up on PC
-* **If you are running GeForce Experience 3.0.7 (latest version), you may have problems pairing to your PC. If this happens, uninstall and reinstall GeForce Experience 3.0.7 and the problem should go away.**
 * Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
 * Reboot your PC
 * Delete the following registry value (if present): HKEY_LOCAL_MACHINE\SOFTWARE\NVIDIA Corporation\NvTray\ShowInSedona
@@ -40,7 +37,6 @@ Look at the troubleshooting steps for each of the following issues:
 * [Send us an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch)
 
 ### Can't pair or stream at all
-* **If you are running GeForce Experience 3.0.7 (latest version), you may have problems pairing to your PC. If this happens, uninstall and reinstall GeForce Experience 3.0.7 and the problem should go away.**
 * Make sure a monitor is connected to your PC and turned on, and you are logged in.
 * Reboot your PC and client device.
 * Disable your PC's firewall and anti-virus, and reboot again.
