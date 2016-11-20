@@ -16,27 +16,29 @@ In this guide:
 * 720p or higher display connected to the PC
 
 ##Quick Setup Instructions
-1. On the server, install the GeForce Experience software from [geforce.com](http://www.geforce.com). The server may need a reboot after installation to finish setup.
+1. On your gaming PC, install the GeForce Experience software from [geforce.com](http://www.geforce.com). The PC may need a reboot after installation to finish setup.
 
-2. Start up GeForce Experience on the server and click on the **Settings "gear" button**. Then choose the **SHIELD** option. Make sure the GameStream switch is in the **"on" position (green)**. If the SHIELD tab is not present, see the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
+2. Start GeForce Experience and click on the **Settings "gear" button**. Then choose the **SHIELD** option. Make sure the GameStream switch is in the **"on" position (green)**. If the SHIELD tab is not present, see the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
   <p align="center">
      <img src="https://github.com/moonlight-stream/moonlight-docs/wiki/images/gfe-gamestream-enable-small.png"/>
   </p>
 
-3. Download, install, and start your client. In most cases, your PC server will show up automatically in the PC list. Click the entry in the PC list (PC: and then click on the **Pair** button) to start pairing. If not, click the plus button and add your PC using its local network IP address. If this doesn't work, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
+3. Start Moonlight and make sure your client is connected to the same network as your PC. In most cases, your gaming PC will show up automatically in the PC list after a few seconds. Click the entry in the PC list to start pairing.
 
-    * Find the server's local network address
+    * If your PC doesn't appear automatically, click the plus button and add your PC using its local network IP address. To find your gaming PC's local network address:
 
-         1. Click on the Start menu and run the command prompt (cmd.exe)
+         1. Click on the Start menu, type **cmd**, and press Enter/Return
 
-         2. Type *ipconfig /all* and press Enter/Return
+         2. Type **ipconfig** and press Enter/Return
 
-         3. A local network addresses usually takes the form of **192.168.x.yyy**
+         3. Try typing the number after "IPv4 Address" into Moonlight's Add PC dialog. Try all of the listed addresses until one of them works. Addresses starting with **192.168** are typically the correct ones.
+
+    * If none of the IP addresses work, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
 4. On your PC, enter the PIN displayed in Moonlight and accept the pairing dialog. If you don't see a pairing dialog, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
-5. Use a gamepad or mouse and keyboard connected to your client device, and try streaming a game or app to make sure everything is working. If you can't successfully stream, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
+5. Try streaming a game or app to make sure everything is working. By default, GeForce Experience will reserve Player 1 for the Moonlight client's gamepad. If you want to use a gamepad connected directly to your gaming PC, follow [these steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-a-gamepad-connected-to-the-pc-instead-of-the-streaming-device). If you can't successfully stream at all, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
 ##Streaming over the Internet
 
