@@ -20,6 +20,10 @@ In this guide:
 
 2. Start up GeForce Experience on the server and click on the **Settings "gear" button**. Then choose the **SHIELD** option. Make sure the GameStream switch is in the **"on" position (green)**. If the SHIELD tab is not present, see the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
+  <p align="center">
+     <img src="https://github.com/moonlight-stream/moonlight-docs/wiki/images/gfe-gamestream-enable-small.png"/>
+  </p>
+
 3. Download, install, and start your client. In most cases, your PC server will show up automatically in the PC list. Click the entry in the PC list (PC: and then click on the **Pair** button) to start pairing. If not, click the plus button and add your PC using its local network IP address. If this doesn't work, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
     * Find the server's local network address
