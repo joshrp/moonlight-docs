@@ -26,7 +26,7 @@ In this guide:
 
 3. Start Moonlight and make sure your client is connected to the same network as your PC. In most cases, your gaming PC will show up automatically in the PC list after a few seconds. Click the entry in the PC list to start pairing.
 
-    * If your PC doesn't appear automatically, click the plus button and add your PC using its local network IP address. To find your gaming PC's local network address:
+    * If your PC *doesn't* appear automatically for some reason, click the plus button and add your PC using its local network IP address. To find your gaming PC's local network address:
 
          1. Click on the Start menu, type **cmd**, and press Enter/Return
 
