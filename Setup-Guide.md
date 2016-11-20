@@ -37,17 +37,22 @@ In this guide:
 ##Streaming over the Internet
 
 The following ports must be forwarded through your router for streaming to work with the latest version of GeForce Experience:
-* TCP 47984, 47989
-* UDP 47998, 47999, 48000, 48010
+* **TCP** 47984, 47989
+* **UDP** 47998, 47999, 48000, 48010
 
 If you are using an older version of GeForce Experience, you may need these additional ports:
 * TCP 35043, 47995, 47996, 48010
 
+### Having trouble?
+* If you get an RTSP error or have no audio or video when streaming from outside your network, check that the UDP ports above are forwarded correctly. Make sure they are forwarded as UDP, not TCP in your router settings.
+
+* If your PC doesn't appear online at all, check the TCP ports are correctly forwarded.
+
 To find the external IP address of your server, when connected to your network, use a service like http://www.whatismyip.com to determine the IP address another computer uses to talk to you.
 
-_Note:_ Some Internet Service providers change the external IP address in use by any given subscriber on a regular basis. Since Moonlight needs to connect to the right IP address, this change can cause problems for Moonlight. Using a dynamic DNS service like [No-IP](http://www.noip.com) will give Moonlight a consistent name to use for connecting, even if the IP address that's associated with that name changes a lot. 
-
 To stream over the Internet, in your client: If your PC already appears online when connecting over the Internet, you're all set. If it doesn't, tap on the add button in Moonlight, then enter in the IP address or name. If it still won't come online, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
+
+_Note:_ Some Internet Service providers change the external IP address in use by any given subscriber on a regular basis. Since Moonlight needs to connect to the right IP address, this change can cause problems for Moonlight. Using a dynamic DNS service like [No-IP](http://www.noip.com) will give Moonlight a consistent name to use for connecting, even if the IP address that's associated with that name changes a lot. 
 
 ##Moonlight Client Setup Instructions
 **Client Requirements**
