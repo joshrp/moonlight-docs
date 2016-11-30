@@ -46,6 +46,7 @@ Look at the troubleshooting steps for each of the following issues:
 ### Can't pair or stream at all
 * Make sure a monitor is connected to your PC and turned on, and you are logged in.
 * Reboot your PC and client device.
+* If you're trying to stream 4K, make sure the "Allow experimental features" checkbox in GeForce Experience settings is checked.
 * Disable your PC's firewall and anti-virus, and reboot again.
 * Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
 * If your PC is running Windows Server, install the qWave service.
