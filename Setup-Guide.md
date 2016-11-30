@@ -38,7 +38,10 @@ In this guide:
 
 4. On your PC, enter the PIN displayed in Moonlight and accept the pairing dialog. If you don't see a pairing dialog, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
-5. Try streaming a game or app to make sure everything is working. By default, GeForce Experience will reserve Player 1 for the Moonlight client's gamepad. If you want to use a gamepad connected directly to your gaming PC, follow [these steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-a-gamepad-connected-to-the-pc-instead-of-the-streaming-device). If you can't successfully stream at all, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
+5. Try streaming a game or app to make sure everything is working.
+  * By default, GeForce Experience will reserve Player 1 for the Moonlight client's gamepad. If you want to use a gamepad connected directly to your gaming PC, follow [these steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-a-gamepad-connected-to-the-pc-instead-of-the-streaming-device).
+  * If you want to stream in 4K resolution, you must check the "Allow experimental features" checkbox on the GeForce Experience settings page.
+  * If you can't successfully stream at all, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
 ##Streaming over the Internet
 
