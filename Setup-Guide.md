@@ -11,7 +11,7 @@ In this guide:
 
 **PC Requirements** 
 
-* NVIDIA GeForce GTX 600+ series GPU (GT-series and AMD GPUs aren't support by NVIDIA GameStream)
+* NVIDIA GeForce GTX 600+ series GPU (GT-series and AMD GPUs aren't supported by NVIDIA GameStream)
 * NVIDIA GeForce Experience (GFE) 2.1.1 or higher
 * 720p or higher display connected to the PC
 
