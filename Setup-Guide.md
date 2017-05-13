@@ -15,7 +15,7 @@ In this guide:
 * NVIDIA GeForce Experience (GFE) 2.1.1 or higher
 * 720p or higher display connected to the PC
 
-##Quick Setup Instructions
+## Quick Setup Instructions
 1. On your gaming PC, install the GeForce Experience software from [geforce.com](http://www.geforce.com). The PC may need a reboot after installation to finish setup.
 
 2. Start GeForce Experience and click on the **Settings "gear" button**. Then choose the **SHIELD** option. Make sure the GameStream switch is in the **"on" position (green)**. If the SHIELD tab is not present, see the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
@@ -43,7 +43,7 @@ In this guide:
   * If you want to stream in 4K resolution, you must check the "Allow experimental features" checkbox on the GeForce Experience settings page.
   * If you can't successfully stream at all, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
-##Streaming over the Internet
+## Streaming over the Internet
 
 The following ports must be forwarded through your router for streaming to work with the latest version of GeForce Experience:
 * **TCP** 47984, 47989
@@ -63,7 +63,7 @@ To stream over the Internet, in your client: If your PC already appears online w
 
 _Note:_ Some Internet Service providers change the external IP address in use by any given subscriber on a regular basis. Since Moonlight needs to connect to the right IP address, this change can cause problems for Moonlight. Using a dynamic DNS service like [No-IP](http://www.noip.com) will give Moonlight a consistent name to use for connecting, even if the IP address that's associated with that name changes a lot. 
 
-##Moonlight Client Setup Instructions
+## Moonlight Client Setup Instructions
 **Client Requirements**
 
 * Android: An Android device running Android 4.1 (Jelly Bean) or newer. Newer and "flagship" devices with higher processor speeds are more likely to be able to handle Moonlight well by using the hardware video system on the device to produce smooth streaming without video stuttering or freezing.
@@ -113,7 +113,7 @@ PC clients support keyboard/mouse input and up to 4 game controllers. On Windows
 
 To free the mouse cursor from the Moonlight window, press Ctrl+Alt+Shift. To quit streaming, press Ctrl+Alt+Shift+Q.
 
-##Touchscreen Controls for Android or iOS
+## Touchscreen Controls for Android or iOS
 
 Moonlight for Android and iOS use the touch screen as a way of controlling the mouse cursor. Multi-touch devices can emulate more mouse functions than single-touch devices.
 
@@ -123,25 +123,23 @@ Moonlight for Android and iOS use the touch screen as a way of controlling the m
 * Hold one finger down and tap a second finger to right-click.
 * Tap with three fingers to open the on-screen keyboard (Android only for now). Only some keyboards work with Moonlight for Android - the [Hacker's Keyboard](https://play.google.com/store/apps/details?id=org.pocketworkstation.pckeyboard) seems to work well for everything but the arrow keys.
 
-##Using a gamepad connected to the PC instead of the streaming device
+## Using a gamepad connected to the PC instead of the streaming device
 Normally, Moonlight sends controller input from the streaming client which gets sent to the game by GFE. If you want to connect a controller to your PC instead of the streaming device, GFE can cause some problems because the emulated controller still appears to games as controller 1. Luckily there is a workaround for this. You'll need to rename the DLL that Nvidia is using to send controller input so it won't be used anymore. You may have to do the renaming again if GFE does an update, but it should allow you to use your controller normally on games that only support 1 controller.
 
 * On GeForce Experience 3.0 and later, rename rxgamepadinput.dll to rxgamepadinput.dll.old in C:\Program Files\NVIDIA Corporation\NvStreamSrv and C:\Program Files (x86)\NVIDIA Corporation\NvStreamSrv.
 
 * On older version of GeForce Experience (2.x), rename rxinput.dll to rxinput.dll.old in C:\Program Files\NVIDIA Corporation\NvStreamSrv and C:\Program Files (x86)\NVIDIA Corporation\NvStreamSrv.
 
-##Adding custom programs that are not automatically found
+## Adding custom programs that are not automatically found
 You can stream any almost any game or app by adding the EXE file to GFE manually (if it's not found by the automatic app scan). Open GeForce Experience, click the **Settings (gear) button**, click **SHIELD** on the sidebar, then click the **Add button** on the right. Browse to the app or file you want to add and click OK. You can rename the app using the **Edit button**.
 
 The next time the client opens and displays the App List, the newly added programs and games should be displayed and ready to stream.
 
 If quitting an application doesn't stop Moonlight, press *Ctrl+Shift+Alt+Q* on Moonlight PC to quit the streaming session. On Moonlight Android and iOS, pressing the home key will switch out of the streaming session. Choose the **Quit Session** option from the App List to fully quit the streaming session. 
 
-##Using Moonlight to stream your entire desktop
+## Using Moonlight to stream your entire desktop
 Follow the steps above for adding a custom program, but for the path use: **C:\windows\system32\mstsc.exe**
 
 You can rename the remote desktop entry using the edit button. When you click this entry, you will see your full desktop where you can run whatever you want.
 
 ***
-
-This page is under construction
