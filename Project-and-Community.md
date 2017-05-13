@@ -16,5 +16,3 @@ This project is being actively developed at [XDA Developers](http://forum.xda-de
 1. Fork us
 2. Write code
 3. Send Pull Requests
-
-Additionally, you can provide more information on this community-curated wiki for others to use.
