@@ -57,9 +57,9 @@ If you are using an older version of GeForce Experience, you may need these addi
 
 * If your PC doesn't appear online at all, check the TCP ports are correctly forwarded.
 
-To find the external IP address of your server, when connected to your network, use a service like http://www.whatismyip.com to determine the IP address another computer uses to talk to you.
+To find the external IPv4 address of your server, when connected to your network, use a service like http://whatip.me/ to determine the IPv4 address another computer uses to talk to you. _Ensure you always use your IPv4 address not your IPv6 address._
 
-To stream over the Internet, in your client: If your PC already appears online when connecting over the Internet, you're all set. If it doesn't, tap on the add button in Moonlight, then enter in the IP address or name. If it still won't come online, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
+To stream over the Internet, in your client: If your PC already appears online when connecting over the Internet, you're all set. If it doesn't, tap on the add button in Moonlight, then enter in the IPv4 address (or hostname, if you set one up for your router). Your IPv4 address should look something like 123.123.123.123. If you see an address with semi-colons, that's an IPv6 address and won't work for Moonlight. If your PC still won't come online, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
 _Note:_ Some Internet Service providers change the external IP address in use by any given subscriber on a regular basis. Since Moonlight needs to connect to the right IP address, this change can cause problems for Moonlight. Using a dynamic DNS service like [No-IP](http://www.noip.com) will give Moonlight a consistent name to use for connecting, even if the IP address that's associated with that name changes a lot. 
 
