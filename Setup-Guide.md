@@ -45,12 +45,32 @@ In this guide:
 
 ## Streaming over the Internet
 
+### Port forwarding (recommended for most users)
+
 The following ports must be forwarded through your router for streaming to work with the latest version of GeForce Experience:
 * **TCP** 47984, 47989
 * **UDP** 47998, 47999, 48000, 48010
 
 If you are using an older version of GeForce Experience, you may need these additional ports:
 * TCP 35043, 47995, 47996, 48010
+
+### IPv6 (certain ISPs only)
+
+If you are lucky enough to have native IPv6 connectivity to your host PC and client device on the networks you'd like to stream on, you may opt to use IPv6. This has the advantage of allowing you to stream from multiple PCs behind a single Internet connection, which would not be possible with port forwarding. This option is only recommended for those very familiar with network administration. You may combine these steps with port forwarding above to stream over IPv4 or IPv6, depending on your client's connectivity.
+
+1. Navigate to http://test-ipv6.com/ on both your host PC and client device and confirm they both score 10/10 on the networks you will be streaming from. You may need to disable Chrome's Data Compression option to get accurate results on mobile.
+
+  * If your host PC doesn't score 10/10, you won't be able to use this method for streaming over the Internet with your ISP.
+
+  * If your client device doesn't score 10/10 but your host PC does, you won't be able to stream over IPv6 on the current network but another network may work.
+
+2. Install the [GameStream IPv6 Forwarder](https://github.com/moonlight-stream/GS-IPv6-Forwarder/releases) on your host PC.
+
+3. Configure your router's IPv6 firewall (typically separate from the IPv4 firewall/port forwarding) to allow the ports listed in the section above.
+
+4. In Moonlight, click Add PC and type the IPv6 address of your PC. Your PC should appear online (or remain online, if you already had IPv4 connectivity to it).
+
+All officially supported Moonlight clients (iOS, Chrome, Android) support streaming from servers over IPv6. Unofficial clients (Embedded, Vita) may not.
 
 ### Having trouble?
 * If you get an RTSP error or have no audio or video when streaming from outside your network, check that the UDP ports above are forwarded correctly. Make sure they are forwarded as UDP, not TCP in your router settings.
