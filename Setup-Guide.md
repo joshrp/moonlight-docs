@@ -56,7 +56,7 @@ If you are using an older version of GeForce Experience, you may need these addi
 
 ### IPv6 (certain ISPs only)
 
-If you are lucky enough to have native IPv6 connectivity to your host PC and client device on the networks you'd like to stream on, you may opt to use IPv6. This has the advantage of allowing you to stream from multiple PCs behind a single Internet connection, which would not be possible with port forwarding. This option is only recommended for those very familiar with network administration. You may combine these steps with port forwarding above to stream over IPv4 or IPv6, depending on your client's connectivity.
+If you are lucky enough to have native IPv6 connectivity to your host PC and client device on the networks you'd like to stream on, you may opt to use IPv6 instead of port forwarding. This has the advantage of allowing you to stream from multiple PCs behind a single Internet connection, which is not possible with port forwarding. This option is only recommended for those very familiar with network administration. You may combine these steps with port forwarding above to stream over IPv4 or IPv6, depending on your client's connectivity.
 
 1. Navigate to http://test-ipv6.com/ on both your host PC and client device and confirm they both score 10/10 on the networks you will be streaming from. You may need to disable Chrome's Data Compression option to get accurate results on mobile.
 
