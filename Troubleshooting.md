@@ -43,24 +43,27 @@ Look at the troubleshooting steps for each of the following issues:
 * Install the latest GPU driver from NVIDIA's website
 * Uninstall and reinstall GeForce Experience
 
+### Unable to stream over the Internet
+* Ensure you've forwarded the required ports [here](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#streaming-over-the-internet)
+* Double-check that you forwarded the UDP ports as UDP and not TCP (especially if you get the "RTSP handshake failed" error or no audio/video)
+* Ensure you don't have 2 or more devices acting as routers in your network (for example, an ISP modem/router combo and your own router). This is known as a double-NAT and can be solved by switching one of them to bridged or AP mode (if supported by the hardware). Double-NAT interferes with all applications that rely on UPnP or port forwarding.
+
 ### Can't pair or stream at all
-* Make sure a monitor is connected to your PC and turned on, and you are logged in.
+* Ensure you've enabled GameStream in GeForce Experience
+* Make sure your primary monitor is connected to your NVIDIA GPU and turned on, and you are logged in.
 * Reboot your PC and client device.
-* If you're trying to stream 4K, make sure the "Allow experimental features" checkbox in GeForce Experience settings is checked.
 * Disable your PC's firewall and anti-virus, and reboot again.
 * Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
 * If your PC is running Windows Server, install the qWave service.
-* Make sure the NVIDIA Streaming Service is enabled and running.
 * Uninstall GeForce Experience, reboot, clean install GeForce Experience, and reboot again.
 * [Send us an email](https://github.com/moonlight-stream/moonlight-docs/wiki/Get-In-Touch)
 
 ### Games are missing from Moonlight
-* If nothing appears at all (not even Steam), try restarting your PC. If that doesn't work, uninstall GeForce Experience, reboot your PC, then reinstall GeForce Experience again and scan for games.
 * Make sure the folder where your games are installed is listed in GeForce Experience. Add it by opening GeForce Experience, clicking on the Preferences tab, then clicking the + button and navigating to the correct folder.
 * You can add games manually that aren't detected as streamable by GeForce Experience [using this guide](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#adding-custom-programs-that-are-not-automatically-found)
 
 ### No video displayed on device
-* Make sure a monitor is connected to your PC, turned on, and that you can see your desktop.
+* Make sure your primary monitor is connected to your NVIDIA GPU, turned on, and that you can see your desktop.
 * Reboot your PC and device.
 * Disable your PC's firewall and anti-virus, and reboot again.
 * Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
