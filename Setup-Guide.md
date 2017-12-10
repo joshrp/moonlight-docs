@@ -34,7 +34,7 @@ In this guide:
 
          3. Try typing the number after "IPv4 Address" into Moonlight's Add PC dialog. Try all of the listed addresses until one of them works. Addresses starting with **192.168** are typically the correct ones.
 
-    * If none of the IP addresses work, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
+    * If none of the IP addresses work, first try the [firewall setup steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#firewall-setup) and if that fails, try the [general troubleshooting steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
 4. On your PC, enter the PIN displayed in Moonlight and accept the pairing dialog. If you don't see a pairing dialog, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
