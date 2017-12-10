@@ -43,6 +43,23 @@ In this guide:
   * If you want to stream in 4K resolution, you must check the "Allow experimental features" checkbox on the GeForce Experience settings page.
   * If you can't successfully stream at all, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
+## Firewall setup
+
+If you are not able to stream when connected to the same network as your gaming PC, you may need to add firewall rules to stream successfully. First, try disabling your firewall software (usually Windows Firewall or a firewall integrated into your anti-virus software) to confirm it's a firewall-related problem.
+
+### Windows Firewall
+GeForce Experience should create rules for Windows Firewall automatically, but in the event that they don't work, you can create the rules required for streaming by using the following steps:
+1. Open a Command Prompt or PowerShell window as administrator
+2. Run the following 2 commands:
+* netsh advfirewall firewall add rule name="GameStream UDP" dir=in protocol=udp localport=5353,47998-48002 action=allow
+* netsh advfirewall firewall add rule name="GameStream TCP" dir=in protocol=tcp localport=47984,47989 action=allow
+3. Ensure your PC now appears online in Moonlight
+
+### Other firewall software
+For other firewall products, you should follow their instructions to create exceptions for the following ports:
+* **TCP** 47984, 47989
+* **UDP** 5353, 47998, 47999, 48000, 48010
+
 ## Streaming over the Internet
 
 ### Port forwarding (recommended for most users)
@@ -100,9 +117,9 @@ To have a good experience, you need a mid to high-end wireless router with a goo
 
 **Controls for Android devices**
 
-For non-SHIELD devices, using an external mouse with proper mouse capture on Android requires a rooted device. If you want to use an external mouse on your rooted device, you should download "Moonlight for Rooted Devices" on the Play Store or app-root-release.apk from releases. NVIDIA SHIELD devices has mouse capturing built-in that Moonlight uses without needing root.
+For non-SHIELD devices and devices running Android 7.1 (Nougat) or earlier, using an external mouse with proper mouse capture on Android requires a rooted device. If you want to use an external mouse on your rooted device, you should download "Moonlight for Rooted Devices" on the Play Store or app-root-release.apk from releases. NVIDIA SHIELD devices and Android 8.0 (Oreo) have mouse capturing built-in that Moonlight uses without needing root. Moonlight for Rooted Devices is not available for Android 8.0, since the non-root version contains all features that required root using the new Android Oreo APIs.
 
-To toggle capturing the mouse cursor, press Ctrl+Alt+Z.
+To toggle capturing the mouse cursor on Moonlight for Rooted Devices, press Ctrl+Alt+Z.
 
 **Mouse emulation**
 
