@@ -51,7 +51,7 @@ If you are not able to stream when connected to the same network as your gaming 
 GeForce Experience should create rules for Windows Firewall automatically, but in the event that they don't work, you can create the rules required for streaming by using the following steps:
 1. Open a Command Prompt or PowerShell window as administrator
 2. Run the following 2 commands:
-* netsh advfirewall firewall add rule name="GameStream UDP" dir=in protocol=udp localport=5353,47998-48002 action=allow
+* netsh advfirewall firewall add rule name="GameStream UDP" dir=in protocol=udp localport=5353,47998-48010 action=allow
 * netsh advfirewall firewall add rule name="GameStream TCP" dir=in protocol=tcp localport=47984,47989 action=allow
 3. Ensure your PC now appears online in Moonlight
 
