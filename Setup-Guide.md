@@ -52,13 +52,13 @@ GeForce Experience should create rules for Windows Firewall automatically, but i
 1. Open a Command Prompt or PowerShell window as administrator
 2. Run the following 2 commands:
 * netsh advfirewall firewall add rule name="GameStream UDP" dir=in protocol=udp localport=5353,47998-48010 action=allow
-* netsh advfirewall firewall add rule name="GameStream TCP" dir=in protocol=tcp localport=47984,47989 action=allow
+* netsh advfirewall firewall add rule name="GameStream TCP" dir=in protocol=tcp localport=47984,47989,48010 action=allow
 3. Ensure your PC now appears online in Moonlight
 
 ### Other firewall software
 For other firewall products, you should follow their instructions to create exceptions for the following ports:
 * **TCP** 47984, 47989, 48010
-* **UDP** 5353, 47998, 47999, 48000, 48010
+* **UDP** 5353, 47998, 47999, 48000, 48002, 48010
 
 ## Streaming over the Internet
 
@@ -66,7 +66,7 @@ For other firewall products, you should follow their instructions to create exce
 
 The following ports must be forwarded through your router for streaming to work with the latest version of GeForce Experience:
 * **TCP** 47984, 47989, 48010
-* **UDP** 47998, 47999, 48000, 48010
+* **UDP** 47998, 47999, 48000, 48002, 48010
 
 ### IPv6 (certain ISPs only)
 
