@@ -57,7 +57,7 @@ GeForce Experience should create rules for Windows Firewall automatically, but i
 
 ### Other firewall software
 For other firewall products, you should follow their instructions to create exceptions for the following ports:
-* **TCP** 47984, 47989
+* **TCP** 47984, 47989, 48010
 * **UDP** 5353, 47998, 47999, 48000, 48010
 
 ## Streaming over the Internet
@@ -65,11 +65,8 @@ For other firewall products, you should follow their instructions to create exce
 ### Port forwarding (recommended for most users)
 
 The following ports must be forwarded through your router for streaming to work with the latest version of GeForce Experience:
-* **TCP** 47984, 47989
+* **TCP** 47984, 47989, 48010
 * **UDP** 47998, 47999, 48000, 48010
-
-If you are using an older version of GeForce Experience, you may need these additional ports:
-* TCP 35043, 47995, 47996, 48010
 
 ### IPv6 (certain ISPs only)
 
