@@ -2,7 +2,7 @@
 ## Introduction
 Welcome to **Moonlight** - the open source client implementation of NVIDIA GameStream that allows you to to stream your collection of games and apps from your GameStream-compatible PC to another device.
 
-**Disclaimer: This app is not affiliated with NVIDIA Corporation. Please do not contact them for support. **
+**Disclaimer: This app is not affiliated with NVIDIA Corporation. Please do not contact them for support.**
 
 This wiki is open to contributions from our community. Thanks for making Moonlight easier to use!
 
