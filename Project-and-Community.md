@@ -4,6 +4,7 @@ Moonlight was created by [Case Western Reserve University](http://case.edu) stud
 Who we are: 
 * [Cameron Gutman](https://github.com/cgutman)
 * [Diego Waxemberg](https://github.com/dwaxemberg)
+* [Aidan Campbell](https://github.com/raidancampbell)
 * [Aaron Neyer](https://github.com/aaronneyer)
 * [Michelle Bergeron](https://github.com/mrb113)
 * [Andrew Hennessy](https://github.com/yetanothername)
