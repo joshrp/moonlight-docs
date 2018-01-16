@@ -7,7 +7,7 @@ We receive a lot of mail and can't respond to all of it, so please research your
 
 If you do email us, please include the troubleshooting steps you've already tried and the version of Moonlight you're having issues with.
 
-**Report bugs**: If you have a Github account, please open issues on the Issues page of the corresponding project. Please do not create issues on 
+**Report bugs**: If you have a Github account, please open issues on the Issues page of the corresponding project. Please do not create issues on this project.
 - [Report Moonlight Android Issues](https://github.com/moonlight-stream/moonlight-android/issues)
 - [Report Moonlight iOS Issues](https://github.com/moonlight-stream/moonlight-ios/issues)
 - [Report Moonlight Chrome Issues](https://github.com/moonlight-stream/moonlight-chrome/issues)
