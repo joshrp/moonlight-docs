@@ -68,6 +68,8 @@ The following ports must be forwarded through your router for streaming to work 
 * **TCP** 47984, 47989, 48010
 * **UDP** 47998, 47999, 48000, 48002, 48010
 
+**If your port forwarding setup just stopped working recently, check that TCP 48010 is forwarded. It is newly required with GeForce Experience v3.12.**
+
 ### IPv6 (certain ISPs only)
 
 If you are lucky enough to have native IPv6 connectivity to your host PC and client device on the networks you'd like to stream on, you may opt to use IPv6 instead of port forwarding. This has the advantage of allowing you to stream from multiple PCs behind a single Internet connection, which is not possible with port forwarding. This option is only recommended for those very familiar with network administration. You may combine these steps with port forwarding above to stream over IPv4 or IPv6, depending on your client's connectivity.
