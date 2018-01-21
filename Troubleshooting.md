@@ -50,7 +50,7 @@ Look at the troubleshooting steps for each of the following issues:
 * On your home network, go to http://canyouseeme.org/ and check port 47989 and 47984 using the tool to ensure they are both open. If they are not, your port forwarding is not configured correctly (or you have another issue, possibly listed below).
 * On your home network, go to https://whatsmyip.com/ to get your current external IP address. Use the Add PC button and type that address to ensure Moonlight has your router's current IP address (which can change periodically depending on your ISP). If your IP address changes frequently, you may look at a Dynamic DNS provider such as https://www.noip.com/ to allow you to use a hostname instead.
 * Make sure your PC's internal IP address (that you forwarded to) hasn't changed since you created the forwarding rules. If so, you may assign a static IP reservation to it via your router or a static IP address on the PC itself to prevent it from changing. Update the forwarding rules to point to the new IP address.
-* Double-check that you forwarded the UDP ports as UDP and not TCP (especially if you get the "RTSP handshake failed" error or no audio/video)
+* Double-check that you forwarded the UDP ports as UDP and not TCP (especially if you get no audio or video)
 * Ensure you don't have 2 or more devices acting as routers in your network (for example, an ISP modem/router combo and your own router). This is known as a double-NAT and can be solved by switching one of them to bridged or AP mode (if supported by the hardware). Double-NAT interferes with all applications that rely on UPnP or port forwarding.
 
 ### Can't pair or stream at all
