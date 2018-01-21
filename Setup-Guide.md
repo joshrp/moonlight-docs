@@ -89,9 +89,9 @@ If you are lucky enough to have native IPv6 connectivity to your host PC and cli
 All officially supported Moonlight clients (iOS, Chrome, Android) support streaming from servers over IPv6. Unofficial clients (Embedded, Vita) may not.
 
 ### Having trouble?
-* If you get an RTSP error or have no audio or video when streaming from outside your network, check that the UDP ports above are forwarded correctly. Make sure they are forwarded as UDP, not TCP in your router settings.
+* If your PC doesn't appear online outside your network or you get an RTSP handshake failure error, check that the TCP ports are correctly forwarded. Also ensure you've typed your server PC's external IP address into the Add PC page to bond your external IP address with your PC in Moonlight.
 
-* If your PC doesn't appear online at all, check the TCP ports are correctly forwarded.
+* If you have no audio or video when streaming from outside your network, check that the UDP ports above are forwarded correctly. Make sure they are forwarded as UDP, not TCP in your router settings.
 
 To find the external IPv4 address of your server, when connected to your network, use a service like http://whatip.me/ to determine the IPv4 address another computer uses to talk to you. _Ensure you always use your IPv4 address not your IPv6 address._
 
