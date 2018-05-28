@@ -70,6 +70,8 @@ The following ports must be forwarded through your router for streaming to work 
 
 **If your port forwarding setup just stopped working recently, check that TCP 48010 is forwarded. It is newly required with GeForce Experience v3.12.**
 
+Once you've set up port forwarding, you'll need to add your PC again from the Moonlight app so it can learn your router's external IP address. Go to http://www.whatsmyip.org/ from your gaming PC, then enter the IP address you get there into Moonlight. If you don't get an error, you should be all set.
+
 ### IPv6 (certain ISPs only)
 
 If you are lucky enough to have native IPv6 connectivity to your host PC and client device on the networks you'd like to stream on, you may opt to use IPv6 instead of port forwarding. This has the advantage of allowing you to stream from multiple PCs behind a single Internet connection, which is not possible with port forwarding. This option is only recommended for those very familiar with network administration. You may combine these steps with port forwarding above to stream over IPv4 or IPv6, depending on your client's connectivity.
