@@ -17,7 +17,15 @@ Moonlight uses VAAPI and VDPAU for hardware acceleration on Linux. One of those 
 
 ### Ubuntu
 
+All GPUs:
 1. `sudo apt install ubuntu-restricted-addons`
-2. * Intel GPUs: `sudo apt install intel-vaapi-driver`
-   * AMD GPUs and NVIDIA GPUs using open-source drivers: `sudo apt install mesa-vdpau-drivers`
-   * NVIDIA GPUs using proprietary drivers: VDPAU should be included in the NVIDIA driver package
+2. `sudo apt install va-driver-all vdpau-driver-all`
+
+### Fedora
+
+Intel GPUs:
+1. `sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm`
+2. `sudo dnf install intel-vaapi-driver`
+
+Other GPUs:
+1. `sudo dnf install mesa-vdpau-drivers`
