@@ -1,6 +1,6 @@
 **Talk to Us!**
 
-**[XDA Forum](http://forum.xda-developers.com/showthread.php?t=2505510)**: Keep up with Moonlight developments and get in touch with the developer and other users.
+**[Discord](https://discord.gg/MySTSdq)**: Keep up with Moonlight developments and get in touch with the developers and other users.
 
 **Email**: info@moonlight-stream.com
 We receive a lot of mail and can't respond to all of it, so please research your question on this wiki first. If we don't respond in a few days and you still haven't been able to sort out your issue, feel free to send a follow-up email to remind us - sometimes we miss things in our inboxes.
@@ -10,8 +10,7 @@ If you do email us, please include the troubleshooting steps you've already trie
 **Report bugs**: If you have a Github account, please open issues on the Issues page of the corresponding project. Please do not create issues on this project.
 - [Report Moonlight Android Issues](https://github.com/moonlight-stream/moonlight-android/issues)
 - [Report Moonlight iOS Issues](https://github.com/moonlight-stream/moonlight-ios/issues)
+- [Report Moonlight PC Issues](https://github.com/moonlight-stream/moonlight-qt/issues)
 - [Report Moonlight Chrome Issues](https://github.com/moonlight-stream/moonlight-chrome/issues)
 
 ![](https://github.com/moonlight-stream/moonlight-android/blob/master/app/src/main/res/drawable-xhdpi/ic_launcher.png)
-
-This page is under construction.
