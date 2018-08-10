@@ -108,7 +108,7 @@ _Note:_ Some Internet Service providers change the external IP address in use by
 
 * iOS: An iOS device running iOS 8.0 or later.
 
-* PC: Windows 7+, macOS 10.10+, or Linux. Your PC should be new enough that it supports hardware-accelerated H.264 video decoding, otherwise it will have to use CPU decoding. Most PCs made since around 2010 should work fine.
+* PC: Windows 7+, macOS 10.11+, or Linux. Your PC should be new enough that it supports hardware-accelerated H.264 video decoding, otherwise it will have to use CPU decoding. Most PCs made since around 2010 should work fine.
 
 * ChromeOS: All ChromeOS devices should have the required hardware.
 
