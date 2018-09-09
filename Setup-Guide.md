@@ -70,6 +70,8 @@ The following ports must be forwarded through your router for streaming to work 
 
 **If your port forwarding setup just stopped working recently, check that TCP 48010 is forwarded. It is newly required with GeForce Experience v3.12.**
 
+To verify the basic port forwarding was done correctly, visit http://www.canyouseeme.org/ and test port 47984 and 47989. If port forwarding is working, they should both report "Success" when you test them. The other ports are only active during streaming, so the only way to test them is via Moonlight.
+
 Once you've set up port forwarding, you'll need to add your PC again from the Moonlight app so it can learn your router's external IP address. Go to http://www.whatsmyip.org/ from your gaming PC, then enter the IP address you get there into Moonlight. If you don't get an error, you should be all set.
 
 ### IPv6 (certain ISPs only)
