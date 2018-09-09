@@ -25,7 +25,7 @@ Look at the troubleshooting steps for each of the following issues:
 * Ask for help on our [Discord server](https://discord.gg/MySTSdq)
 
 ### Unable to stream at all over the Internet
-* First, ensure you can stream successfully from your home network to ensure it's an issue specific to streaming over the Internet. If you can't, follow the instructions in the section below for general streaming issues.
+* First, ensure you can stream successfully from your home network to ensure it's an issue specific to streaming over the Internet. If you can't, follow the instructions in the section above for general streaming issues.
 * Ensure you've forwarded the required ports [here](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#streaming-over-the-internet). **TCP 48010 is now required with the GeForce Experience v3.12 update.**
 * On your home network, go to http://canyouseeme.org/ and check port 47989 and 47984 using the tool to ensure they are both open. If they are not, your port forwarding is not configured correctly (or you have another issue, possibly listed below).
 * On your home network, go to https://whatsmyip.com/ to get your current external IP address. Use the Add PC button and type that address to ensure Moonlight has your router's current IP address (which can change periodically depending on your ISP). If your IP address changes frequently, you may look at a Dynamic DNS provider such as https://www.noip.com/ to allow you to use a hostname instead.
