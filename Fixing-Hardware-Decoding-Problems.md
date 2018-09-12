@@ -13,6 +13,8 @@ If you are using Hackintosh machine, you'll need to find a GPU driver (if availa
 # Linux
 Moonlight uses VAAPI and VDPAU for hardware acceleration on Linux. One of those two APIs should be compatible with any modern GPU. The most common issue preventing it from working properly is a missing VAAPI or VDPAU driver package for your GPU.
 
+* Run `flatpak update` to ensure the Flatpak runtime has installed the matching extension for your current GPU.
+
 * Ensure your desktop session is running using X, not Wayland. On GNOME-based distros, you can switch this at the logon screen by clicking the little gear icon.
 
 ### Ubuntu
