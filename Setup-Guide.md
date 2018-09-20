@@ -78,9 +78,11 @@ If you are lucky enough to have native IPv6 connectivity to your host PC and cli
 
 1. Navigate to http://test-ipv6.com/ on both your host PC and client device and confirm they both score 10/10 on the networks you will be streaming from. You may need to disable Chrome's Data Compression option to get accurate results on mobile.
 
-  * If your host PC doesn't score 10/10, you won't be able to use this method for streaming over the Internet with your ISP.
+    * If your host PC scores 0/10, check your router settings for an IPv6 option. Make sure it's enabled and set to "Native", "Automatic", "DHCPv6", or similar. Avoid "6to4" or "Teredo" options. Restart your router and try the IPv6 test again. If you can't find an IPv6 option or it's not working, contact your ISP and ask whether they support IPv6.
 
-  * If your client device doesn't score 10/10 but your host PC does, you won't be able to stream over IPv6 on the current network but another network may work.
+    * If you can't get your host PC to 10/10, you won't be able to use this method for streaming over the Internet with your ISP.
+
+    * If your client device doesn't score 10/10 but your host PC does, you won't be able to stream over IPv6 on the current network but another network may work.
 
 2. Install the [GameStream IPv6 Forwarder](https://github.com/moonlight-stream/GS-IPv6-Forwarder/releases) on your host PC.
 
