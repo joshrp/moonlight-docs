@@ -31,6 +31,10 @@ Look at the troubleshooting steps for each of the following issues:
 * Follow the steps on the [port forwarding troubleshooting section](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#having-trouble)
 * Make sure your PC's internal IP address (that you forwarded to) hasn't changed since you created the forwarding rules. If so, you may assign a static IP reservation to it via your router or a static IP address on the PC itself to prevent it from changing. Update the forwarding rules to point to the new IP address.
 * Ensure you don't have 2 or more devices acting as routers in your network (for example, an ISP modem/router combo and your own router). This is known as a double-NAT and can be solved by switching one of them to bridged or AP mode (if supported by the hardware). Double-NAT interferes with all applications that rely on UPnP or port forwarding.
+* Check if your router's public/WAN IP address starts with `10.` or numbers between `100.64` and `100.127`. If so and you're positive that you don't have any other device that could be a router on your network, your ISP is running a [Carrier-grade NAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT) that blocks hosting services like Moonlight.
+    * You can try using the [IPv6 setup steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#ipv6-certain-isps-only).
+    * If your ISP deployed Carrier-grade NAT without working IPv6, you have no way of directly hosting anything on the Internet, and you should consider getting a better ISP (I am only half-joking).
+    * If you're stuck with your ISP, a VPN is your only option. VPNs will almost always have significantly higher latency and reduced performance compared to port forwarding or IPv6 because you aren't connecting directly to your PC.
 * Ask for help on our [Discord server](https://discord.gg/MySTSdq)
 
 ### Video is choppy or laggy
