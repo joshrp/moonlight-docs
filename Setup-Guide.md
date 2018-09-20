@@ -8,7 +8,7 @@ In this guide:
 
 ***
 
-**PC Requirements** 
+**Host Gaming PC Requirements** 
 
 * NVIDIA GeForce GTX 600+ series GPU (GT-series and AMD GPUs aren't supported by NVIDIA GameStream)
 * NVIDIA GeForce Experience (GFE) 2.1.1 or higher
@@ -43,10 +43,10 @@ In this guide:
 
 ## Firewall setup
 
-If you are not able to stream when connected to the same network as your gaming PC, you may need to add firewall rules to stream successfully. First, try disabling your firewall software (usually Windows Firewall or a firewall integrated into your anti-virus software) to confirm it's a firewall-related problem.
+If you are not able to stream when connected to the same network as your gaming PC, you may need to add firewall rules to stream successfully. First, try disabling the firewall software on your gaming PC (usually Windows Firewall or a firewall integrated into your anti-virus software) to confirm it's a firewall-related problem.
 
 ### Windows Firewall
-GeForce Experience should create rules for Windows Firewall automatically, but in the event that they don't work, you can create the rules required for streaming by using the following steps:
+GeForce Experience should create rules for Windows Firewall automatically, but in the event that they don't work, you can create the rules required to host streaming by using the following steps:
 1. Open a Command Prompt or PowerShell window as administrator
 2. Run the following 2 commands:
 * netsh advfirewall firewall add rule name="GameStream UDP" dir=in protocol=udp localport=5353,47998-48010 action=allow
@@ -74,26 +74,26 @@ Once you've set up port forwarding, you'll need to add your PC again from the Mo
 
 ### IPv6 (certain ISPs only)
 
-If you are lucky enough to have native IPv6 connectivity to your host PC and client device on the networks you'd like to stream on, you may opt to use IPv6 instead of port forwarding. This has the advantage of allowing you to stream from multiple PCs behind a single Internet connection, which is not possible with port forwarding. This option is only recommended for those very familiar with network administration. You may combine these steps with port forwarding above to stream over IPv4 or IPv6, depending on your client's connectivity.
+If you are lucky enough to have native IPv6 connectivity to your host gaming PC and client device/PC on the networks you'd like to stream on, you may opt to use IPv6 instead of port forwarding. This has the advantage of allowing you to stream from multiple PCs behind a single Internet connection, which is not possible with port forwarding. This option is only recommended for those very familiar with network administration. You may combine these steps with port forwarding above to stream over IPv4 or IPv6, depending on your client's connectivity.
 
-1. Navigate to http://test-ipv6.com/ on both your host PC and client device and confirm they both score 10/10 on the networks you will be streaming from. You may need to disable Chrome's Data Compression option to get accurate results on mobile.
+1. Navigate to http://test-ipv6.com/ on both your host gaming PC and client device/PC and confirm they both score 10/10 on the networks you will be streaming from. You may need to disable Chrome's Data Compression option to get accurate results on mobile.
 
     * If your host PC scores 0/10, check your router settings for an IPv6 option. Make sure it's enabled and set to "Native", "Automatic", "DHCPv6", or similar. Avoid "6to4" or "Teredo" options. Restart your router and try the IPv6 test again. If you can't find an IPv6 option or it's not working, contact your ISP and ask whether they support IPv6.
 
-    * If you can't get your host PC to 10/10, you won't be able to use this method for streaming over the Internet with your ISP.
+    * If you can't get your host gaming PC to 10/10, you won't be able to use this method for streaming over the Internet with your ISP.
 
     * If your client device doesn't score 10/10 but your host PC does, you won't be able to stream over IPv6 on the current network but another network may work.
 
-2. Install the [GameStream IPv6 Forwarder](https://github.com/moonlight-stream/GS-IPv6-Forwarder/releases) on your host PC.
+2. Install the [GameStream IPv6 Forwarder](https://github.com/moonlight-stream/GS-IPv6-Forwarder/releases) on your host gaming PC (same PC that runs GeForce Experience).
 
 3. Configure your router's IPv6 firewall (typically separate from the IPv4 firewall/port forwarding) to allow the ports listed in the section above.
 
-4. In Moonlight, click Add PC and type the IPv6 address of your PC. Your PC should appear online (or remain online, if you already had IPv4 connectivity to it).
+4. In Moonlight, click Add PC and type the IPv6 address of your host gaming PC. Your PC should appear online (or remain online, if you already had IPv4 connectivity to it).
 
 All officially supported Moonlight clients (iOS, PC, Android) support streaming from servers over IPv6. Unofficial clients (Embedded, Vita) may not.
 
 ### Having trouble?
-* If your PC doesn't appear online outside your network, check that TCP ports 47984 and 47989 are correctly forwarded. Also ensure you've typed your server PC's external IP address into the Add PC page to bond your external IP address with your PC in Moonlight.
+* If your gaming PC doesn't appear online outside your network, check that TCP ports 47984 and 47989 are correctly forwarded. Also ensure you've typed your server PC's external IP address into the Add PC page to bond your external IP address with your PC in Moonlight.
 
 * If your connection fails at the RTSP handshake stage, check that TCP port 48010 is correctly forwarded.
 
@@ -105,7 +105,7 @@ All officially supported Moonlight clients (iOS, PC, Android) support streaming 
 
 To find the external IP address of your server, when connected to your home network, use a service like http://whatip.me/ on your server PC to determine the IPv4 address another computer uses to talk to you. _Ensure you always use your IPv4 address not your IPv6 address (unless you're following the IPv6 steps above)._
 
-To stream over the Internet, in your client: If your PC already appears online when connecting over the Internet, you're all set. If it doesn't, tap on the add button in Moonlight, then enter in the IP address (or hostname, if you set one up for your router). Your IP address should look something like 123.123.123.123. If you see an address with semi-colons, that's an IPv6 address and won't work for Moonlight (unless you've followed the IPv6 steps above). If your PC still won't come online, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
+To stream over the Internet, in your client: If your PC already appears online when connecting over the Internet, you're all set. If it doesn't, tap on the add button in Moonlight, then enter in the IP address (or hostname, if you set one up for your router). Your IP address should look something like 123.123.123.123. If you see an address with colons (like 2001:4860:4860::8844), that's an IPv6 address and won't work for Moonlight (unless you've followed the IPv6 steps above). If your PC still won't come online, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
 _Note:_ Some Internet Service providers change the external IP address in use by any given subscriber on a regular basis. Since Moonlight needs to connect to the right IP address, this change can cause problems for Moonlight. Using a dynamic DNS service like [No-IP](http://www.noip.com) will give Moonlight a consistent name to use for connecting, even if the IP address that's associated with that name changes a lot. 
 
@@ -116,7 +116,7 @@ _Note:_ Some Internet Service providers change the external IP address in use by
 
 * iOS: An iOS device running iOS 8.0 or later.
 
-* PC: Windows 7+, macOS 10.11+, or Linux. Your PC should be new enough that it supports hardware-accelerated H.264 video decoding, otherwise it will have to use CPU decoding. Most PCs made since around 2010 should work fine.
+* PC: Windows 7+, macOS 10.11+, or Linux. Your PC should be new enough that it supports hardware-accelerated H.264 video decoding, otherwise it will have to use CPU decoding. Most PCs made since around 2010 should work fine, though older PCs may not be able to stream at 60 FPS without lag.
 
 * ChromeOS: All ChromeOS devices should have the required hardware.
 
@@ -157,7 +157,9 @@ Apple devices only natively support MFi controllers. We recommend the "extended 
 
 PC clients support keyboard/mouse input and up to 4 game controllers. On Windows, XInput-compatible gamepads will be mapped automatically. On other systems, you may need to map the controller manually. 
 
-To free the mouse cursor from the Moonlight window, press Ctrl+Alt+Shift. To quit streaming, press Ctrl+Alt+Shift+Q.
+* Ctrl+Alt+Shift+Z - Toggle mouse pointer capture
+* Ctrl+Alt+Shift+X - Toggle between full-screen and windowed mode
+* Ctrl+Alt+Shift+Q - Quit the streaming session (leaving the game running on the host PC)
 
 ## Touchscreen Controls for Android or iOS
 
