@@ -2,7 +2,7 @@
 Moonlight uses DXVA2 for hardware acceleration on Windows. All modern GPUs from AMD, NVIDIA, and Intel should support hardware decoding of H.264 via DXVA2 with the proper drivers installed.
 
 If you have issues with hardware decoding:
-* Ensure your GPU drivers are properly installed from the GPU manufacturer or PC vendor's website.
+* Ensure your GPU drivers are properly installed and up-to-date from the GPU manufacturer or PC vendor's website.
 * Ensure you're not using Remote Desktop to access your PC. This prevents your GPU from being usable for rendering.
 
 # Mac
