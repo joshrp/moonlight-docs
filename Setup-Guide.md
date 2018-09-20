@@ -62,7 +62,7 @@ For other firewall products, you should follow their instructions to create exce
 
 ### Port forwarding (recommended for most users)
 
-The following ports must be forwarded through your router for streaming to work with the latest version of GeForce Experience:
+The following ports must be forwarded through your router to your host gaming PC's IP address for streaming to work over the Internet:
 * **TCP** 47984, 47989, 48010
 * **UDP** 47998, 47999, 48000, 48002, 48010
 
