@@ -71,11 +71,11 @@ Look at the troubleshooting steps for each of the following issues:
 * You can add games manually that aren't detected as streamable by GeForce Experience [using this guide](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#adding-custom-programs-that-are-not-automatically-found)
 
 ### Controller input doesn't work when streaming
-* Try a different game or Steam Big Picture
-* If you're using a controller directly connected to your GeForce PC, you may need to follow an extra step to prevent the local controller from being overridden. Follow [the steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-a-gamepad-connected-to-the-pc-instead-of-the-streaming-device).
+* Ensure you're running GeForce Experience 3.15.0 or later
+* Check if input works in Steam Big Picture to see if it's a game-specific compatibility issue
 * Ask for help on our [Discord server](https://discord.gg/MySTSdq)
 
 ### Bluetooth-related streaming issues
-Depending on your phone/tablet, you may have a bad streaming experience if Bluetooth is active while streaming. This is a hardware issue due to the antenna wiring. If you experience this, you can [try this](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-a-gamepad-connected-to-the-pc-instead-of-the-streaming-device) as a workaround.
+Depending on your streaming device, you may have a bad experience if Bluetooth is active while streaming. This is a hardware limitation due to the antenna wiring. If you experience this and are streaming from within your home, you can try connecting the gamepad directly to your PC using a wireless adapter or Bluetooth.
 
 Still having issues? Ask for help on our [Discord server](https://discord.gg/MySTSdq)
