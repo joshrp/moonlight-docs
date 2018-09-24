@@ -5,6 +5,7 @@ In this guide:
 * [Touchscreen Controls for Android or iOS](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#touchscreen-controls-for-android-or-ios)
 * [Adding custom programs that are not automatically found](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#adding-custom-programs-that-are-not-automatically-found)
 * [Using Moonlight to stream your entire desktop](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-moonlight-to-stream-your-entire-desktop)
+* [Getting help](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#getting-help)
 
 ***
 
@@ -182,5 +183,11 @@ If quitting an application doesn't stop Moonlight, press *Ctrl+Shift+Alt+Q* on M
 Follow the steps above for adding a custom program, but for the path use: **C:\windows\system32\mstsc.exe**
 
 You can rename the remote desktop entry using the edit button. When you click this entry, you will see your full desktop where you can run whatever you want.
+
+## Getting help
+
+If the information on this wiki doesn't help you, you can join our [Discord server](https://discord.gg/MySTSdq) to get help from the developers and the community. This is the recommended way to get the fastest help, since many people can answer your questions.
+
+If you don't want to use Discord, you can email info@moonlight-stream.com but be aware that responses may be delayed, since this only goes to core developers. Please ensure you include all necessary information, including GeForce Experience and driver versions, specifications of your client device, streaming settings, etc.
 
 ***
