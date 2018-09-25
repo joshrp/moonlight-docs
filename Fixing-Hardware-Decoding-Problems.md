@@ -17,6 +17,12 @@ Moonlight uses VAAPI and VDPAU for hardware acceleration on Linux. One of those 
 
 * Ensure your desktop session is running using X, not Wayland. On GNOME-based distros, you can switch this at the logon screen by clicking the little gear icon.
 
+    * The following software limitations prevent hardware acceleration from being usable on Wayland:
+
+        * VDPAU - the API has no Wayland rendering support at all
+        * VAAPI - [missing DRI3 support](https://github.com/intel/libva/issues/79) that is required to render on XWayland
+        * GNOME's Wayland compositor (Mutter) - [missing YUV surface support](https://github.com/intel/intel-vaapi-driver/issues/357) that is required for native Wayland rendering 
+
 ### Ubuntu
 
 All GPUs:
