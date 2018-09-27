@@ -15,8 +15,9 @@ Look at the troubleshooting steps for each of the following issues:
 * [Bluetooth-related streaming issues](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#bluetooth-related-streaming-issues)
 
 ### Unable to stream at all on the same network as the PC
-* Ensure you've enabled GameStream in GeForce Experience
+* Ensure you've enabled GameStream in GeForce Experience per the [setup guide](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide)
 * Ensure GeForce Experience is up to date
+* Ensure your GeForce GPU driver is up to date
 * Make sure your primary monitor is connected to your NVIDIA GPU and turned on, and you are logged in.
 * Reboot your PC and client device.
 * Disable your PC's firewall and anti-virus, and reboot again. If this works, you can create a firewall exception using [the steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#firewall-setup).
