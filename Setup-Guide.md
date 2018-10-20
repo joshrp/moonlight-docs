@@ -41,6 +41,13 @@ In this guide:
 2. Make sure the automatic configuration was successful by running "Moonlight Internet Streaming Tester" via the Start Menu.
 3. Type the address that is displayed on the tester's success dialog into the Add PC dialog of Moonlight.
 
+#### Having trouble?
+* Ensure UPnP is enabled in your router settings and delete any older Moonlight port forwarding entries.
+
+* Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) and ask for help on our [Discord server](https://discord.gg/MySTSdq). Be sure to have the tester log handy.
+
+_Note:_ Some Internet Service providers change the external IP address in use by any given subscriber on a regular basis. Since Moonlight needs to connect to the right IP address, this change can cause problems for Moonlight. Using a dynamic DNS service like [No-IP](http://www.noip.com) will give Moonlight a consistent name to use for connecting, even if the IP address that's associated with that name changes a lot. 
+
 ### Manual port forwarding (advanced)
 The following ports must be forwarded through your router to your host gaming PC's IP address for streaming to work over the Internet:
 * **TCP** 47984, 47989, 48010
@@ -71,13 +78,6 @@ If you are lucky enough to have native IPv6 connectivity to your host gaming PC 
 4. In Moonlight, click Add PC and type the IPv6 address of your host gaming PC. Your PC should appear online (or remain online, if you already had IPv4 connectivity to it).
 
 All officially supported Moonlight clients (iOS, PC, Android) support streaming from servers over IPv6. Unofficial clients (Embedded, Vita) may not.
-
-### Having trouble?
-* Ensure UPnP is enabled in your router settings and delete any older Moonlight port forwarding entries.
-
-* Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) and ask for help on our [Discord server](https://discord.gg/MySTSdq). Be sure to have the tester log handy.
-
-_Note:_ Some Internet Service providers change the external IP address in use by any given subscriber on a regular basis. Since Moonlight needs to connect to the right IP address, this change can cause problems for Moonlight. Using a dynamic DNS service like [No-IP](http://www.noip.com) will give Moonlight a consistent name to use for connecting, even if the IP address that's associated with that name changes a lot. 
 
 ## Firewall setup
 
