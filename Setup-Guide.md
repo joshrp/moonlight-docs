@@ -26,14 +26,6 @@ In this guide:
 
 3. Start Moonlight and make sure your client is connected to the same network as your PC. In most cases, your gaming PC will show up automatically in the PC list after a few seconds. Click the entry in the PC list to start pairing.
 
-    * If your PC *doesn't* appear automatically for some reason, click the plus button and add your PC using its local network IP address. To find your gaming PC's local network address:
-
-         1. Click on the Start menu, type **cmd**, and press Enter/Return
-
-         2. Type **ipconfig** and press Enter/Return
-
-         3. Try typing the number after "IPv4 Address" into Moonlight's Add PC dialog. Try all of the listed addresses until one of them works. Addresses starting with **192.168** are typically the correct ones.
-
     * If none of the IP addresses work, first try the [firewall setup steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#firewall-setup) and if that fails, try the [general troubleshooting steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
 4. On your PC, enter the PIN displayed in Moonlight and accept the pairing dialog. If you don't see a pairing dialog, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
@@ -42,27 +34,14 @@ In this guide:
    * If your gamepad isn't working, make sure you've updated GeForce Experience to version 3.15.0 or later.
    * If you can't successfully stream at all, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
-## Firewall setup
-
-If you are not able to stream when connected to the same network as your gaming PC, you may need to add firewall rules to stream successfully. First, try disabling the firewall software on your gaming PC (usually Windows Firewall or a firewall integrated into your anti-virus software) to confirm it's a firewall-related problem.
-
-### Windows Firewall
-GeForce Experience should create rules for Windows Firewall automatically, but in the event that they don't work, you can create the rules required to host streaming by using the following steps:
-1. Open a Command Prompt or PowerShell window as administrator
-2. Run the following 2 commands:
-* netsh advfirewall firewall add rule name="GameStream UDP" dir=in protocol=udp localport=5353,47998-48010 action=allow
-* netsh advfirewall firewall add rule name="GameStream TCP" dir=in protocol=tcp localport=47984,47989,48010 action=allow
-3. Ensure your PC now appears online in Moonlight
-
-### Other firewall software
-For other firewall products, you should follow their instructions to create exceptions for the following ports:
-* **TCP** 47984, 47989, 48010
-* **UDP** 5353, 47998, 47999, 48000, 48002, 48010
-
 ## Streaming over the Internet
 
-### Port forwarding (recommended for most users)
+### Automatic configuration (recommended for most users)
+1. Install the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) on your gaming PC.
+2. Make sure the automatic configuration was successful by running "Moonlight Internet Streaming Tester" via the Start Menu.
+3. Type the address that is displayed on the tester's success dialog into the Add PC dialog of Moonlight.
 
+### Manual port forwarding (advanced)
 The following ports must be forwarded through your router to your host gaming PC's IP address for streaming to work over the Internet:
 * **TCP** 47984, 47989, 48010
 * **UDP** 47998, 47999, 48000, 48002, 48010
@@ -94,21 +73,28 @@ If you are lucky enough to have native IPv6 connectivity to your host gaming PC 
 All officially supported Moonlight clients (iOS, PC, Android) support streaming from servers over IPv6. Unofficial clients (Embedded, Vita) may not.
 
 ### Having trouble?
-* If your gaming PC doesn't appear online outside your network, check that TCP ports 47984 and 47989 are correctly forwarded. Also ensure you've typed your server PC's external IP address into the Add PC page to bond your external IP address with your PC in Moonlight.
+* Ensure UPnP is enabled in your router settings and delete any older Moonlight port forwarding entries.
 
-* If your connection fails at the RTSP handshake stage, check that TCP port 48010 is correctly forwarded.
-
-* If your connection fails at the control stream stage, check that UDP port 47999 is correctly forwarded. Ensure it is specified as UDP and not TCP.
-
-* If your stream has no video, check that UDP port 47998 is correctly forwarded. Ensure it is specified as UDP and not TCP.
-
-* If your stream has no audio, check that UDP port 48000 is correctly forwarded. Ensure it is specified as UDP and not TCP.
-
-To find the external IP address of your server, when connected to your home network, use a service like http://whatip.me/ on your server PC to determine the IPv4 address another computer uses to talk to you. _Ensure you always use your IPv4 address not your IPv6 address (unless you're following the IPv6 steps above)._
-
-To stream over the Internet, in your client: If your PC already appears online when connecting over the Internet, you're all set. If it doesn't, tap on the add button in Moonlight, then enter in the IP address (or hostname, if you set one up for your router). Your IP address should look something like 123.123.123.123. If you see an address with colons (like 2001:4860:4860::8844), that's an IPv6 address and won't work for Moonlight (unless you've followed the IPv6 steps above). If your PC still won't come online, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
+* Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) and ask for help on our [Discord server](https://discord.gg/MySTSdq). Be sure to have the tester log handy.
 
 _Note:_ Some Internet Service providers change the external IP address in use by any given subscriber on a regular basis. Since Moonlight needs to connect to the right IP address, this change can cause problems for Moonlight. Using a dynamic DNS service like [No-IP](http://www.noip.com) will give Moonlight a consistent name to use for connecting, even if the IP address that's associated with that name changes a lot. 
+
+## Firewall setup
+
+If you are not able to stream when connected to the same network as your gaming PC, you may need to add firewall rules to stream successfully. First, try disabling the firewall software on your gaming PC (usually Windows Firewall or a firewall integrated into your anti-virus software) to confirm it's a firewall-related problem.
+
+### Windows Firewall
+GeForce Experience should create rules for Windows Firewall automatically, but in the event that they don't work, you can create the rules required to host streaming by using the following steps:
+1. Open a Command Prompt or PowerShell window as administrator
+2. Run the following 2 commands:
+* netsh advfirewall firewall add rule name="GameStream UDP" dir=in protocol=udp localport=5353,47998-48010 action=allow
+* netsh advfirewall firewall add rule name="GameStream TCP" dir=in protocol=tcp localport=47984,47989,48010 action=allow
+3. Ensure your PC now appears online in Moonlight
+
+### Other firewall software
+For other firewall products, you should follow their instructions to create exceptions for the following ports:
+* **TCP** 47984, 47989, 48010
+* **UDP** 5353, 47998, 47999, 48000, 48002, 48010
 
 ## Moonlight Client Setup Instructions
 **Client Requirements**
