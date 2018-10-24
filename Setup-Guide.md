@@ -73,7 +73,7 @@ If you are lucky enough to have native IPv6 connectivity to your host gaming PC 
 
 2. Install the [GameStream IPv6 Forwarder](https://github.com/moonlight-stream/GS-IPv6-Forwarder/releases) on your host gaming PC (same PC that runs GeForce Experience).
 
-3. Configure your router's IPv6 firewall (typically separate from the IPv4 firewall/port forwarding) to allow the ports listed in the section above.
+3. Configure your router's IPv6 firewall (typically separate from the IPv4 firewall/port forwarding) to allow the ports listed in the section above. You may be able to accomplish this by simply installing the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) if your router supports configuring its IPv6 firewall via UPnP.
 
 4. In Moonlight, click Add PC and type the IPv6 address of your host gaming PC. Your PC should appear online (or remain online, if you already had IPv4 connectivity to it).
 
