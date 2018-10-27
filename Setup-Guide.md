@@ -39,17 +39,21 @@ In this guide:
 ### Automatic configuration (recommended for most users)
 1. Install the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) on your gaming PC.
 2. Make sure the automatic configuration was successful by running "Moonlight Internet Streaming Tester" via the Start Menu.
-3. Type the address that is displayed on the tester's success dialog into the Add PC dialog of Moonlight.
+3. Confirm everything works by testing it from a different network. Testing connectivity with cellular data or tethering is a good option if you don't have a different network easily reachable.
+    * If you've previously used Moonlight on the same network as your PC, it should connect automatically over the Internet if you're outside your house.
+    * If it doesn't connect automatically or it's your first time connecting to this PC, type the address that is displayed on the tester's success dialog into the Add PC dialog of Moonlight.
 
 #### Having trouble?
 * Ensure UPnP is enabled in your router settings and delete any older Moonlight port forwarding entries.
+
+* Try streaming from a different network. Some corporate or public WiFi networks block streaming applications like Moonlight.
 
 * Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) and ask for help on our [Discord server](https://discord.gg/MySTSdq). Be sure to have the tester log handy.
 
 _Note:_ Some Internet Service providers change the external IP address in use by any given subscriber on a regular basis. Since Moonlight needs to connect to the right IP address, this change can cause problems for Moonlight. Using a dynamic DNS service like [No-IP](http://www.noip.com) will give Moonlight a consistent name to use for connecting, even if the IP address that's associated with that name changes a lot. 
 
 ### Manual port forwarding (advanced)
-The following ports must be forwarded through your router to your host gaming PC's IP address for streaming to work over the Internet:
+If the automatic tool doesn't work, you can try manually forwarding the following ports through your router to your host gaming PC's IP address for streaming to work over the Internet:
 * **TCP** 47984, 47989, 48010
 * **UDP** 47998, 47999, 48000, 48002, 48010
 
