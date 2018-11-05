@@ -160,7 +160,8 @@ Moonlight for Android and iOS use the touch screen as a way of controlling the m
 * Tap once with one finger to left-click.
 * Tap and hold in the same place to start a click and drag. After a short while, swipe the finger to drag in the direction of the swipe.
 * Hold one finger down and tap a second finger to right-click.
-* Tap with three fingers to open the on-screen keyboard (Android only for now). Only some keyboards work with Moonlight for Android - the [Hacker's Keyboard](https://play.google.com/store/apps/details?id=org.pocketworkstation.pckeyboard) seems to work well for everything but the arrow keys.
+* Tap with three fingers to open the on-screen keyboard.
+* Scroll vertically by dragging with 2 fingers (iOS only for now)
 
 ## Adding custom programs that are not automatically found
 You can stream any almost any game or app by adding the EXE file to GFE manually (if it's not found by the automatic app scan). Open GeForce Experience, click the **Settings (gear) button**, click **SHIELD** on the sidebar, then click the **Add button** on the right. Browse to the app or file you want to add and click OK. You can rename the app using the **Edit button**.
