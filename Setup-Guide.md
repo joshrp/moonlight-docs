@@ -16,7 +16,7 @@ In this guide:
 * 720p or higher display connected to the PC
 
 ## Quick Setup Instructions
-1. On your gaming PC, install the GeForce Experience software from [geforce.com](http://www.geforce.com). The PC may need a reboot after installation to finish setup.
+1. On your gaming PC, install the [GeForce Experience software](https://www.nvidia.com/en-us/geforce/geforce-experience/) from NVIDIA. Your PC may need a reboot after installation to finish setup.
 
 2. Start GeForce Experience and click on the **Settings "gear" button**. Then choose the **SHIELD** option. Make sure the GameStream switch is in the **"on" position (green)**. If the SHIELD tab is not present, see the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
