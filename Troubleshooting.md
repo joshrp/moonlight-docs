@@ -46,6 +46,9 @@ Look at the troubleshooting steps for each of the following issues:
 * Ask for help on our [Discord server](https://discord.gg/MySTSdq)
 
 ### Known application compatibility issues
+Some installed applications and security products can interfere with GeForce Experience or GameStream. Depending on the configuration of these incompatible applications, you may or may not experience issues streaming.
+
+If you have one of the following, try disabling or uninstalling it:
 * Some 3rd-party firewalls and anti-virus (Kaspersky, Panda, AVG, K9, ESET)
 * DisplayLink dock/display software
 * Razer Synapse
