@@ -115,42 +115,27 @@ For other firewall products, you should follow their instructions to create exce
 
 To have a good experience, you need a mid to high-end wireless router with a good wireless connection to your client device (5 Gigahertz (GHz) highly recommended, Wireless-N (802.11n) or better strongly recommended) and a good connection from your PC server to your router (Ethernet/wired connections highly recommended).
 
+**Controls for PC clients**
+
+PC clients support keyboard, mouse, and touchscreen input and up to 4 game controllers (with mappings for most common gamepads included).
+
+* Ctrl+Alt+Shift+Z - Toggle mouse pointer capture
+* Ctrl+Alt+Shift+X - Toggle between full-screen and windowed mode
+* Ctrl+Alt+Shift+Q - Quit the streaming session (leaving the game running on the host PC)
+
 **Controls for Android devices**
 
 For non-SHIELD devices and devices running Android 7.1 (Nougat) or earlier, using an external mouse with proper mouse capture on Android requires a rooted device. If you want to use an external mouse on your rooted device, you should download "Moonlight for Rooted Devices" on the Play Store or app-root-release.apk from releases. NVIDIA SHIELD devices and Android 8.0 (Oreo) have mouse capturing built-in that Moonlight uses without needing root. Moonlight for Rooted Devices is not available for Android 8.0, since the non-root version contains all features that required root using the new Android Oreo APIs.
 
 To toggle capturing the mouse cursor on Moonlight for Rooted Devices, press Ctrl+Alt+Z.
 
-**Mouse emulation**
-
 If you don't have a mouse connected to your Android device, you can emulate one using a game controller. Press and hold the Start button to toggle mouse emulation. When mouse emulation is on, you can use either analog stick to move the cursor. The A button left clicks and the B button right clicks.
-
-Most controllers will work just fine, but the following have been tested:
-* Xbox 360 wired/wireless
-* Xbox One wired (with Moonlight's built-in driver)
-* PS3 wired (with Sixaxis Enabler app) or wireless (with SixAxis Controller app)
-* PS4 wired via USB
-* MOGA controller (see note below)
-* Amazon Fire Game Controller
-* Shield integrated controller
-
-_MOGA controller users_:
-If your controller has a switch with A and B, it must be switched to B to be used for streaming. If you have no switch, use the MOGA Universal Driver app.
-
-_SixAxis controller users_:
-Use SixAxis in "Native Gamepad" mode. The default button mapping needs to be adjusted to match the standard controller layout for streaming.
 
 **Controls for iOS devices**
 
-Apple devices only natively support MFi controllers. We recommend the "extended layout" controllers which have most buttons present on a typical Xbox 360 controller. Notably lacking are the L3 and R3 buttons and the select button. When using the Auto setting for on-screen controls, an overlay will be displayed containing the buttons that your physical controller is missing.
+Apple devices only natively support MFi controllers. We recommend the "extended layout" controllers which have most buttons present on a typical Xbox 360 controller. Notably lacking on most MFi controllers are the L3 and R3 buttons and the Select button. When using the Auto setting for on-screen controls, an overlay will be displayed containing the buttons that your physical controller is missing.
 
-**Controls for PC clients**
-
-PC clients support keyboard/mouse input and up to 4 game controllers. On Windows, XInput-compatible gamepads will be mapped automatically. On other systems, you may need to map the controller manually. 
-
-* Ctrl+Alt+Shift+Z - Toggle mouse pointer capture
-* Ctrl+Alt+Shift+X - Toggle between full-screen and windowed mode
-* Ctrl+Alt+Shift+Q - Quit the streaming session (leaving the game running on the host PC)
+iOS 12.1 added support for physical L3 and R3 buttons on MFi gamepads. These don't appear to be clearly marked in all cases, so make sure the controller you buy has these buttons.
 
 ## Touchscreen Controls for Android or iOS
 
