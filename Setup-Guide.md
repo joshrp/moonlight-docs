@@ -13,7 +13,7 @@ In this guide:
 
 * NVIDIA GeForce GTX/RTX 600+ series GPU (GT-series and AMD GPUs aren't supported by NVIDIA GameStream)
 * NVIDIA GeForce Experience (GFE) 2.1.1 or higher
-* 720p or higher display connected to the PC (or headless display dongle)
+* 720p or higher display (or headless display dongle) connected to the GeForce GPU
 
 ## Quick Setup Instructions
 1. On your gaming PC, install the [GeForce Experience software](https://www.nvidia.com/en-us/geforce/geforce-experience/) from NVIDIA. Your PC may need a reboot after installation to finish setup.
