@@ -63,9 +63,9 @@ To verify the basic port forwarding was done correctly, visit http://www.canyous
 
 Once you've set up port forwarding, you'll need to add your PC again from the Moonlight app so it can learn your router's external IP address. Go to http://www.whatsmyip.org/ from your gaming PC, then enter the IP address you get there into Moonlight. If you don't get an error, you should be all set.
 
-### IPv6 (certain ISPs only)
+### IPv6 (advanced - certain ISPs only)
 
-If you are lucky enough to have native IPv6 connectivity to your host gaming PC and client device/PC on the networks you'd like to stream on, you may opt to use IPv6 instead of port forwarding. This has the advantage of allowing you to stream from multiple PCs behind a single Internet connection, which is not possible with port forwarding. This option is only recommended for those very familiar with network administration. You may combine these steps with port forwarding above to stream over IPv4 or IPv6, depending on your client's connectivity.
+If you are lucky enough to have native IPv6 connectivity to your host gaming PC and client device/PC on the networks you'd like to stream on, you may opt to use IPv6 for Internet streaming, which has the advantage of allowing you to stream from multiple PCs behind a single Internet connection. This option is only recommended for those very familiar with network administration. You may combine these steps with the Internet Streaming Helper tool above to stream over IPv4 or IPv6, depending on your client's connectivity.
 
 1. Navigate to http://test-ipv6.com/ on both your host gaming PC and client device/PC and confirm they both score 10/10 on the networks you will be streaming from. You may need to disable Chrome's Data Compression option to get accurate results on mobile.
 
