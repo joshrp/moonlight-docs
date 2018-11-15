@@ -48,9 +48,7 @@ In this guide:
 
 * Try streaming from a different network. Some corporate or public WiFi networks block streaming applications like Moonlight.
 
-* Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) and ask for help on our [Discord server](https://discord.gg/MySTSdq). Be sure to have the tester log handy.
-
-_Note:_ Some Internet Service providers change the external IP address in use by any given subscriber on a regular basis. Since Moonlight needs to connect to the right IP address, this change can cause problems for Moonlight. Using a dynamic DNS service like [No-IP](http://www.noip.com) will give Moonlight a consistent name to use for connecting, even if the IP address that's associated with that name changes a lot. 
+* Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) and ask for help on our [Discord server](https://discord.gg/MySTSdq). Be sure to have the tester log handy. 
 
 ### Manual port forwarding (advanced)
 If the automatic tool doesn't work, you can try manually forwarding the following ports through your router to your host gaming PC's IP address for streaming to work over the Internet:
