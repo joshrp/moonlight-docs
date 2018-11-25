@@ -7,6 +7,8 @@ Look at the troubleshooting steps for each of the following issues:
 * [Unable to stream at all on the same network as the PC](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#unable-to-stream-at-all-on-the-same-network-as-the-pc)
 * [Unable to stream at all over the Internet](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#unable-to-stream-at-all-over-the-internet)
 * [Video is choppy or laggy](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#video-is-choppy-or-laggy)
+* [No video (black screen)](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#no-video-black-screen)
+* [Missing mouse cursor](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#missing-mouse-cursor)
 * [Known application compatibility issues](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#known-application-compatibility-issues)
 * [Pairing dialog won't show up on PC](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#pairing-dialog-wont-show-up-on-pc)
 * [SHIELD tab is missing in GeForce Experience](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#shield-tab-is-missing-in-geforce-experience)
@@ -34,7 +36,7 @@ Look at the troubleshooting steps for each of the following issues:
 * If the Moonlight Internet Streaming Tester says your ISP is running a [Carrier-grade NAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT) that blocks hosting services like Moonlight, try these steps:
     * You can try using the [IPv6 setup steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#ipv6-certain-isps-only).
     * If your ISP deployed Carrier-grade NAT without working IPv6, you have no way of directly hosting anything on the Internet, and you should consider getting a better ISP (I am only half-joking).
-    * If you're stuck with your ISP, a VPN is your only option. VPNs will almost always have significantly higher latency and reduced performance compared to port forwarding or IPv6 because you aren't connecting directly to your PC.
+    * If you're stuck with your ISP, many users have reported good streaming performance using [ZeroTier](https://www.zerotier.com/download.shtml).
 * Ask for help on our [Discord server](https://discord.gg/MySTSdq)
 
 ### Video is choppy or laggy
@@ -43,6 +45,17 @@ Look at the troubleshooting steps for each of the following issues:
 * Lower the bitrate slider.
 * Try using 720p30 which has the lowest requirements.
 * Try forcing your PC's Ethernet adapter to run at 100Mb Full Duplex in Device Manager.
+* Ask for help on our [Discord server](https://discord.gg/MySTSdq)
+
+### No video (black screen)
+* Ensure your monitor is powered on and connected to your NVIDIA GPU
+* If you want to stream without a monitor connected, you can buy a cheap headless HDMI dongle like [this one](https://www.amazon.com/fit-Headless-GS-resolution-emulator-game-streaming/dp/B01EK05WTY)
+* Try a different game or stream Steam to see if it's game-specific. You may be able to work around the game-specific issues by [streaming your whole desktop](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-moonlight-to-stream-your-entire-desktop) and starting the game from there.
+* Ask for help on our [Discord server](https://discord.gg/MySTSdq)
+
+### Missing mouse cursor
+* Ensure a mouse is connected to your host gaming PC
+* If unable to physically connect a mouse, enable Mouse Keys on the host gaming PC to force Windows to display a mouse cursor
 * Ask for help on our [Discord server](https://discord.gg/MySTSdq)
 
 ### Known application compatibility issues
