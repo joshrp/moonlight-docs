@@ -36,7 +36,7 @@ Look at the troubleshooting steps for each of the following issues:
 * If the Moonlight Internet Streaming Tester says your ISP is running a [Carrier-grade NAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT) that blocks hosting services like Moonlight, try these steps:
     * You can try using the [IPv6 setup steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#ipv6-certain-isps-only).
     * If your ISP deployed Carrier-grade NAT without working IPv6, you have no way of directly hosting anything on the Internet, and you should consider getting a better ISP (I am only half-joking).
-    * If you're stuck with your ISP, many users have reported good streaming performance using [ZeroTier](https://www.zerotier.com/download.shtml).
+    * If you're stuck with your ISP, many users have reported good streaming performance using [ZeroTier](https://www.zerotier.com/download.shtml) on their host PC and client device.
 * Ask for help on our [Discord server](https://discord.gg/MySTSdq)
 
 ### Video is choppy or laggy
