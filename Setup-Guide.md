@@ -50,6 +50,20 @@ In this guide:
 
 * Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) and ask for help on our [Discord server](https://discord.gg/MySTSdq). Be sure to have the tester log handy. 
 
+### ZeroTier
+If the automatic tool above says you're behind a Carrier-Grade NAT or that you have two routers connected together that you can't resolve, we've had many users report good streaming performance through [ZeroTier](https://www.zerotier.com/) which is a service that acts similar to a VPN, but with better performance in most cases.
+
+This option also gives you the ability to stream from multiple PCs that are all connected via a single Internet connection.
+
+To set it up:
+1. [Create an account](https://my.zerotier.com/login) on the ZeroTier website. The free service is perfectly fine for Moonlight.
+2. Download the Windows version for your PC from the [Downloads page](http://www.zerotier.com/download.shtml) and install it on your host gaming PC. You can set it to start on PC startup using the Preferences option in the taskbar icon menu.
+3. If using Moonlight on a PC or Mac, download and install the appropriate version from the [Downloads page](http://www.zerotier.com/download.shtml). For Android and iOS, the apps are available on the Play Store and App Store.
+4. Go to the [Networks tab](https://my.zerotier.com/network) then create a new network. The default values are fine.
+5. Copy the Network ID from that page and type it into the ZeroTier client's Join Network dialog (or use the e-mail invite system).
+6. After joining the network on each device, go back to the network page and check the Auth checkbox for each member of your network to allow the devices to connect with each other.
+7. Moonlight should automatically discover your host gaming PC when ZeroTier is connected. Try streaming!
+
 ### Manual port forwarding (advanced)
 If the automatic tool doesn't work, you can try manually forwarding the following ports through your router to your host gaming PC's IP address for streaming to work over the Internet:
 * **TCP** 47984, 47989, 48010
@@ -63,7 +77,7 @@ Once you've set up port forwarding, you'll need to add your PC again from the Mo
 
 ### IPv6 (advanced - certain ISPs only)
 
-If you are lucky enough to have native IPv6 connectivity to your host gaming PC and client device/PC on the networks you'd like to stream on, you may opt to use IPv6 for Internet streaming, which has the advantage of allowing you to stream from multiple PCs behind a single Internet connection. This option is only recommended for those very familiar with network administration. You may combine these steps with the Internet Streaming Helper tool above to stream over IPv4 or IPv6, depending on your client's connectivity.
+If you are lucky enough to have native IPv6 connectivity to your host gaming PC and client device/PC on the networks you'd like to stream on, you may opt to use IPv6 for Internet streaming. This option is only recommended for those very familiar with network administration. You may combine these steps with the Internet Streaming Helper tool above to stream over IPv4 or IPv6, depending on your client's connectivity.
 
 1. Navigate to http://test-ipv6.com/ on both your host gaming PC and client device/PC and confirm they both score 10/10 on the networks you will be streaming from. You may need to disable Chrome's Data Compression option to get accurate results on mobile.
 
