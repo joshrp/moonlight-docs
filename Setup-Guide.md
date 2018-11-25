@@ -46,14 +46,17 @@ In this guide:
 #### Having trouble?
 * Ensure UPnP is enabled in your router settings and delete any older Moonlight port forwarding entries.
 
-* Try streaming from a different network. Some corporate or public WiFi networks block streaming applications like Moonlight.
+* Try streaming from a different network. Some corporate or public WiFi networks block streaming applications like Moonlight. If that happens, you may have success with the ZeroTier setup steps below.
 
 * Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) and ask for help on our [Discord server](https://discord.gg/MySTSdq). Be sure to have the tester log handy. 
 
 ### ZeroTier
-If the automatic tool above says you're behind a Carrier-Grade NAT or that you have two routers connected together that you can't resolve, we've had many users report good streaming performance through [ZeroTier](https://www.zerotier.com/) which is a service that acts similar to a VPN, but with better performance in most cases.
+[ZeroTier](https://www.zerotier.com/) which is a service that acts similar to a VPN, but with better performance in most cases. This option also gives you the ability to stream from multiple PCs that are all connected via a single Internet connection.
 
-This option also gives you the ability to stream from multiple PCs that are all connected via a single Internet connection.
+You should use ZeroTier if you are in one of the following situations:
+* The automatic tool above says you're behind a Carrier-Grade NAT, that you have two routers connected together, or otherwise doesn't work and you can't resolve it yourself.
+* You have multiple gaming PCs on your network that you'd like to stream from over the Internet.
+* Moonlight is blocked on the network you want to use for streaming.
 
 To set it up:
 1. [Create an account](https://my.zerotier.com/login) on the ZeroTier website. The free service is perfectly fine for Moonlight.
