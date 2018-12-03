@@ -64,8 +64,8 @@ To set it up:
 3. If using Moonlight on a PC or Mac, download and install the appropriate version from the [Downloads page](http://www.zerotier.com/download.shtml). For Android and iOS, the apps are available on the Play Store and App Store.
 4. Go to the [Networks tab](https://my.zerotier.com/network) then create a new network. The default values are fine.
 5. Copy the Network ID from that page and type it into the ZeroTier client's Join Network dialog (or use the e-mail invite system).
-6. After joining the network on each device, go back to the network page and check the Auth checkbox for each member of your network to allow the devices to connect with each other.
-7. Moonlight should automatically discover your host gaming PC when ZeroTier is connected. Try streaming!
+6. After joining the network on each device, go back to the ZeroTier Network page and check the Auth checkbox for each member of your network to allow the devices to connect with each other. ZeroTier should show up as connected on all devices.
+7. With ZeroTier connected, open Moonlight and click/tap the Add PC button, then type the IP address of your PC as shown on the ZeroTier Network page.
 
 ### Manual port forwarding (advanced)
 If the automatic tool doesn't work, you can try manually forwarding the following ports through your router to your host gaming PC's IP address for streaming to work over the Internet:
