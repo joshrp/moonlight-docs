@@ -9,7 +9,7 @@ Who we are:
 * [Michelle Bergeron](https://github.com/mrb113)
 * [Andrew Hennessy](https://github.com/yetanothername)
 
-Email any of us at our firstname@moonlight-stream.com or all of us at info@moonlight-stream.com. We do receive a lot of mail, so please check if your answer is described in this wiki first. 
+Email any of us at `<our first name>@moonlight-stream.org` or all of us at info@moonlight-stream.org. We do receive a lot of mail, so please check if your answer is described in this wiki first. 
 
 ## Contribute
 This project is being actively developed at [XDA Developers](http://forum.xda-developers.com/showthread.php?t=2505510). We welcome code contributions - here's how in three easy steps.
