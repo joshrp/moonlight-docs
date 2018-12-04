@@ -179,6 +179,6 @@ See our [dedicated troubleshooting wiki page](https://github.com/moonlight-strea
 
 If the information on the wiki doesn't help you, you can join our [Discord server](https://discord.gg/MySTSdq) to get help from the developers and the community. This is the recommended way to get the fastest help, since many people can answer your questions.
 
-If you don't want to use Discord, you can email info@moonlight-stream.com but be aware that responses may be delayed, since this only goes to core developers. Please ensure you include all necessary information, including GeForce Experience and driver versions, specifications of your client device, streaming settings, etc.
+If you don't want to use Discord, you can email info@moonlight-stream.org but be aware that responses may be delayed, since this only goes to core developers. Please ensure you include all necessary information, including GeForce Experience and driver versions, specifications of your client device, streaming settings, etc.
 
 ***
