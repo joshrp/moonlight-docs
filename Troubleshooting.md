@@ -21,7 +21,7 @@ Look at the troubleshooting steps for each of the following issues:
 * Ensure GeForce Experience is up to date
 * Ensure your GeForce GPU driver is up to date
 * Make sure your primary monitor is connected to your NVIDIA GPU and turned on, and you are logged in.
-* If you use a VPN for Internet access, disable it to ensure your local network is accessible. You may also need to disable the setting to block local network access when the VPN is disconnected, if that option is available for your VPN software.
+* If you use a VPN for Internet access on your gaming PC, disable it to ensure your local network is accessible. You may also need to disable the setting to block local network access when the VPN is disconnected, if that option is available for your VPN software.
 * Reboot your PC and client device.
 * Disable your PC's firewall and anti-virus, and reboot again. If this works, you can create a firewall exception using [the steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#firewall-setup).
 * Check the list of [known application compatibility issues](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#known-application-compatibility-issues). Try uninstalling any programs on that list one to see if one of them is interfering.
@@ -33,12 +33,12 @@ Look at the troubleshooting steps for each of the following issues:
 * First, ensure you can stream successfully from your home network to ensure it's an issue specific to streaming over the Internet. If you can't, follow the instructions in the section above for general streaming issues.
 * Make sure your gaming PC is running the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) to automatically manage your port forwarding rules.
 * Ensure UPnP is enabled in your router settings and delete any older Moonlight port forwarding entries.
-* If you use a VPN for Internet access, disable it to ensure your local network is accessible. You may also need to disable the setting to block local network access when the VPN is disconnected, if that option is available for your VPN software.
+* If you use a VPN for Internet access on your gaming PC, disable it to ensure your local network is accessible. You may also need to disable the setting to block local network access when the VPN is disconnected, if that option is available for your VPN software.
 * Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) and ask for help on our [Discord server](https://discord.gg/MySTSdq). Be sure to have the tester log handy.
 * If the Moonlight Internet Streaming Tester says your ISP is running a [Carrier-grade NAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT) that blocks hosting services like Moonlight, try these steps:
-    * You can try using the [IPv6 setup steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#ipv6-certain-isps-only).
-    * If your ISP deployed Carrier-grade NAT without working IPv6, you have no way of directly hosting anything on the Internet, and you should consider getting a better ISP (I am only half-joking).
-    * If you're stuck with your ISP, many users have reported good streaming performance using [ZeroTier](https://www.zerotier.com/download.shtml) on their host PC and client device.
+    * Ask your ISP for a public IP address. Many users have reported that their ISP is happy to provide one free of charge upon request.
+    * Many users have reported good streaming performance using the [ZeroTier](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#zerotier) setup steps.
+    * You can try using the [IPv6 setup steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#ipv6-certain-isps-only) if your home ISP and client network both support IPv6. You can check this by seeing if you score a 10/10 on [this web IPv6 test](http://test-ipv6.com/).
 * Ask for help on our [Discord server](https://discord.gg/MySTSdq)
 
 ### Video is choppy or laggy
