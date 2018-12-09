@@ -33,6 +33,7 @@ Look at the troubleshooting steps for each of the following issues:
 * First, ensure you can stream successfully from your home network to ensure it's an issue specific to streaming over the Internet. If you can't, follow the instructions in the section above for general streaming issues.
 * Make sure your gaming PC is running the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) to automatically manage your port forwarding rules.
 * Ensure UPnP is enabled in your router settings and delete any older Moonlight port forwarding entries.
+* If you use a VPN for Internet access, disable it to ensure your local network is accessible. You may also need to disable the setting to block local network access when the VPN is disconnected, if that option is available for your VPN software.
 * Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) and ask for help on our [Discord server](https://discord.gg/MySTSdq). Be sure to have the tester log handy.
 * If the Moonlight Internet Streaming Tester says your ISP is running a [Carrier-grade NAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT) that blocks hosting services like Moonlight, try these steps:
     * You can try using the [IPv6 setup steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#ipv6-certain-isps-only).
