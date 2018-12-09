@@ -21,6 +21,7 @@ Look at the troubleshooting steps for each of the following issues:
 * Ensure GeForce Experience is up to date
 * Ensure your GeForce GPU driver is up to date
 * Make sure your primary monitor is connected to your NVIDIA GPU and turned on, and you are logged in.
+* If you use a VPN for Internet access, disable it to ensure your local network is accessible. You may also need to disable the setting to block local network access when the VPN is disconnected, if that option is available for your VPN software.
 * Reboot your PC and client device.
 * Disable your PC's firewall and anti-virus, and reboot again. If this works, you can create a firewall exception using [the steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#firewall-setup).
 * Check the list of [known application compatibility issues](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#known-application-compatibility-issues). Try uninstalling any programs on that list one to see if one of them is interfering.
