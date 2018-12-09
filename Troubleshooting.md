@@ -63,17 +63,25 @@ Look at the troubleshooting steps for each of the following issues:
 ### Known application compatibility issues
 Some installed applications and security products can interfere with GeForce Experience or GameStream. Depending on the configuration of these incompatible applications, you may or may not experience issues streaming.
 
+Special-case issues:
+* Parsec/Rainway/Steam In-Home Streaming
+    * Disconnect your stream before using Moonlight to avoid encoder conflicts with other streaming apps
+* NordVPN, TunnelBear, PIA, and other VPNs
+    * Disable the VPN if Moonlight cannot discover your gaming PC or stream over the Internet
+    * You may need to stop the VPN software from blocking network access when the it is disconnected
+* Microsoft Remote Desktop
+    * Streaming will fail until you log back in at the physical machine after connecting via RDP
+    * Chrome Remote Desktop and TeamViewer can be used for remote access without breaking Moonlight
+
 If you have one of the following, try disabling or uninstalling it:
 * Some 3rd-party firewalls and anti-virus (Kaspersky, Panda, AVG, K9, ESET)
+    * Kaspersky in particular may only [stop breaking Moonlight when it is fully uninstalled](https://www.reddit.com/r/theNvidiaShield/comments/4g5fft/gamestreaming_vs_kaspersky_resolved/).
 * DisplayLink dock/display software
 * Razer Synapse
 * Razer Kraken software (APO Helper)
-* TeamViewer
-* KinoConsole Server
 * ASUS SonicRadar
 * ASUS KeyBot
 * ASUS GameFirst
-* Microsoft Remote Desktop (streaming fails during and after an RDP session)
 
 ### Pairing dialog won't show up on PC
 * Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
