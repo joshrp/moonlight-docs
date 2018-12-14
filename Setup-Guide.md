@@ -26,22 +26,22 @@ In this guide:
 
 3. Start Moonlight and make sure your client is connected to the same network as your PC. In most cases, your gaming PC will show up automatically in the PC list after a few seconds. Click the entry in the PC list to start pairing.
 
-    * If none of the IP addresses work, first try the [firewall setup steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#firewall-setup) and if that fails, try the [general troubleshooting steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
-
 4. On your PC, enter the PIN displayed in Moonlight and accept the pairing dialog. If you don't see a pairing dialog, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
-5. Try streaming a game or app to make sure everything is working.
-   * If your gamepad isn't working, make sure you've updated GeForce Experience to version 3.15.0 or later.
-   * If you can't successfully stream at all, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
+5. Try streaming a game or app to make sure everything is working. If you encounter issues, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
 ## Streaming over the Internet
 
 ### Automatic configuration (recommended for most users)
+For the easiest possible setup process, we highly recommend that you first pair Moonlight with your gaming PC while connected to your home network before trying to use Moonlight over the Internet.
+
+#### If your PC is already paired with Moonlight:
+* Simply install the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) on your gaming PC. That's it!
+
+#### If your PC is _not_ already paired with Moonlight:
 1. Install the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) on your gaming PC.
-2. Make sure the automatic configuration was successful by running "Moonlight Internet Streaming Tester" via the Start Menu.
-3. Confirm everything works by testing it from a different network. Testing connectivity with cellular data or tethering is a good option if you don't have a different network easily reachable.
-    * If you've previously used Moonlight on the same network as your PC, it should connect automatically over the Internet if you're outside your house.
-    * If it doesn't connect automatically or it's your first time connecting to this PC, type the address that is displayed on the tester's success dialog into the Add PC dialog of Moonlight.
+2. On your gaming PC, run "Moonlight Internet Streaming Tester" via the Start Menu.
+3. Type the IP address that is displayed on the tester's success dialog into the Add PC dialog of Moonlight.
 
 #### Having trouble?
 * Ensure UPnP is enabled in your router settings and delete any older Moonlight port forwarding entries.
