@@ -153,6 +153,8 @@ Apple devices only natively support MFi controllers. We recommend the "extended 
 
 iOS 12.1 added support for physical L3 and R3 buttons on MFi gamepads. These don't appear to be clearly marked in all cases, so make sure the controller you buy has these buttons.
 
+To disconnect from your PC while streaming, swipe from the left edge of the screen.
+
 ## Touchscreen Controls for Android or iOS
 
 Moonlight for Android and iOS use the touch screen as a way of controlling the mouse cursor. Multi-touch devices can emulate more mouse functions than single-touch devices.
