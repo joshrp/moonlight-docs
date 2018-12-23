@@ -53,7 +53,9 @@ For the easiest possible setup process, we highly recommend that you first pair 
 * Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) and ask for help on our [Discord server](https://discord.gg/MySTSdq). Be sure to have the tester log handy. 
 
 ### ZeroTier
-[ZeroTier](https://www.zerotier.com/) which is a service that acts similar to a VPN, but with better performance in most cases. This option also gives you the ability to stream from multiple PCs that are all connected via a single Internet connection.
+[ZeroTier](https://www.zerotier.com/) which is a service that acts similar to a VPN, but with better performance in most cases.
+
+This option also gives you the ability to stream from multiple PCs that are all connected via a single Internet connection. However, it requires software on your hosts and clients that must be running and connected in order to stream over the Internet, unlike the other Internet streaming options.
 
 You should use ZeroTier if you are in one of the following situations:
 * The automatic tool above says you're behind a Carrier-Grade NAT, that you have two routers connected together, or otherwise doesn't work and you can't resolve it yourself.
@@ -68,11 +70,13 @@ To set it up:
     * If using Moonlight on Android or iOS, the apps are available on the [Google Play Store](https://play.google.com/store/apps/details?id=com.zerotier.one) and [Apple App Store](https://itunes.apple.com/us/app/zerotier-one/id1084101492).
 4. Go to the [Networks tab](https://my.zerotier.com/network) then create a new network.
     * Uncheck all checkboxes in the "IPv6 Auto-Assign" section (if checked)
-    * Under the "IPv4 Auto-Assign" section, ensure "Auto-Assign from Range" is checked, click the "Easy" button, then choose "10.147.17.*".
+    * Under the "IPv4 Auto-Assign" section, ensure "Auto-Assign from Range" is checked, click the "Easy" button, then choose "10.147.17.*"
 5. Copy the Network ID from that page and type it into the ZeroTier app's Join Network dialog (or use the e-mail invite system).
     * If you get a prompt from Windows about asking for the network type/location, choose Private or Home network to avoid firewall issues.
 6. After joining the network on each device (_including your client running Moonlight!_), go back to the ZeroTier Network page and check the Auth checkbox for each member of your network to allow the devices to connect with each other. ZeroTier should show up as connected on all devices.
 7. With ZeroTier connected on your client and host PC, open Moonlight and click/tap the Add PC button, then type the "Managed IP" of your host PC as shown on the ZeroTier Network page.
+
+Don't forget to connect to your ZeroTier network when you want to stream over the Internet!
 
 ### Manual port forwarding (advanced)
 If the automatic tool doesn't work, you can try manually forwarding the following ports through your router to your host gaming PC's IP address for streaming to work over the Internet:
