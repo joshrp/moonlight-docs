@@ -66,7 +66,9 @@ To set it up:
 3. Install ZeroTier on your client device.
     * If using Moonlight on a PC or Mac, download and install the appropriate version from the [Downloads page](http://www.zerotier.com/download.shtml).
     * If using Moonlight on Android or iOS, the apps are available on the [Google Play Store](https://play.google.com/store/apps/details?id=com.zerotier.one) and [Apple App Store](https://itunes.apple.com/us/app/zerotier-one/id1084101492).
-4. Go to the [Networks tab](https://my.zerotier.com/network) then create a new network. The default values are fine.
+4. Go to the [Networks tab](https://my.zerotier.com/network) then create a new network.
+    * Uncheck all checkboxes in the "IPv6 Auto-Assign" section (if checked)
+    * Under the "IPv4 Auto-Assign" section, ensure "Auto-Assign from Range" is checked, click the "Easy" button, then choose "10.147.17.*".
 5. Copy the Network ID from that page and type it into the ZeroTier app's Join Network dialog (or use the e-mail invite system).
     * If you get a prompt from Windows about asking for the network type/location, choose Private or Home network to avoid firewall issues.
 6. After joining the network on each device (_including your client running Moonlight!_), go back to the ZeroTier Network page and check the Auth checkbox for each member of your network to allow the devices to connect with each other. ZeroTier should show up as connected on all devices.
