@@ -70,7 +70,7 @@ To set it up:
 5. Copy the Network ID from that page and type it into the ZeroTier app's Join Network dialog (or use the e-mail invite system).
     * If you get a prompt from Windows about asking for the network type/location, choose Private or Home network to avoid firewall issues.
 6. After joining the network on each device (_including your client running Moonlight!_), go back to the ZeroTier Network page and check the Auth checkbox for each member of your network to allow the devices to connect with each other. ZeroTier should show up as connected on all devices.
-7. With ZeroTier connected on your client and host PC, open Moonlight and click/tap the Add PC button, then type the IP address of your PC as shown on the ZeroTier Network page.
+7. With ZeroTier connected on your client and host PC, open Moonlight and click/tap the Add PC button, then type the "Managed IP" of your host PC as shown on the ZeroTier Network page.
 
 ### Manual port forwarding (advanced)
 If the automatic tool doesn't work, you can try manually forwarding the following ports through your router to your host gaming PC's IP address for streaming to work over the Internet:
