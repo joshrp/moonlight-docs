@@ -165,6 +165,8 @@ iOS 12.1 added support for physical L3 and R3 buttons on MFi gamepads. These don
 
 To disconnect from your PC while streaming, swipe from the left edge of the screen.
 
+iCade gamepads (old iOS gamepads that fake a Bluetooth keyboard) are not supported by Moonlight.
+
 ## Touchscreen Controls for Android or iOS
 
 Moonlight for Android and iOS use the touch screen as a way of controlling the mouse cursor. Multi-touch devices can emulate more mouse functions than single-touch devices.
