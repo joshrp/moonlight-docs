@@ -2,7 +2,7 @@ In this guide:
 * [Quick Setup Instructions](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#quick-setup-instructions)
 * [Streaming over the Internet](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#streaming-over-the-internet)
 * [Moonlight Client Setup Instructions](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#moonlight-client-setup-instructions)
-* [Touchscreen Controls for Android or iOS](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#touchscreen-controls-for-android-or-ios)
+* [Keyboard/Mouse/Gamepad Input Options](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#keyboardmousegamepad-input-Options)
 * [Adding custom programs that are not automatically found](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#adding-custom-programs-that-are-not-automatically-found)
 * [Using Moonlight to stream your entire desktop](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-moonlight-to-stream-your-entire-desktop)
 * [Troubleshooting](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#troubleshooting)
@@ -141,7 +141,9 @@ For other firewall products, you should follow their instructions to create exce
 
 To have a good experience, you need a mid to high-end wireless router with a good wireless connection to your client device (5 Gigahertz (GHz) highly recommended, Wireless-N (802.11n) or better strongly recommended) and a good connection from your PC server to your router (Ethernet/wired connections highly recommended).
 
-**Controls for PC clients**
+## Keyboard/Mouse/Gamepad Input Options
+
+**PC client**
 
 PC clients support keyboard, mouse, and touchscreen input and up to 4 game controllers (with mappings for most common gamepads included).
 
@@ -149,7 +151,7 @@ PC clients support keyboard, mouse, and touchscreen input and up to 4 game contr
 * Ctrl+Alt+Shift+X - Toggle between full-screen and windowed mode
 * Ctrl+Alt+Shift+Q - Quit the streaming session (leaving the game running on the host PC)
 
-**Controls for Android devices**
+**Android client**
 
 For non-SHIELD devices and devices running Android 7.1 (Nougat) or earlier, using an external mouse with proper mouse capture on Android requires a rooted device. If you want to use an external mouse on your rooted device, you should download "Moonlight for Rooted Devices" on the Play Store or app-root-release.apk from releases. NVIDIA SHIELD devices and Android 8.0 (Oreo) have mouse capturing built-in that Moonlight uses without needing root. Moonlight for Rooted Devices is not available for Android 8.0, since the non-root version contains all features that required root using the new Android Oreo APIs.
 
@@ -157,7 +159,7 @@ To toggle capturing the mouse cursor on Moonlight for Rooted Devices, press Ctrl
 
 If you don't have a mouse connected to your Android device, you can emulate one using a game controller. Press and hold the Start button to toggle mouse emulation. When mouse emulation is on, you can use either analog stick to move the cursor. The A button left clicks and the B button right clicks.
 
-**Controls for iOS devices**
+**iOS**
 
 Apple devices only natively support MFi controllers. We recommend the "extended layout" controllers which have most buttons present on a typical Xbox 360 controller. Notably lacking on most MFi controllers are the L3 and R3 buttons and the Select button. When using the Auto setting for on-screen controls, an overlay will be displayed containing the buttons that your physical controller is missing.
 
@@ -167,7 +169,7 @@ To disconnect from your PC while streaming, swipe from the left edge of the scre
 
 iCade gamepads (old iOS gamepads that fake a Bluetooth keyboard) are not supported by Moonlight.
 
-## Touchscreen Controls for Android or iOS
+**Touchscreen Controls (Android and iOS)**
 
 Moonlight for Android and iOS use the touch screen as a way of controlling the mouse cursor. Multi-touch devices can emulate more mouse functions than single-touch devices.
 
