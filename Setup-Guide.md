@@ -153,13 +153,15 @@ PC clients support keyboard, mouse, and touchscreen input and up to 4 game contr
 
 **Android client**
 
+Moonlight supports gamepads that use the standard Android button mapping. It also supports some popular non-Android controllers like the Xbox 360, Xbox One, PS3, and PS4 controllers. However, we recommend testing these with your specific Android device first, because some controllers have latency or disconnection issues (particularly with PlayStation controllers over Bluetooth).
+
 For non-SHIELD devices and devices running Android 7.1 (Nougat) or earlier, using an external mouse with proper mouse capture on Android requires a rooted device. If you want to use an external mouse on your rooted device, you should download "Moonlight for Rooted Devices" on the Play Store or app-root-release.apk from releases. NVIDIA SHIELD devices and Android 8.0 (Oreo) have mouse capturing built-in that Moonlight uses without needing root. Moonlight for Rooted Devices is not available for Android 8.0, since the non-root version contains all features that required root using the new Android Oreo APIs.
 
 To toggle capturing the mouse cursor on Moonlight for Rooted Devices, press Ctrl+Alt+Z.
 
 If you don't have a mouse connected to your Android device, you can emulate one using a game controller. Press and hold the Start button to toggle mouse emulation. When mouse emulation is on, you can use either analog stick to move the cursor. The A button left clicks and the B button right clicks.
 
-**iOS**
+**iOS client**
 
 Apple devices only natively support MFi controllers. We recommend the "extended layout" controllers which have most buttons present on a typical Xbox 360 controller. Notably lacking on most MFi controllers are the L3 and R3 buttons and the Select button. When using the Auto setting for on-screen controls, an overlay will be displayed containing the buttons that your physical controller is missing.
 
@@ -169,16 +171,16 @@ To disconnect from your PC while streaming, swipe from the left edge of the scre
 
 iCade gamepads (old iOS gamepads that fake a Bluetooth keyboard) are not supported by Moonlight.
 
-**Touchscreen Controls (Android and iOS)**
+**Touchscreen controls**
 
-Moonlight for Android and iOS use the touch screen as a way of controlling the mouse cursor. Multi-touch devices can emulate more mouse functions than single-touch devices.
+Moonlight for Android, iOS, and PC use the touch screen as a way of controlling the mouse cursor. Multi-touch devices can emulate more mouse functions than single-touch devices.
 
 * Swiping across the screen moves the mouse cursor in the direction of the swipe.
 * Tap once with one finger to left-click.
 * Tap and hold in the same place to start a click and drag. After a short while, swipe the finger to drag in the direction of the swipe.
 * Hold one finger down and tap a second finger to right-click.
-* Tap with three fingers to open the on-screen keyboard.
-* Scroll vertically by dragging with 2 fingers (iOS only for now)
+* Tap with three fingers to open the on-screen keyboard (Android and iOS only).
+* Scroll vertically by dragging with 2 fingers (iOS only for now).
 
 ## Adding custom programs that are not automatically found
 You can stream any almost any game or app by adding the EXE file to GFE manually (if it's not found by the automatic app scan). Open GeForce Experience, click the **Settings (gear) button**, click **SHIELD** on the sidebar, then click the **Add button** on the right. Browse to the app or file you want to add and click OK. You can rename the app using the **Edit button**.
