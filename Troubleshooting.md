@@ -103,6 +103,7 @@ If you have one of the following, try disabling or uninstalling it:
 
 ### Controller input doesn't work when streaming
 * Ensure you're running GeForce Experience 3.15.0 or later
+* In Steam Big Picture, go to Settings > Controller Settings, then uncheck all gamepad "Configuration Support" checkboxes
 * Check if input works in Steam Big Picture to see if it's a game-specific compatibility issue
 * Ask for help on our [Discord server](https://discord.gg/MySTSdq)
 
