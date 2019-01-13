@@ -57,7 +57,8 @@ Look at the troubleshooting steps for each of the following issues:
 
 ### Missing mouse cursor
 * Ensure a mouse is connected to your host gaming PC
-* If unable to physically connect a mouse, enable Mouse Keys on the host gaming PC to force Windows to display a mouse cursor. If you just type "Mouse key" into the Start Menu search dialog, it should take you to the correct settings page.
+* If unable to physically connect a mouse, enable Mouse Keys on the host gaming PC to force Windows to display a mouse cursor.
+    * If you just type "Mouse key" into the Start Menu search dialog, it should take you to the correct settings page.
 * Ask for help on our [Discord server](https://discord.gg/MySTSdq)
 
 ### Known application compatibility issues
@@ -98,7 +99,8 @@ If you have one of the following, try disabling or uninstalling it:
 * Uninstall and reinstall GeForce Experience
 
 ### Games are missing from Moonlight
-* Make sure the folder where your games are installed is listed in GeForce Experience. Add it by opening GeForce Experience, clicking on the Preferences tab, then clicking the + button and navigating to the correct folder.
+* Make sure the folder where your games are installed is listed in GeForce Experience.
+    * You can add a games folder by opening GeForce Experience, clicking on the Settings button, then clicking the + button and navigating to the correct folder.
 * You can add games manually that aren't detected as streamable by GeForce Experience [using this guide](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#adding-custom-programs-that-are-not-automatically-found)
 
 ### Controller input doesn't work when streaming
