@@ -57,7 +57,7 @@ Look at the troubleshooting steps for each of the following issues:
 
 ### Missing mouse cursor
 * Ensure a mouse is connected to your host gaming PC
-* If unable to physically connect a mouse, enable Mouse Keys on the host gaming PC to force Windows to display a mouse cursor
+* If unable to physically connect a mouse, enable Mouse Keys on the host gaming PC to force Windows to display a mouse cursor. If you just type "Mouse key" into the Start Menu search dialog, it should take you to the correct settings page.
 * Ask for help on our [Discord server](https://discord.gg/MySTSdq)
 
 ### Known application compatibility issues
