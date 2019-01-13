@@ -68,7 +68,7 @@ Special-case issues:
     * Disconnect your stream before using Moonlight to avoid encoder conflicts with other streaming apps
 * NordVPN, TunnelBear, PIA, and other VPNs
     * Disable the VPN if Moonlight cannot discover your gaming PC or stream over the Internet
-    * You may need to stop the VPN software from blocking network access when the it is disconnected
+    * You may need to stop the VPN software from blocking local network access when it is disconnected
 * Microsoft Remote Desktop
     * Streaming will fail until you log back in at the physical machine after connecting via RDP
     * Chrome Remote Desktop and TeamViewer can be used for remote access without breaking Moonlight
