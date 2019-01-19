@@ -1,1 +1,1 @@
-© 2019
+Have a question or problem that isn't addressed here? Try asking on [our Discord server](https://discord.gg/MySTSdq)!
