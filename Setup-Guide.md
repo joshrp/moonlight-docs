@@ -33,7 +33,7 @@ In this guide:
 ## Streaming over the Internet
 
 ### Automatic configuration (recommended for most users)
-For the easiest possible setup process, we highly recommend that you first pair Moonlight with your gaming PC while connected to your home network before trying to use Moonlight over the Internet.
+For the easiest possible setup process, we highly recommend that you **first pair Moonlight with your gaming PC while connected to your home network** before trying to use Moonlight over the Internet.
 
 #### If your gaming PC is already paired with Moonlight:
 1. Install the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) on your gaming PC.
@@ -43,7 +43,7 @@ For the easiest possible setup process, we highly recommend that you first pair 
 1. Install the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) on your gaming PC.
 2. Run "Moonlight Internet Streaming Tester" via the Start Menu.
 3. Type the IP address that is displayed on the tester's success dialog into the Add PC dialog of Moonlight.
-    * You must ensure your Moonlight client is not connected to the same network as your gaming PC during this step or the connection may not be successful.
+    * You must ensure your Moonlight client is **not connected to the same network as your gaming PC** during this step or the connection may not be successful.
 
 #### Having trouble?
 * Ensure UPnP is enabled in your router settings and delete any older Moonlight port forwarding entries.
