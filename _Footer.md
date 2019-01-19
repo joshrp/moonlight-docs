@@ -1,1 +1,1 @@
-© 2017. All rights reserved.
+© 2019
