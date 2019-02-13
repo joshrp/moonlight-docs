@@ -44,6 +44,7 @@ Look at the troubleshooting steps for each of the following issues:
 ### Video is choppy or laggy
 * Try streaming with Bluetooth disabled to see if your device has the Bluetooth issue detailed below.
 * Make sure your device is connected on 5 GHz and your PC is wired to your router.
+* If you're streaming to a Mac over WiFi, try [disabling Location Services](https://github.com/moonlight-stream/moonlight-qt/issues/159#issuecomment-452675992).
 * Lower the bitrate slider.
 * Try using 720p30 which has the lowest requirements.
 * Try forcing your PC's Ethernet adapter to run at 100Mb Full Duplex in Device Manager.
