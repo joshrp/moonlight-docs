@@ -25,7 +25,7 @@ Look at the troubleshooting steps for each of the following issues:
 * Disable your PC's firewall and anti-virus, and reboot again. If this works, you can create a firewall exception using [the steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#firewall-setup).
 * Uninstall GeForce Experience, reboot, clean install GeForce Experience, and reboot again.
 * In an administrator command prompt, run `netsh winsock reset` and reboot your computer.
-* If your PC is running Windows Server, install the qWave service.
+* If your PC is running Windows Server, install the qWave service and ensure the Windows Audio service is enabled and running.
 * Ask for help on our [Discord server](https://discord.gg/MySTSdq)
 
 ### Unable to stream at all over the Internet
