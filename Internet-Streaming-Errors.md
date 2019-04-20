@@ -1,5 +1,5 @@
 # Connected through another router error
-If you get this error, it usually means you have two routers plugged into each other. This is usually caused by having your own wireless router plugged into a router already provided by your ISP.
+If you get this error, it usually means you have two routers plugged into each other. This is usually caused by having your own wireless router plugged into a router already provided by your ISP. This setup prevents many applications from working optimally, like hosting games, P2P applications, etc.
 
 You can fix this by switching one of your two routers into bridged or Access Point mode. The steps to do this vary by router, but you should be able to find them by Googling around a bit.
 
@@ -15,6 +15,6 @@ If your ISP won't give you a public IP address, you can try using the [ZeroTier 
 # Internet GameStream connectivity check error
 This error usually means your router doesn't have UPnP enabled. Some routers have bugs where UPnP doesn't work properly, so you may check your router manufacturer's website for a firmware update for your router that could fix it.
 
-This error may also be caused by a firewall product on your host PC blocking the Internet Streaming Helper from talking to your router. Try disabling your PC's firewall temporarily to see if that's the cause.
+This error may also be caused by a firewall product on your host PC blocking the Internet Streaming Helper from talking to your router. Try disabling your host PC's firewall temporarily to see if that's the cause.
 
-If you can't fix this error, you can try using the [ZeroTier setup steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#zerotier) instead or you can [forward the ports manually](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#manual-port-forwarding-advanced).
+If you can't fix this error, you can try using the [ZeroTier setup steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#zerotier) instead or you can [forward the ports manually](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#manual-port-forwarding-advanced) if you feel comfortable making changes to your router settings.
