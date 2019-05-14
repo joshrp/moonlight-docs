@@ -196,7 +196,9 @@ If quitting an application doesn't stop Moonlight, press *Ctrl+Shift+Alt+Q* on M
 ## Using Moonlight to stream your entire desktop
 Follow the steps above for adding a custom program, but for the path use: **C:\windows\system32\mstsc.exe**
 
-You can rename the remote desktop entry using the edit button. When you click this entry, you will see your full desktop where you can run whatever you want.
+You can rename the remote desktop entry using the Edit button. When you click this entry, you will see your full desktop where you can run whatever you want.
+
+Even though the mstsc.exe executable is typically used for Microsoft Remote Desktop, this is only an indicator to GeForce Experience that you want to stream your desktop. It does not actually launch mstsc.exe or use RDP to stream.
 
 ## Troubleshooting
 
