@@ -14,27 +14,9 @@ If you are using Hackintosh machine, you'll need to find a GPU driver (if availa
 # Linux
 Moonlight uses VAAPI and VDPAU for hardware acceleration on Linux. One of those two APIs should be compatible with any modern GPU. The most common issue preventing it from working properly is a missing VAAPI or VDPAU driver package for your GPU.
 
-* Run `flatpak update` to ensure the Flatpak runtime has installed the matching extension for your current GPU.
+* If you installed Moonlight via Flatpak, run `flatpak update` to ensure the Flatpak runtime has installed the matching extension for your current GPU.
 
-* Ensure your desktop session is running using X, not Wayland. On GNOME-based distros, you can switch this at the logon screen by clicking the little gear icon.
-
-    * The following software limitations prevent hardware acceleration from being usable on Wayland:
-
-        * VDPAU - the API has no Wayland rendering support at all
-        * VAAPI - [missing DRI3 support](https://github.com/intel/libva/issues/79) that is required to render on XWayland
-        * GNOME's Wayland compositor (Mutter) - [missing YUV surface support](https://github.com/intel/intel-vaapi-driver/issues/357) that is required for native Wayland rendering 
-
-### Ubuntu
-
-All GPUs:
-1. `sudo apt install ubuntu-restricted-addons`
-2. `sudo apt install va-driver-all vdpau-driver-all`
-
-### Fedora
-
-Intel GPUs:
-1. `sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm`
-2. `sudo dnf install intel-vaapi-driver`
-
-Other GPUs:
-1. `sudo dnf install mesa-vdpau-drivers`
+* If you are running Wayland on GNOME, you may need to launch Moonlight with the `-platform wayland` option to ensure hardware acceleration works.
+    * If you installed Moonlight via Flatpak, you would run `flatpak run com.moonlight_stream.Moonlight -platform wayland`.
+    * The Snap package of Moonlight does not currently support hardware acceleration on Wayland.
+    * Decoding performance under Wayland may not be as good as X11, so try X11 if you experience performance issues.
