@@ -19,4 +19,5 @@ Moonlight uses VAAPI and VDPAU for hardware acceleration on Linux. One of those 
 * If you are running Wayland on GNOME, you may need to launch Moonlight with the `-platform wayland` option to ensure hardware acceleration works.
     * If you installed Moonlight via Flatpak, you would run `flatpak run com.moonlight_stream.Moonlight -platform wayland`
     * The Snap package of Moonlight does not currently support hardware acceleration on Wayland.
+    * Hardware acceleration on NVIDIA GPUs doesn't not work under Wayland because VDPAU doesn't support Wayland rendering.
     * Decoding performance under Wayland may not be as good as X11, so try X11 if you experience performance issues.
