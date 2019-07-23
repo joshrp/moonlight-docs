@@ -37,11 +37,11 @@ In this guide:
 For the easiest possible setup process, we highly recommend that you **first pair Moonlight with your gaming PC while connected to your home network** before trying to use Moonlight over the Internet.
 
 #### If your gaming PC is already paired with Moonlight:
-1. Install the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) on your gaming PC.
+1. Install the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) on your gaming PC.
 2. Run "Moonlight Internet Streaming Tester" via the Start Menu to confirm it's working properly.
 
 #### If your gaming PC is _not_ already paired with Moonlight:
-1. Install the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) on your gaming PC.
+1. Install the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) on your gaming PC.
 2. Run "Moonlight Internet Streaming Tester" via the Start Menu.
 3. Type the IP address that is displayed on the tester's success dialog into the Add PC dialog of Moonlight.
     * You must ensure your Moonlight client is **not connected to the same network as your gaming PC** during this step or the connection may not be successful.
@@ -51,7 +51,7 @@ For the easiest possible setup process, we highly recommend that you **first pai
 
 * Try streaming from a different network. Some corporate or public WiFi networks block streaming applications like Moonlight. If that happens, you may have success with the ZeroTier setup steps below.
 
-* Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) and ask for help on our [Discord server](https://discord.gg/MySTSdq). Be sure to have the tester log handy. 
+* Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) and ask for help on our [Discord server](https://discord.gg/MySTSdq). Be sure to have the tester log handy. 
 
 ### ZeroTier
 [ZeroTier](https://www.zerotier.com/) which is a service that acts similar to a VPN, but with better performance in most cases.
@@ -94,7 +94,7 @@ Once you've set up port forwarding, you'll need to add your PC again from the Mo
 
 ### IPv6 (advanced - certain ISPs only)
 
-If you are lucky enough to have native IPv6 connectivity to your host gaming PC and client device/PC on the networks you'd like to stream on, you may opt to use IPv6 for Internet streaming. This option is only recommended for those very familiar with network administration. You may combine these steps with the Internet Streaming Helper tool above to stream over IPv4 or IPv6, depending on your client's connectivity.
+If you are lucky enough to have native IPv6 connectivity to your host gaming PC and client device/PC on the networks you'd like to stream on, you may opt to use IPv6 for Internet streaming. This option is only recommended for those very familiar with network administration. You may combine these steps with the Moonlight Internet Hosting Tool above to stream over IPv4 or IPv6, depending on your client's connectivity.
 
 1. Navigate to http://test-ipv6.com/ on both your host gaming PC and client device/PC and confirm they both score 10/10 on the networks you will be streaming from. You may need to disable Chrome's Data Compression option to get accurate results on mobile.
 
@@ -104,7 +104,7 @@ If you are lucky enough to have native IPv6 connectivity to your host gaming PC 
 
     * If your client device doesn't score 10/10 but your host PC does, you won't be able to stream over IPv6 on the current network but another network may work.
 
-2. Install the [GameStream IPv6 Forwarder](https://github.com/moonlight-stream/GS-IPv6-Forwarder#instructions) on your host gaming PC (same PC that runs GeForce Experience).
+2. Install the [GameStream IPv6 Forwarder](https://github.com/moonlight-stream/GS-IPv6-Forwarder#instructions) on your host gaming PC (same PC that runs GeForce Experience). This step is only required if you do not have the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) already installed.
 
 3. In Moonlight, click Add PC and type the IPv6 address of your host gaming PC. Your PC should appear online (or remain online, if you already had IPv4 connectivity to it).
 
