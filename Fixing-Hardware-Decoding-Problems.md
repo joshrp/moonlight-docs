@@ -12,12 +12,11 @@ Moonlight uses VideoToolbox for hardware acceleration on macOS. All Macs capable
 If you are using Hackintosh machine, you'll need to find a GPU driver (if available) that correctly implements VideoToolbox decoding for H.264 video.
 
 # Linux
-Moonlight uses VAAPI and VDPAU for hardware acceleration on Linux. One of those two APIs should be compatible with any modern GPU. The most common issue preventing it from working properly is a missing VAAPI or VDPAU driver package for your GPU.
+Moonlight uses VAAPI, VDPAU, and NVDEC for hardware acceleration on Linux. One of those APIs should be compatible with any modern GPU. The most common issue preventing it from working properly is a missing driver package for your GPU.
 
 * If you installed Moonlight via Flatpak, run `flatpak update` to ensure the Flatpak runtime has installed the matching extension for your current GPU.
 
 * If you are running Wayland on GNOME, you may need to launch Moonlight with the `-platform wayland` option to ensure hardware acceleration works.
     * If you installed Moonlight via Flatpak, you would run `flatpak run com.moonlight_stream.Moonlight -platform wayland`
     * The Snap package of Moonlight does not currently support hardware acceleration on Wayland.
-    * Hardware acceleration on NVIDIA GPUs doesn't not work under Wayland because VDPAU doesn't support Wayland rendering.
     * Decoding performance under Wayland may not be as good as X11, so try X11 if you experience performance issues.
