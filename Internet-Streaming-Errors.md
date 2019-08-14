@@ -20,7 +20,7 @@ Despite the lack of a public IP address, your connection does offer IPv6 support
 If your ISP won't give you a public IP address, you can try using the [ZeroTier setup steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#zerotier) instead.
 
 # Internet GameStream connectivity check error
-This error usually means your router doesn't have UPnP enabled. Some routers have bugs where UPnP doesn't work properly, so you may check your router manufacturer's website for a firmware update for your router that could fix it.
+This error usually means your router doesn't have UPnP enabled. Some routers have bugs where UPnP doesn't work properly, so you may check your router manufacturer's website for a firmware update for your router that could fix it. You can also try restarting your router.
 
 This error may also be caused by a firewall product on your host PC blocking the Internet Streaming Helper from talking to your router. Try disabling your host PC's firewall temporarily to see if that's the cause.
 
