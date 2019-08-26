@@ -19,6 +19,7 @@ Look at the troubleshooting steps for each of the following issues:
 ### Unable to stream at all on the same network as the PC
 * Ensure you've enabled GameStream in GeForce Experience per the [setup guide](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide)
 * Reboot your PC and client device.
+* If your gaming PC is connected to your home network via multiple connections (like both Ethernet and WiFi), disconnect all connections except for the fastest one (usually Ethernet).
 * Check the list of [known application compatibility issues](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#known-application-compatibility-issues). Try uninstalling any programs on that list one to see if one of them is interfering.
 * Make sure your primary monitor is connected to your NVIDIA GPU and turned on, and you are logged in.
 * If you use a VPN for Internet access on your gaming PC, disable it to ensure your local network is accessible. You may also need to disable the setting to block local network access when the VPN is disconnected, if that option is available for your VPN software.
