@@ -31,10 +31,10 @@ Look at the troubleshooting steps for each of the following issues:
 
 ### Unable to stream at all over the Internet
 * First, ensure you can stream successfully from your home network to ensure it's an issue specific to streaming over the Internet. If you can't, follow the instructions in the section above for general streaming issues.
-* Make sure your gaming PC is running the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) to automatically manage your port forwarding rules.
+* Make sure your gaming PC is running the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Hosting-Tool/releases) to automatically manage your port forwarding rules.
 * Ensure UPnP is enabled in your router settings and delete any older Moonlight port forwarding entries.
 * If you use a VPN for Internet access on your gaming PC, disable it to ensure your local network is accessible. You may also need to disable the setting to block local network access when the VPN is disconnected, if that option is available for your VPN software.
-* Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Streaming Helper](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) and ask for help on our [Discord server](https://discord.gg/MySTSdq). Be sure to have the tester log handy.
+* Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Hosting-Tool/releases) and ask for help on our [Discord server](https://discord.gg/MySTSdq). Be sure to have the tester log handy.
 * If the Moonlight Internet Streaming Tester says your ISP is running a [Carrier-grade NAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT) that blocks hosting services like Moonlight, try these steps:
     * Ask your ISP for a public IP address. Many users have reported that their ISP is happy to provide one free of charge upon request.
     * Many users have reported good streaming performance using the [ZeroTier](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#zerotier) setup steps.
