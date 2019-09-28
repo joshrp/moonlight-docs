@@ -1,3 +1,6 @@
+# Multiple connections error
+If you get this warning, your host PC is probably connected to your home network via both WiFi and Ethernet. This can cause connection issues with NVIDIA GameStream. Disconnect one of the connections (preferably the WiFi connection), then try again.
+
 # Connected through another router error
 If you get this error, it usually means you have two routers plugged into each other. This is usually caused by having your own wireless router plugged into a router already provided by your ISP. This setup prevents many applications from working optimally, like hosting games, P2P applications, etc.
 
