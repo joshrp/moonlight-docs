@@ -94,19 +94,19 @@ Once you've set up port forwarding, you'll need to add your PC again from the Mo
 
 ### IPv6 (advanced - certain ISPs only)
 
-If you are lucky enough to have native IPv6 connectivity to your host gaming PC and client device/PC on the networks you'd like to stream on, you may opt to use IPv6 for Internet streaming. This option is only recommended for those very familiar with network administration. You may combine these steps with the Moonlight Internet Hosting Tool above to stream over IPv4 or IPv6, depending on your client's connectivity.
+If you are lucky enough to have native IPv6 connectivity to your host gaming PC, you may opt to use IPv6 for Internet streaming. This option is only recommended for those very familiar with network administration. You may combine these steps with the Moonlight Internet Hosting Tool above to stream over IPv4 or IPv6, depending on your client's connectivity.
 
-1. Navigate to http://test-ipv6.com/ on both your host gaming PC and client device/PC and confirm they both score 10/10 on the networks you will be streaming from. You may need to disable Chrome's Data Compression option to get accurate results on mobile.
+1. Navigate to http://test-ipv6.com/ on both your host gaming PC and client device/PC to check their IPv6 test scores. You may need to disable Chrome's Data Compression option to get accurate results on mobile.
 
     * If your host PC scores 0/10, check your router settings for an IPv6 option. Make sure it's enabled and set to "Native", "Automatic", "DHCPv6", or similar. Avoid "6to4" or "Teredo" options. Restart your router and try the IPv6 test again. If you can't find an IPv6 option or it's not working, contact your ISP and ask whether they support IPv6.
 
     * If you can't get your host gaming PC to 10/10, you won't be able to use this method for streaming over the Internet with your ISP.
 
-    * If your client device doesn't score 10/10 but your host PC does, you won't be able to stream over IPv6 on the current network but another network may work.
+    * If your client device doesn't score 10/10 but your host PC does, you can try the [Cloudflare 1.1.1.1 app for iOS and Android](https://1.1.1.1/) with the free 'WARP' feature to gain IPv6 connectivity on networks that don't natively support it.
 
 2. Install the [GameStream IPv6 Forwarder](https://github.com/moonlight-stream/GS-IPv6-Forwarder#instructions) on your host gaming PC (same PC that runs GeForce Experience). This step is only required if you do not have the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) already installed.
 
-3. In Moonlight, click Add PC and type the IPv6 address of your host gaming PC. Your PC should appear online (or remain online, if you already had IPv4 connectivity to it).
+3. If Moonlight already found your gaming PC automatically while on the same network, it should connect to your PC over IPv6 without any additional steps. If you haven't already paired to your gaming PC while on the same network, click Add PC and type the IPv6 address of your host gaming PC.
 
 All officially supported Moonlight clients (iOS, PC, Android) support streaming from servers over IPv6. Unofficial clients (Embedded, Vita) may not.
 
