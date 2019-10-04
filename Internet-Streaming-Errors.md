@@ -18,7 +18,7 @@ If your ISP won't give you a public IP address, you can try using the [ZeroTier 
 # Limited connectivity for hosting error
 If you get this error, your ISP hasn't given you a public IP address which allows you to host services like Moonlight on the Internet. In many cases, your ISP will be happy to give one to you for free if you just ask.
 
-Despite the lack of a public IP address, your connection does offer IPv6 support which will work for hosting over the Internet but streaming will only work from networks that also support IPv6. You can check a network's IPv6 support by [running this test](http://test-ipv6.com/) while connected to the network you want to test. If it scores a 10/10, it should be good to go.
+Despite the lack of a public IP address, your connection does offer IPv6 support which will work for hosting over the Internet but streaming will only work natively from networks that also support IPv6. You can check a network's IPv6 support by [running this test](http://test-ipv6.com/) while connected to the network you want to test. If it scores a 10/10, it should be good to go. If not, you may try the [Cloudflare 1.1.1.1 app for iOS and Android](https://1.1.1.1/) with the free 'WARP' feature to gain IPv6 connectivity on networks that don't natively support it.
 
 If your ISP won't give you a public IP address, you can try using the [ZeroTier setup steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#zerotier) instead.
 
