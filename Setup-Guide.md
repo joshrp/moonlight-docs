@@ -167,9 +167,9 @@ If you don't have a mouse connected to your Android device, you can emulate one 
 
 **iOS client**
 
-Apple devices only natively support MFi controllers. We recommend the "extended layout" controllers which have most buttons present on a typical Xbox 360 controller. Notably lacking on most MFi controllers are the L3 and R3 buttons and the Select button. When using the Auto setting for on-screen controls, an overlay will be displayed containing the buttons that your physical controller is missing.
+If your device is running iOS 13 or later, you can use Xbox One S and PS4 controllers with your iOS device over Bluetooth. Moonlight supports all physical buttons on these controllers, including Select, L3, and R3. You can also still use MFi controllers if you want, but they may not have all of the buttons that an Xbox or PS4 controller has.
 
-iOS 12.1 added support for physical L3 and R3 buttons on MFi gamepads. These don't appear to be clearly marked in all cases, so make sure the controller you buy has these buttons.
+Devices running iOS 12 or earlier are limited to MFi controllers. We recommend the "extended layout" controllers which have most buttons present on a typical Xbox controller. Notably lacking on most MFi controllers are the L3 and R3 buttons and the Select button. When using the Auto setting for on-screen controls, an overlay will be displayed containing the buttons that your physical controller is missing.
 
 To disconnect from your PC while streaming, swipe from the left edge of the screen.
 
