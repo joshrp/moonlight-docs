@@ -1,5 +1,7 @@
 _These troubleshooting checklists contain various suggestions to solve each potential issue. They are generally meant to be done in the order the steps are listed, however the list doesn't need to be fully completed if issue goes away during the process of troubleshooting._
 
+**BitDefender is currently causing connection issues. Please see the #bitdefender-situation channel on our [Discord server](https://discord.gg/vYcEng)**
+
 You can chat with Moonlight developers and other users to help you resolve streaming issues on our [Discord server](https://discord.gg/MySTSdq).
 
 Look at the troubleshooting steps for each of the following issues: 
