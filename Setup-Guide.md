@@ -108,7 +108,7 @@ If you are lucky enough to have native IPv6 connectivity to your host gaming PC,
 
 3. If Moonlight already found your gaming PC automatically while on the same network, it should connect to your PC over IPv6 without any additional steps. If you haven't already paired to your gaming PC while on the same network, click Add PC and type the IPv6 address of your host gaming PC.
 
-All officially supported Moonlight clients (iOS, PC, Android) support streaming from servers over IPv6. Unofficial clients (Embedded, Vita) may not.
+All officially supported Moonlight clients (iOS/tvOS, PC, Android) support streaming from servers over IPv6. Unofficial clients (Embedded, Vita) may not.
 
 ## Firewall setup
 
@@ -135,6 +135,8 @@ For other firewall products, you should follow their instructions to create exce
 * Android: An Android device running Android 4.1 (Jelly Bean) or newer. Newer and "flagship" devices with higher processor speeds are more likely to be able to handle Moonlight well by using the hardware video system on the device to produce smooth streaming without video stuttering or freezing.
 
 * iOS: An iOS device running iOS 8.0 or later.
+
+* tvOS: An Apple TV device running tvOS 12.0 or later.
 
 * PC: Windows 7+, macOS 10.11+, or Linux. Your PC should be new enough that it supports hardware-accelerated H.264 video decoding, otherwise it will have to use CPU decoding. Most PCs made since around 2010 should work fine, though older PCs may not be able to stream at 60 FPS without lag.
 
@@ -165,13 +167,13 @@ To toggle capturing the mouse cursor on Moonlight for Rooted Devices, press Ctrl
 
 If you don't have a mouse connected to your Android device, you can emulate one using a game controller. Press and hold the Start button to toggle mouse emulation. When mouse emulation is on, you can use either analog stick to move the cursor. The A button left clicks and the B button right clicks.
 
-**iOS client**
+**iOS/tvOS client**
 
-If your device is running iOS 13 or later, you can use Xbox One S and PS4 controllers with your iOS device over Bluetooth. Moonlight supports all physical buttons on these controllers, including Select, L3, and R3. You can also still use MFi controllers if you want, but they may not have all of the buttons that an Xbox or PS4 controller has.
+If your device is running iOS/tvOS 13 or later, you can use Xbox One S and PS4 controllers with your device over Bluetooth. Moonlight supports all physical buttons on these controllers, including Select, L3, and R3. You can also still use MFi controllers if you want, but they may not have all of the buttons that an Xbox or PS4 controller has.
 
-Devices running iOS 12 or earlier are limited to MFi controllers. We recommend the "extended layout" controllers which have most buttons present on a typical Xbox controller. Notably lacking on most MFi controllers are the L3 and R3 buttons and the Select button. When using the Auto setting for on-screen controls, an overlay will be displayed containing the buttons that your physical controller is missing.
+Devices running iOS/tvOS 12 or earlier are limited to MFi controllers. We recommend the "extended layout" controllers which have most buttons present on a typical Xbox controller. Notably lacking on most MFi controllers are the L3 and R3 buttons and the Select button. When using the Auto setting for on-screen controls on iOS, an overlay will be displayed containing the buttons that your physical controller is missing.
 
-To disconnect from your PC while streaming, swipe from the left edge of the screen.
+To disconnect from your PC while streaming on iOS, swipe from the left edge of the screen. To disconnect on tvOS, double-tap the Menu button on your Apple TV Remote or press the Xbox/PS button on your gamepad.
 
 iCade gamepads (old iOS gamepads that fake a Bluetooth keyboard) are not supported by Moonlight.
 
