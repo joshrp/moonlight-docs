@@ -173,6 +173,8 @@ If your device is running iOS/tvOS 13 or later, you can use Xbox One S and PS4 c
 
 Devices running iOS/tvOS 12 or earlier are limited to MFi controllers. We recommend the "extended layout" controllers which have most buttons present on a typical Xbox controller. Notably lacking on most MFi controllers are the L3 and R3 buttons and the Select button. When using the Auto setting for on-screen controls on iOS, an overlay will be displayed containing the buttons that your physical controller is missing.
 
+You can use the Apple TV remote as a touchpad to move the mouse cursor and click.
+
 To disconnect from your PC while streaming on iOS, swipe from the left edge of the screen. To disconnect on tvOS, double-tap the Menu button on your Apple TV Remote or press the Xbox/PS button on your gamepad.
 
 iCade gamepads (old iOS gamepads that fake a Bluetooth keyboard) are not supported by Moonlight.
