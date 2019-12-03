@@ -77,7 +77,6 @@ Special-case issues:
 
 If you have one of the following, try disabling or uninstalling it:
 * Some 3rd-party firewalls and anti-virus (Kaspersky, Panda, AVG, K9, ESET)
-    * BitDefender is currently causing connection issues. Please see the #bitdefender-situation channel on our [Discord server](https://discord.gg/vYcEng)
     * Kaspersky in particular may only [stop breaking Moonlight when it is fully uninstalled](https://www.reddit.com/r/theNvidiaShield/comments/4g5fft/gamestreaming_vs_kaspersky_resolved/).
 * DisplayLink dock/display software
 * Razer Synapse
