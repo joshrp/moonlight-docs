@@ -74,6 +74,8 @@ Special-case issues:
 * Microsoft Remote Desktop
     * Streaming will fail until you log back in at the physical machine after connecting via RDP
     * Chrome Remote Desktop and TeamViewer can be used for remote access without breaking Moonlight
+* Teamspeak Gamepad Plugin
+    * The gamepad plugin may cause [extra gamepads to appear in Device Manager](https://github.com/moonlight-stream/moonlight-qt/issues/304), but streaming works normally
 
 If you have one of the following, try disabling or uninstalling it:
 * Some 3rd-party firewalls and anti-virus (Kaspersky, Panda, AVG, K9, ESET)
