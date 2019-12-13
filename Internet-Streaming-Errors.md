@@ -6,7 +6,7 @@ If you get this error, it usually means you have two routers plugged into each o
 
 You can fix this by switching one of your two routers into bridged or Access Point mode. The steps to do this vary by router, but you should be able to find them by Googling around a bit.
 
-If you're sure that you don't have more than one router running on your network, this error may be caused by a Carrier-Grade NAT running on the ISP's network. You can try the steps in the section below to resolve that.
+If you're sure that you don't have more than one router running on your network, try restarting your router. If that doesn't work, the error may be caused by a Carrier-Grade NAT running on the ISP's network. You can try the steps in the section below to resolve that.
 
 If you can't fix this, you can try using the [ZeroTier setup steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#zerotier) instead.
 
