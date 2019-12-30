@@ -138,7 +138,7 @@ For other firewall products, you should follow their instructions to create exce
 
 * tvOS: An Apple TV device running tvOS 12.0 or later.
 
-* PC: Windows 7+, macOS 10.11+, or Linux. Your PC should be new enough that it supports hardware-accelerated H.264 video decoding, otherwise it will have to use CPU decoding. Most PCs made since around 2010 should work fine, though older PCs may not be able to stream at 60 FPS without lag.
+* PC: Windows 7+, macOS 10.13+, or Linux. Your PC should be new enough that it supports hardware-accelerated H.264 video decoding, otherwise it will have to use CPU decoding. Most PCs made since around 2010 should work fine, though older PCs may not be able to stream at 60 FPS without lag.
 
 * ChromeOS: All ChromeOS devices should have the required hardware.
 
