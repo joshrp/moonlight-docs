@@ -1,6 +1,6 @@
 _These troubleshooting checklists contain various suggestions to solve each potential issue. They are generally meant to be done in the order the steps are listed, however the list doesn't need to be fully completed if issue goes away during the process of troubleshooting._
 
-You can chat with Moonlight developers and other users to help you resolve streaming issues on our [Discord server](https://discord.gg/MySTSdq).
+You can chat with Moonlight developers and other users to help you resolve streaming issues on our [Discord server](https://moonlight-stream.org/discord).
 
 Look at the troubleshooting steps for each of the following issues: 
 
@@ -27,19 +27,19 @@ Look at the troubleshooting steps for each of the following issues:
 * Uninstall GeForce Experience, reboot, clean install GeForce Experience, and reboot again.
 * In an administrator command prompt, run `netsh winsock reset` and reboot your computer.
 * If your PC is running Windows Server, install the qWave service and ensure the Windows Audio service is enabled and running.
-* Ask for help on our [Discord server](https://discord.gg/MySTSdq)
+* Ask for help on our [Discord server](https://moonlight-stream.org/discord)
 
 ### Unable to stream at all over the Internet
 * First, ensure you can stream successfully from your home network to ensure it's an issue specific to streaming over the Internet. If you can't, follow the instructions in the section above for general streaming issues.
 * Make sure your gaming PC is running the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Hosting-Tool/releases) to automatically manage your port forwarding rules.
 * Ensure UPnP is enabled in your router settings and delete any older Moonlight port forwarding entries.
 * If you use a VPN for Internet access on your gaming PC, disable it to ensure your local network is accessible. You may also need to disable the setting to block local network access when the VPN is disconnected, if that option is available for your VPN software.
-* Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Hosting-Tool/releases) and ask for help on our [Discord server](https://discord.gg/MySTSdq). Be sure to have the tester log handy.
+* Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Hosting-Tool/releases) and ask for help on our [Discord server](https://moonlight-stream.org/discord). Be sure to have the tester log handy.
 * If the Moonlight Internet Streaming Tester says your ISP is running a [Carrier-grade NAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT) that blocks hosting services like Moonlight, try these steps:
     * Ask your ISP for a public IP address. Many users have reported that their ISP is happy to provide one free of charge upon request.
     * Many users have reported good streaming performance using the [ZeroTier](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#zerotier) setup steps.
     * You can try using the [IPv6 setup steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#ipv6-certain-isps-only) if your home ISP and client network both support IPv6. You can check this by seeing if you score a 10/10 on [this web IPv6 test](http://test-ipv6.com/).
-* Ask for help on our [Discord server](https://discord.gg/MySTSdq)
+* Ask for help on our [Discord server](https://moonlight-stream.org/discord)
 
 ### Video is choppy or laggy
 * Try streaming with Bluetooth disabled to see if your device has the Bluetooth issue detailed below.
@@ -48,19 +48,19 @@ Look at the troubleshooting steps for each of the following issues:
 * Lower the bitrate slider.
 * Try using 720p30 which has the lowest requirements.
 * Try forcing your PC's Ethernet adapter to run at 100Mb Full Duplex in Device Manager.
-* Ask for help on our [Discord server](https://discord.gg/MySTSdq)
+* Ask for help on our [Discord server](https://moonlight-stream.org/discord)
 
 ### No video (black screen)
 * Ensure your monitor is powered on and connected to your NVIDIA GPU
 * If you want to stream without a monitor connected, you can buy a cheap headless HDMI dongle like [this one](https://www.amazon.com/fit-Headless-GS-resolution-emulator-game-streaming/dp/B01EK05WTY)
 * Try a different game or stream Steam to see if it's game-specific. You may be able to work around the game-specific issues by [streaming your whole desktop](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-moonlight-to-stream-your-entire-desktop) and starting the game from there.
-* Ask for help on our [Discord server](https://discord.gg/MySTSdq)
+* Ask for help on our [Discord server](https://moonlight-stream.org/discord)
 
 ### Missing mouse cursor
 * Ensure a mouse is connected to your host gaming PC
 * If unable to physically connect a mouse, enable Mouse Keys on the host gaming PC to force Windows to display a mouse cursor.
     * If you just type "Mouse key" into the Start Menu search dialog, it should take you to the correct settings page.
-* Ask for help on our [Discord server](https://discord.gg/MySTSdq)
+* Ask for help on our [Discord server](https://moonlight-stream.org/discord)
 
 ### Known application compatibility issues
 Some installed applications and security products can interfere with GeForce Experience or GameStream. Depending on the configuration of these incompatible applications, you may or may not experience issues streaming.
@@ -93,7 +93,7 @@ If you have one of the following, try disabling or uninstalling it:
 * Delete the following registry value (if present): HKEY_LOCAL_MACHINE\SOFTWARE\NVIDIA Corporation\NvTray\ShowInSedona
 * Open the NVIDIA Control Panel, select the "Desktop" menu at the top, and check "Show Notification Tray Icon".
 * Uninstall GeForce Experience, reboot, clean install GeForce Experience, and reboot again.
-* Ask for help on our [Discord server](https://discord.gg/MySTSdq)
+* Ask for help on our [Discord server](https://moonlight-stream.org/discord)
 
 ### SHIELD tab is missing in GeForce Experience
 * Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
@@ -110,9 +110,9 @@ If you have one of the following, try disabling or uninstalling it:
 * Ensure you're running GeForce Experience 3.15.0 or later
 * In Steam Big Picture, go to Settings > Controller Settings, then uncheck all gamepad "Configuration Support" checkboxes
 * Check if input works in Steam Big Picture to see if it's a game-specific compatibility issue
-* Ask for help on our [Discord server](https://discord.gg/MySTSdq)
+* Ask for help on our [Discord server](https://moonlight-stream.org/discord)
 
 ### Bluetooth-related streaming issues
 Depending on your streaming device, you may have a bad experience if Bluetooth is active while streaming. This is a hardware limitation due to the antenna wiring. If you experience this and are streaming from within your home, you can try connecting the gamepad directly to your PC using a wireless adapter or Bluetooth.
 
-Still having issues? Ask for help on our [Discord server](https://discord.gg/MySTSdq)
+Still having issues? Ask for help on our [Discord server](https://moonlight-stream.org/discord)

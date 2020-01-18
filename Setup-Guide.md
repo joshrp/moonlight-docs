@@ -51,7 +51,7 @@ For the easiest possible setup process, we highly recommend that you **first pai
 
 * Try streaming from a different network. Some corporate or public WiFi networks block streaming applications like Moonlight. If that happens, you may have success with the ZeroTier setup steps below.
 
-* Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) and ask for help on our [Discord server](https://discord.gg/MySTSdq). Be sure to have the tester log handy. 
+* Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) and ask for help on our [Discord server](https://moonlight-stream.org/discord). Be sure to have the tester log handy. 
 
 ### ZeroTier
 [ZeroTier](https://www.zerotier.com/) which is a service that acts similar to a VPN, but with better performance in most cases.
@@ -208,7 +208,7 @@ Even though the mstsc.exe executable is typically used for Microsoft Remote Desk
 
 See our [dedicated troubleshooting wiki page](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting) for detailed steps for resolving a variety of issues.
 
-If the information on the wiki doesn't help you, you can join our [Discord server](https://discord.gg/MySTSdq) to get help from the developers and the community. This is the recommended way to get the fastest help, since many people can answer your questions.
+If the information on the wiki doesn't help you, you can join our [Discord server](https://moonlight-stream.org/discord) to get help from the developers and the community. This is the recommended way to get the fastest help, since many people can answer your questions.
 
 If you don't want to use Discord, you can email info@moonlight-stream.org but be aware that responses may be delayed, since this only goes to core developers. Please ensure you include all necessary information, including GeForce Experience and driver versions, specifications of your client device, streaming settings, etc.
 

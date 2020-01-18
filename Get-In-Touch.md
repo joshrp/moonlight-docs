@@ -1,6 +1,6 @@
 **Talk to Us!**
 
-**[Discord](https://discord.gg/MySTSdq)**: Keep up with Moonlight developments and get in touch with the developers and other users. This is the recommended way to get the fastest help, since many people can answer your questions.
+**[Discord](https://moonlight-stream.org/discord)**: Keep up with Moonlight developments and get in touch with the developers and other users. This is the recommended way to get the fastest help, since many people can answer your questions.
 
 **Email**: info@moonlight-stream.org
 We receive a lot of mail and can't respond to all of it, so please research your question on this wiki first. If we don't respond in a few days and you still haven't been able to sort out your issue, feel free to send a follow-up email to remind us - sometimes we miss things in our inboxes.
