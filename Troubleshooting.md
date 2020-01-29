@@ -78,8 +78,9 @@ Special-case issues:
     * The gamepad plugin may cause [extra gamepads to appear in Device Manager](https://github.com/moonlight-stream/moonlight-qt/issues/304), but streaming works normally
 
 If you have one of the following, try disabling or uninstalling it:
-* Some 3rd-party firewalls and anti-virus (Kaspersky, Panda, AVG, K9, ESET)
+* 3rd-party Firewalls and Anti-virus
     * Kaspersky in particular may only [stop breaking Moonlight when it is fully uninstalled](https://www.reddit.com/r/theNvidiaShield/comments/4g5fft/gamestreaming_vs_kaspersky_resolved/).
+    * Malwarebytes (specifically the Web Protection module)
 * DisplayLink dock/display software
 * Razer Synapse
 * Razer Kraken software (APO Helper)
