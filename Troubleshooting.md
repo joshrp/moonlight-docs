@@ -111,6 +111,7 @@ If you have one of the following, try disabling or uninstalling it:
 * Ensure you're running GeForce Experience 3.15.0 or later
 * In Steam Big Picture, go to Settings > Controller Settings, then uncheck all gamepad "Configuration Support" checkboxes
 * Check if input works in Steam Big Picture to see if it's a game-specific compatibility issue
+* If your host is running Windows Server 2016/2019, you may need to install the [Xbox 360 drivers for Windows 7 64-bit](https://www.microsoft.com/accessories/en-gb/d/xbox-360-controller-for-windows)
 * Ask for help on our [Discord server](https://moonlight-stream.org/discord)
 
 ### Bluetooth-related streaming issues
