@@ -28,3 +28,17 @@ This error usually means your router doesn't have UPnP enabled. Some routers hav
 This error may also be caused by a firewall product on your host PC blocking the Internet Hosting Tool from talking to your router. Try disabling your host PC's firewall temporarily to see if that's the cause.
 
 If you can't fix this error, you can try using the [ZeroTier setup steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#zerotier) instead or you can [forward the ports manually](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#manual-port-forwarding-advanced) if you feel comfortable making changes to your router settings.
+
+# Sleep mode enabled warning
+This warning means your PC is configured to go to sleep after a period of inactivity. This will almost always make the PC unusable for streaming over the Internet until it is manually woken up.
+
+In most cases, you should disable sleep in the Power Settings on your host PC to address this warning. You can leave the monitor power-off option enabled if you wish.
+
+If you have configured a Wake-on-LAN relay device on your network, you can safely ignore this warning. If you don't know what this is, you probably don't have one :)
+
+# Hibernation enabled warning
+This warning means your PC is configured to hibernate after a period of inactivity. This will almost always make the PC unusable for streaming over the Internet until it is manually powered back on.
+
+In most cases, you should disable hibernation in the Advanced Power Options on your host PC to address this warning.
+
+If you have configured a Wake-on-LAN relay device on your network and your PC can wake from hibernation via Wake-on-LAN, you can safely ignore this warning. If you don't know what this is, you probably don't have one :)
