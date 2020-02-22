@@ -29,6 +29,13 @@ This error may also be caused by a firewall product on your host PC blocking the
 
 If you can't fix this error, you can try using the [ZeroTier setup steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#zerotier) instead or you can [forward the ports manually](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#manual-port-forwarding-advanced) if you feel comfortable making changes to your router settings.
 
+# Display locked error
+This error means that your PC is currently sitting at the lock screen. This may seem counterintuitive since you've obviously managed to run the tester, but you are probably doing that over Microsoft Remote Desktop.
+
+In order for GameStream to work, your PC's "console session" (physical monitor, keyboard, and mouse) must be logged in. Microsoft Remote Desktop locks the console session until you sign in again, making GameStream unavailable.
+
+You can use a GameStream-compatible remote desktop solution like Chrome Remote Desktop, TeamViewer, or VNC to connect to your PC's console session and sign in again. You will need to use one of these compatible remote desktop apps if you want to use GameStream.
+
 # Sleep mode enabled warning
 This warning means your PC is configured to go to sleep after a period of inactivity. This will almost always make the PC unusable for streaming over the Internet until it is manually woken up.
 
