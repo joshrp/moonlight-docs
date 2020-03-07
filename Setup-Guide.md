@@ -84,13 +84,13 @@ Don't forget to connect to your ZeroTier network when you want to stream over th
 ### Manual port forwarding (advanced)
 If the automatic tool doesn't work, you can try manually forwarding the following ports through your router to your host gaming PC's IP address for streaming to work over the Internet:
 * **TCP** 47984, 47989, 48010
-* **UDP** 47998, 47999, 48000, 48002, 48010
+* **UDP** 47998, 47999, 48000, 48010
 
-**If your port forwarding setup just stopped working recently, check that TCP 48010 is forwarded. It is newly required with GeForce Experience v3.12.**
+If your router has separate options for "internal port" and "external port", you should set them to the same values. For example, your port forward for TCP 47989 would be set as internal port 47989 and external port 47989.
 
 To verify the basic port forwarding was done correctly, visit http://www.canyouseeme.org/ and test port 47984 and 47989. If port forwarding is working, they should both report "Success" when you test them. The other ports are only active during streaming, so the only way to test them is via Moonlight.
 
-Once you've set up port forwarding, you'll need to add your PC again from the Moonlight app so it can learn your router's external IP address. Go to http://www.whatsmyip.org/ from your gaming PC, then enter the IP address you get there into Moonlight. If you don't get an error, you should be all set.
+If Moonlight already found your gaming PC automatically while on the same network, it should connect to your PC over the Internet without any additional steps. If you're not on the same network as your PC, go to http://www.whatsmyip.org/ from your gaming PC, then enter the IP address you get there into Moonlight. If you don't get an error, you should be all set.
 
 ### IPv6 (advanced - certain ISPs only)
 
