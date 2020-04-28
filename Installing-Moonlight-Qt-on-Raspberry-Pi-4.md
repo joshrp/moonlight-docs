@@ -4,7 +4,7 @@ Beginning with Moonlight Qt v2.0.0, Raspberry Pi 4 support is in beta. As is typ
 
 Requirements:
 - Raspberry Pi 4 (earlier Raspberry Pi models may not perform well with the current beta)
-- Raspbian Stretch
+- Raspbian Buster
 
 Run the following commands to install Moonlight Qt to your Raspberry Pi:
 ```
