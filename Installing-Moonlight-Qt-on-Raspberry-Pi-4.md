@@ -2,10 +2,13 @@ Beginning with Moonlight Qt v2.0.0, Raspberry Pi 4 support is in beta. As is typ
 
 [Moonlight Qt](https://github.com/moonlight-stream/moonlight-qt) differs from [Moonlight Embedded](https://github.com/irtimmer/moonlight-embedded) in that it provides a graphical user interface for Moonlight (even without X running), while Moonlight Embedded is command-line only. If you experience issues streaming to your Pi, trying the other client might resolve the problem. You can have both clients installed at the same time and switch between the two by running `moonlight` (Moonlight Embedded) or `moonlight-qt` (Moonlight Qt).
 
+NOTE: If you installed an earlier preview version of Moonlight Qt, you must switch to the official repository to receive the update to v2.0.0 and future updates. To do so, run the the commands listed in the installation section and then those listed in the updates section.
+
 Requirements:
 - Raspberry Pi 4 (earlier Raspberry Pi models may not perform well with the current beta)
 - Raspbian Buster
 
+### Installation
 Run the following commands to install Moonlight Qt to your Raspberry Pi:
 ```
 echo "deb https://dl.bintray.com/moonlight-stream/moonlight-raspbian buster main" | sudo tee /etc/apt/sources.list.d/moonlight-raspbian.list 
@@ -15,3 +18,10 @@ sudo apt install moonlight-qt
 ```
 
 You can then launch Moonlight from your Raspberry Pi's desktop or via the `moonlight-qt` command in the terminal.
+
+### Updates
+To update Moonlight Qt after you've installed it, run:
+```
+sudo apt update
+sudo apt upgrade
+```
