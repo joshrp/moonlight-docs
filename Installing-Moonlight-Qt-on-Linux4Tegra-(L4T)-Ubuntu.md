@@ -3,7 +3,7 @@ Beginning with Moonlight Qt v2.0.0, support for L4T devices such as the [Nintend
 NOTE: If you installed an earlier preview version of Moonlight Qt prior to v2.0.0, you must switch to the official repository to receive the update to v2.0.0 and future updates. To do so, you must first run `sudo apt remove moonlight` then run the commands listed in the installation section to install the new `moonlight-qt` package.
 
 Requirements:
-* Ubuntu 18.04
+* Linux4Tegra OS based on Ubuntu 18.04
 
 ### Installation
 Run the following commands to install Moonlight Qt to your L4T device:
