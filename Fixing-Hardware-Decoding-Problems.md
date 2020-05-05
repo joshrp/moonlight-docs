@@ -24,3 +24,14 @@ Moonlight uses VAAPI, VDPAU, and NVDEC for hardware acceleration on Linux. One o
     * If you installed Moonlight via Flatpak, you would run `flatpak run com.moonlight_stream.Moonlight -platform wayland`
     * The Snap package of Moonlight does not currently support hardware acceleration on Wayland.
     * Decoding performance under Wayland may not be as good as X11, so try X11 if you experience performance issues.
+
+# Raspberry Pi
+Moonlight uses the Raspberry Pi's H.264 hardware decoder using the MMAL decoder library. MMAL requires enough GPU memory to be allocated to store video frames.
+
+If the H.264 decoder fails to initialize, this usually means that the amount of reserved GPU memory is insufficient.
+
+To increase the reserved GPU memory, run the following commands:
+```
+echo "gpu_mem=128" | sudo tee -a /boot/config.txt
+sudo reboot
+```
