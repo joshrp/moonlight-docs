@@ -19,6 +19,17 @@ sudo apt install moonlight-qt
 
 You can then launch Moonlight from your Raspberry Pi's desktop or via the `moonlight-qt` command in the terminal.
 
+### Decoder Errors with a 4K 60 Hz Monitor
+If your Raspberry Pi is configured for 4K 60 Hz output, you will need to increase the amount of GPU memory for the hardware video decoder to work.
+
+Run the following commands:
+```
+echo "gpu_mem=128" | sudo tee -a /boot/config.txt
+sudo reboot
+```
+
+NOTE: The Raspberry Pi 4's H.264 decoder is still limited to 1080p. 4K streaming is only available using HEVC, which is not yet supported on the Raspberry Pi.
+
 ### Updates
 To update Moonlight Qt after you've installed it, run:
 ```
