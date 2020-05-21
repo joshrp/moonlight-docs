@@ -41,6 +41,11 @@ This error means that something on your PC is blocking access to other devices o
 
 This is most commonly caused by VPN software which contains a feature to disable access to the local network. You will need to disable this in order to stream successfully. Check the documentation for the VPN software if you are unsure of how to disable local network blocking.
 
+Here are links to instructions on unblocking the local network for some commonly used VPN software:
+* [Private Internet Access (PIA)](https://www.privateinternetaccess.com/helpdesk/kb/articles/i-cannot-access-devices-on-my-local-network) - enable "Allow LAN traffic"
+* [NordVPN](https://support.nordvpn.com/FAQ/Setup-tutorials/1047409642/Installing-and-using-NordVPN-on-Windows-7-and-later-versions.htm#Advanced%20settings) - disable "Invisibility on LAN" and "Internet Killswitch" options
+* [ExpressVPN](https://www.expressvpn.com/support/troubleshooting/restore-lan-access/) - enable "Allow access to local network devices such as network shares or printers"
+
 # Sleep mode enabled warning
 This warning means your PC is configured to go to sleep after a period of inactivity. This will almost always make the PC unusable for streaming over the Internet until it is manually woken up.
 
