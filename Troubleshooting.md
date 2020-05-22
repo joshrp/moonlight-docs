@@ -9,6 +9,7 @@ Look at the troubleshooting steps for each of the following issues:
 * [Video is choppy or laggy](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#video-is-choppy-or-laggy)
 * [No video (black screen)](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#no-video-black-screen)
 * [Missing mouse cursor](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#missing-mouse-cursor)
+* [Video only displays on the top left corner of the stream](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#video-only-displays-in-the-top-left-corner-of-the-stream)
 * [Known application compatibility issues](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#known-application-compatibility-issues)
 * [Pairing dialog won't show up on PC](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#pairing-dialog-wont-show-up-on-pc)
 * [SHIELD tab is missing in GeForce Experience](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#shield-tab-is-missing-in-geforce-experience)
@@ -22,7 +23,7 @@ Look at the troubleshooting steps for each of the following issues:
 * If your gaming PC is connected to your home network via multiple connections (like both Ethernet and WiFi), disconnect all connections except for the fastest one (usually Ethernet).
 * Check the list of [known application compatibility issues](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#known-application-compatibility-issues). Try uninstalling any programs on that list one to see if one of them is interfering.
 * Make sure your primary monitor is connected to your NVIDIA GPU and turned on, and you are logged in.
-* If you use a VPN for Internet access on your gaming PC, disable it to ensure your local network is accessible. You may also need to disable the setting to block local network access when the VPN is disconnected, if that option is available for your VPN software.
+* If you use a VPN for Internet access on your gaming PC, disable it to ensure your local network is accessible. You may also need to [disable the setting to block local network access](https://github.com/moonlight-stream/moonlight-docs/wiki/Internet-Streaming-Errors#local-network-access-blocked-error).
 * Disable your PC's firewall and anti-virus, and reboot again. If this works, you can create a firewall exception using [the steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#firewall-setup).
 * Uninstall GeForce Experience, reboot, clean install GeForce Experience, and reboot again.
 * In an administrator command prompt, run `netsh winsock reset` and reboot your computer.
@@ -33,7 +34,7 @@ Look at the troubleshooting steps for each of the following issues:
 * First, ensure you can stream successfully from your home network to ensure it's an issue specific to streaming over the Internet. If you can't, follow the instructions in the section above for general streaming issues.
 * Make sure your gaming PC is running the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Hosting-Tool/releases) to automatically manage your port forwarding rules.
 * Ensure UPnP is enabled in your router settings and delete any older Moonlight port forwarding entries.
-* If you use a VPN for Internet access on your gaming PC, disable it to ensure your local network is accessible. You may also need to disable the setting to block local network access when the VPN is disconnected, if that option is available for your VPN software.
+* If you use a VPN for Internet access on your gaming PC, disable it to ensure your local network is accessible. You may also need to [disable the setting to block local network access](https://github.com/moonlight-stream/moonlight-docs/wiki/Internet-Streaming-Errors#local-network-access-blocked-error).
 * Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Hosting-Tool/releases) and ask for help on our [Discord server](https://moonlight-stream.org/discord). Be sure to have the tester log handy.
 * If the Moonlight Internet Streaming Tester says your ISP is running a [Carrier-grade NAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT) that blocks hosting services like Moonlight, try these steps:
     * Ask your ISP for a public IP address. Many users have reported that their ISP is happy to provide one free of charge upon request.
@@ -61,6 +62,10 @@ Look at the troubleshooting steps for each of the following issues:
 * If unable to physically connect a mouse, enable Mouse Keys on the host gaming PC to force Windows to display a mouse cursor.
     * If you just type "Mouse key" into the Start Menu search dialog, it should take you to the correct settings page.
 * Ask for help on our [Discord server](https://moonlight-stream.org/discord)
+
+### Video only displays in the top left corner of the stream
+* Use the NVIDIA Control Panel to set your desired display resolution, not Windows Display Settings
+   * If your resolution is already set to the desired value, change it to something else and back again using NVIDIA Control Panel.
 
 ### Known application compatibility issues
 Some installed applications and security products can interfere with GeForce Experience or GameStream. Depending on the configuration of these incompatible applications, you may or may not experience issues streaming.
