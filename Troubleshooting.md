@@ -9,7 +9,7 @@ Look at the troubleshooting steps for each of the following issues:
 * [Video is choppy or laggy](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#video-is-choppy-or-laggy)
 * [No video (black screen)](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#no-video-black-screen)
 * [Missing mouse cursor](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#missing-mouse-cursor)
-* [Video only displays on the top left corner of the stream](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#video-only-displays-in-the-top-left-corner-of-the-stream)
+* [Video only displays in the top left corner of the stream](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#video-only-displays-in-the-top-left-corner-of-the-stream)
 * [Known application compatibility issues](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#known-application-compatibility-issues)
 * [Pairing dialog won't show up on PC](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#pairing-dialog-wont-show-up-on-pc)
 * [SHIELD tab is missing in GeForce Experience](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#shield-tab-is-missing-in-geforce-experience)
