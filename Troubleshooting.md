@@ -89,6 +89,7 @@ If you have one of the following, try disabling or uninstalling it:
 * DisplayLink dock/display software
 * Razer Synapse
 * Razer Kraken software (APO Helper)
+* ASUS Sonic Studio
 * ASUS SonicRadar
 * ASUS KeyBot
 * ASUS GameFirst
