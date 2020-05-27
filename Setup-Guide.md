@@ -11,15 +11,16 @@ In this guide:
 
 **Host Gaming PC Requirements** 
 
-* NVIDIA GeForce GTX/RTX 600+ series GPU (GT-series and AMD GPUs aren't supported by NVIDIA GameStream)
-* NVIDIA GeForce Experience (GFE) 2.1.1 or higher
-* 720p or higher display (or headless display dongle) connected to the GeForce GPU
+* NVIDIA GeForce GTX/RTX 600+ series GPU, or NVIDIA Quadro GPU (Kepler series or later)
+* NVIDIA GeForce Experience (GFE) 2.1.1 or higher, or NVIDIA Quadro Experience
+* 720p or higher display (or headless display dongle) connected to the NVIDIA GPU
 * 5 Mbps or higher upload speed (only required for streaming outside your house)
 
 ## Quick Setup Instructions
 1. On your gaming PC, install the [GeForce Experience software](https://www.nvidia.com/en-us/geforce/geforce-experience/) from NVIDIA. Your PC may need a reboot after installation to finish setup.
+    * If your PC has a Quadro GPU, install the [Quadro Experience software](https://www.nvidia.com/en-us/design-visualization/software/quadro-experience/) instead.
 
-2. Start GeForce Experience and click on the **Settings "gear" button**. Then choose the **SHIELD** option. Make sure the GameStream switch is in the **"on" position (green)**. If the SHIELD tab is not present, see the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
+2. Start GeForce/Quadro Experience and click on the **Settings "gear" button**. Then choose the **SHIELD** option. Make sure the GameStream switch is in the **"on" position (green)**. If the SHIELD tab is not present, see the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
   <p align="center">
      <img src="https://github.com/moonlight-stream/moonlight-docs/wiki/images/gfe-gamestream-enable-small.png"/>
@@ -191,7 +192,7 @@ To disconnect from your PC while streaming on iOS, swipe from the left edge of t
 iCade gamepads (old iOS gamepads that fake a Bluetooth keyboard) are not supported by Moonlight.
 
 ## Adding custom programs that are not automatically found
-You can stream any almost any game or app by adding the EXE file to GFE manually (if it's not found by the automatic app scan). Open GeForce Experience, click the **Settings (gear) button**, click **SHIELD** on the sidebar, then click the **Add button** on the right. Browse to the app or file you want to add and click OK. You can rename the app using the **Edit button**.
+You can stream any almost any game or app by adding the EXE file to GFE manually (if it's not found by the automatic app scan). Open GeForce/Quadro Experience, click the **Settings (gear) button**, click **SHIELD** on the sidebar, then click the **Add button** on the right. Browse to the app or file you want to add and click OK. You can rename the app using the **Edit button**.
 
 The next time the client opens and displays the App List, the newly added programs and games should be displayed and ready to stream.
 
@@ -202,7 +203,7 @@ Follow the steps above for adding a custom program, but for the path use: **C:\w
 
 You can rename the remote desktop entry using the Edit button. When you click this entry, you will see your full desktop where you can run whatever you want.
 
-Even though the mstsc.exe executable is typically used for Microsoft Remote Desktop, this is only an indicator to GeForce Experience that you want to stream your desktop. It does not actually launch mstsc.exe or use RDP to stream.
+Even though the mstsc.exe executable is typically used for Microsoft Remote Desktop, this is only an indicator to GeForce/Quadro Experience that you want to stream your desktop. It does not actually launch mstsc.exe or use RDP to stream.
 
 ## Troubleshooting
 
@@ -210,6 +211,6 @@ See our [dedicated troubleshooting wiki page](https://github.com/moonlight-strea
 
 If the information on the wiki doesn't help you, you can join our [Discord server](https://moonlight-stream.org/discord) to get help from the developers and the community. This is the recommended way to get the fastest help, since many people can answer your questions.
 
-If you don't want to use Discord, you can email info@moonlight-stream.org but be aware that responses may be delayed, since this only goes to core developers. Please ensure you include all necessary information, including GeForce Experience and driver versions, specifications of your client device, streaming settings, etc.
+If you don't want to use Discord, you can email info@moonlight-stream.org but be aware that responses may be delayed, since this only goes to core developers. Please ensure you include all necessary information, including GeForce/Quadro Experience and driver versions, specifications of your client device, streaming settings, etc.
 
 ***
