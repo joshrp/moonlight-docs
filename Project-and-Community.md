@@ -12,7 +12,9 @@ Who we are:
 Email any of us at `<our first name>@moonlight-stream.org` or all of us at info@moonlight-stream.org. We do receive a lot of mail, so please check if your answer is described in this wiki first. 
 
 ## Contribute
-This project is being actively developed at [XDA Developers](http://forum.xda-developers.com/showthread.php?t=2505510). We welcome code contributions - here's how in three easy steps.
+Project developers are often available on [our Discord server](https://moonlight-stream.org/discord) in the `dev` channels. Feel free to drop by with questions or to get feedback on your pull requests.
+
+We welcome code contributions - here's how in three easy steps.
 
 1. Fork us
 2. Write code
