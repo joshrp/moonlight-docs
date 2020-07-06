@@ -156,7 +156,7 @@ PC clients support keyboard, mouse, and touchscreen input and up to 4 game contr
 * Ctrl+Alt+Shift+Z - Toggle mouse pointer capture
 * Ctrl+Alt+Shift+X - Toggle between full-screen and windowed mode
 * Ctrl+Alt+Shift+Q - Quit the streaming session (leaving the game running on the host PC)
-* Ctrl+Alt+Shift+S - Open performance stats overlay
+* Ctrl+Alt+Shift+S - Open performance stats overlay (currently implemented for Windows and macOS clients only)
 
 **Touchscreen controls**
 
