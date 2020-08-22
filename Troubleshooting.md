@@ -44,9 +44,10 @@ Look at the troubleshooting steps for each of the following issues:
 
 ### Video is choppy or laggy
 * Try streaming with Bluetooth disabled to see if your device has the Bluetooth issue detailed below.
-* Make sure your device is connected on 5 GHz and your PC is wired to your router.
-* If you're streaming to a Mac over WiFi, try [disabling Location Services](https://github.com/moonlight-stream/moonlight-qt/issues/159#issuecomment-452675992).
-* Lower the bitrate slider.
+* Make sure your client device is connected on 5 GHz WiFi or Ethernet, and your PC is wired to your router if possible.
+* If you're streaming to a Mac over WiFi, try [disabling Location Services and AirDrop](https://github.com/moonlight-stream/moonlight-qt/issues/159#issuecomment-452675992).
+* Ensure your Nvidia GPU is not being underclocked (which can impact NVENC performance). You may also try a modest overclock or raising the GPU power limit if you are comfortable with that.
+* Lower the bitrate slider to determine if it's a bandwidth issue.
 * Try using 720p30 which has the lowest requirements.
 * Try forcing your PC's Ethernet adapter to run at 100Mb Full Duplex in Device Manager.
 * Ask for help on our [Discord server](https://moonlight-stream.org/discord)
