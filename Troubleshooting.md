@@ -1,6 +1,8 @@
 _These troubleshooting checklists contain various suggestions to solve each potential issue. They are generally meant to be done in the order the steps are listed, however the list doesn't need to be fully completed if issue goes away during the process of troubleshooting._
 
-You can chat with Moonlight developers and other users to help you resolve streaming issues on our [Discord server](https://moonlight-stream.org/discord).
+You can chat with Moonlight developers and other users to help you resolve streaming issues on our Discord server.
+
+<a href="https://moonlight-stream.org/discord"><img src="https://moonlight-stream.org/images/discord.png" height="70" alt="Join our Discord"></a>
 
 Look at the troubleshooting steps for each of the following issues: 
 
