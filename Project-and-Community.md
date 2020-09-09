@@ -1,3 +1,5 @@
+<a href="https://moonlight-stream.org/discord"><img src="https://moonlight-stream.org/images/discord.png" height="70" alt="Join our Discord"></a>
+
 ## Meet the Developers
 Moonlight was created by [Case Western Reserve University](http://case.edu) students as a project at the [MHacks](http://mhacks.org) hackathon in 2013 and further developed at MHacks and [HackCWRU](http://www.hackcwru.com) in 2014. It's hard to put a cool project down after a hackathon, so we continue to develop Moonlight today.
 
