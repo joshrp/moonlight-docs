@@ -77,7 +77,7 @@ To set it up:
     * Under the "IPv4 Auto-Assign" section, ensure "Auto-Assign from Range" is checked, click the "Easy" button, then choose "10.147.17.*"
 5. Copy the Network ID from that page and type it into the ZeroTier app's Join Network dialog (or use the e-mail invite system).
     * If you get a prompt from Windows about asking for the network type/location, choose Private or Home network to avoid firewall issues.
-6. After joining the network on each device (_including your client running Moonlight!_), go back to the ZeroTier Network page and check the Auth checkbox for each member of your network to allow the devices to connect with each other. ZeroTier should show up as connected on all devices.
+6. After joining the network on each device (_including your client running Moonlight!_), go back to the ZeroTier Network page and **check the Auth checkbox for each member of your network** to allow the devices to connect with each other. ZeroTier should show up as connected on all devices.
 7. With ZeroTier connected on your client and host PC, open Moonlight and click/tap the Add PC button, then type the "Managed IP" of your host PC as shown on the ZeroTier Network page.
 
 To connect additional clients or host PCs, just download ZeroTier on the device, then complete steps 5-7.
