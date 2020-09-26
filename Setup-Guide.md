@@ -37,7 +37,7 @@ In this guide:
 ## Streaming over the Internet
 
 ### Automatic configuration (recommended for most users)
-For the easiest possible setup process, we highly recommend that you **first pair Moonlight with your gaming PC while connected to your home network** before trying to use Moonlight over the Internet.
+For the easiest possible setup process, we highly recommend that you **first pair Moonlight with your gaming PC while connected to your home network** before trying to use Moonlight over the Internet. For iOS and tvOS users, [you _must_ pair while connected to the same network](https://github.com/moonlight-stream/moonlight-ios/issues/417) to comply with Apple guidelines.
 
 #### If your gaming PC is already paired with Moonlight:
 1. Install the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) on your gaming PC.
@@ -137,7 +137,7 @@ For other firewall products, you should follow their instructions to create exce
 
 * Android: An Android device running Android 4.1 (Jelly Bean) or newer. Newer and "flagship" devices with higher processor speeds are more likely to be able to handle Moonlight well by using the hardware video system on the device to produce smooth streaming without video stuttering or freezing.
 
-* iOS: An iOS device running iOS 8.0 or later.
+* iOS: An iOS device running iOS 9.3 or later.
 
 * tvOS: An Apple TV device running tvOS 12.0 or later.
 
@@ -183,9 +183,11 @@ If you don't have a mouse connected to your Android device, you can emulate one 
 
 **iOS/tvOS client**
 
-If your device is running iOS/tvOS 13 or later, you can use Xbox One S and PS4 controllers with your device over Bluetooth. Moonlight supports all physical buttons on these controllers, including Select, L3, and R3. You can also still use MFi controllers if you want, but they may not have all of the buttons that an Xbox or PS4 controller has.
+If your device is running iOS/tvOS 13 or later, you can use Xbox One S and PS4 controllers with your device over Bluetooth. Moonlight supports all physical buttons on these controllers, including Select, L3, and R3. Moonlight also supports controller vibration on these controllers with iOS/tvOS 14. You can also still use MFi controllers if you want, but they may not have all of the buttons that an Xbox or PS4 controller has and won't support vibration.
 
 Devices running iOS/tvOS 12 or earlier are limited to MFi controllers. We recommend the "extended layout" controllers which have most buttons present on a typical Xbox controller. Notably lacking on most MFi controllers are the L3 and R3 buttons and the Select button. When using the Auto setting for on-screen controls on iOS, an overlay will be displayed containing the buttons that your physical controller is missing.
+
+iPadOS 13.4 adds support for mouse input, though it is limited by the OS such that it doesn't work with games that capture the mouse pointer (like most FPS games) and you can't hold more than one mouse button down at a time. iPadOS 14 solves both of these limitations, however not all mice are compatible with the new enhanced iPadOS 14 mouse support. Compatibility for non-Apple mice seems to be best when connected via USB (with a USB-C to USB-A or Lightning to USB-A adapter) instead of Bluetooth.
 
 You can use the Apple TV remote as a touchpad to move the mouse cursor and click.
 
