@@ -44,14 +44,14 @@ Moonlight Internet Hosting Tool must remain installed on your host PC to maintai
 #### If your gaming PC is already paired with Moonlight:
 1. Install the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) on your gaming PC.
 2. Run "Moonlight Internet Streaming Tester" via the Start Menu to confirm it's working properly.
-3. Do not uninstall Moonlight Internet Hosting Tool, unless you no longer want to stream over the Internet. It needs to run in the background on your PC to maintain the port forwarding entries on your router.
+3. Do not uninstall Moonlight Internet Hosting Tool, unless you no longer want to stream over the Internet. It needs to remain installed on your PC to maintain the port forwarding entries on your router.
 
 #### If your gaming PC is _not_ already paired with Moonlight:
 1. Install the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) on your gaming PC.
 2. Run "Moonlight Internet Streaming Tester" via the Start Menu.
 3. Type the IP address that is displayed on the tester's success dialog into the Add PC dialog of Moonlight.
     * You must ensure your Moonlight client is **not connected to the same network as your gaming PC** during this step or the connection may not be successful.
-4. Do not uninstall Moonlight Internet Hosting Tool, unless you no longer want to stream over the Internet. It needs to run in the background on your PC to maintain the port forwarding entries on your router.
+4. Do not uninstall Moonlight Internet Hosting Tool, unless you no longer want to stream over the Internet. It needs to remain installed on your PC to maintain the port forwarding entries on your router.
 
 #### Having trouble?
 * Ensure UPnP is enabled in your router settings and delete any older Moonlight port forwarding entries.
