@@ -1,13 +1,13 @@
 <a href="https://moonlight-stream.org/discord"><img src="https://moonlight-stream.org/images/discord.png" height="70" alt="Join our Discord"></a>
 
-In this guide: 
 * [Quick Setup Instructions](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#quick-setup-instructions)
 * [Streaming over the Internet](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#streaming-over-the-internet)
 * [Moonlight Client Setup Instructions](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#moonlight-client-setup-instructions)
 * [Keyboard/Mouse/Gamepad Input Options](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#keyboardmousegamepad-input-Options)
 * [Adding custom programs that are not automatically found](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#adding-custom-programs-that-are-not-automatically-found)
 * [Using Moonlight to stream your entire desktop](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-moonlight-to-stream-your-entire-desktop)
-* [Troubleshooting](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#troubleshooting)
+* [Frequently Asked Questions](https://github.com/moonlight-stream/moonlight-docs/wiki/Frequently-Asked-Questions)
+* [Troubleshooting](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting)
 
 ***
 
@@ -212,13 +212,5 @@ Follow the steps above for adding a custom program, but for the path use: **C:\w
 You can rename the remote desktop entry using the Edit button. When you click this entry, you will see your full desktop where you can run whatever you want.
 
 Even though the mstsc.exe executable is typically used for Microsoft Remote Desktop, this is only an indicator to GeForce/Quadro Experience that you want to stream your desktop. It does not actually launch mstsc.exe or use RDP to stream.
-
-## Troubleshooting
-
-See our [dedicated troubleshooting wiki page](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting) for detailed steps for resolving a variety of issues.
-
-If the information on the wiki doesn't help you, you can join our [Discord server](https://moonlight-stream.org/discord) to get help from the developers and the community. This is the recommended way to get the fastest help, since many people can answer your questions.
-
-If you don't want to use Discord, you can email info@moonlight-stream.org but be aware that responses may be delayed, since this only goes to core developers. Please ensure you include all necessary information, including GeForce/Quadro Experience and driver versions, specifications of your client device, streaming settings, etc.
 
 ***
