@@ -34,6 +34,8 @@
 
 5. Try streaming a game or app to make sure everything is working. If you encounter issues, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
+6. If you don't see the game you want to stream in Moonlight, you can [add it manually](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#adding-custom-programs-that-are-not-automatically-found). You can also [stream your desktop](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-moonlight-to-stream-your-entire-desktop) and launch anything you want.
+
 ## Streaming over the Internet
 
 ### Automatic configuration (recommended for most users)
