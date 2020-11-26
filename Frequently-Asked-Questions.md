@@ -37,6 +37,16 @@ You can add an option to stream your full desktop [using these steps](https://gi
 
 If you're using the PC client, you can also enable remote desktop mouse mode in the Moonlight settings for a seamless mouse experience when using other apps along with Moonlight.
 
+## Is Moonlight secure?
+
+NVIDIA GameStream uses a secure pairing process to establish trust between clients and hosts. Each Moonlight client generates a unique key which is exchanged directly with the host PC during the pairing process. This process authorizes the Moonlight client to launch games, view installed apps, etc.
+
+Moonlight client keys are generated and stored locally on each client. We never receive your unique client keys, so there is no online account system that could possibly be compromised to gain access to your PC.
+
+Keyboard, mouse, and gamepad data is sent back to the host PC over an encrypted connection to prevent the possibility of this data being intercepted when travelling over an insecure network.
+
+For even more security, you can use Moonlight over a VPN connection [like ZeroTier](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#zerotier) which encrypts all traffic.
+
 ## Where can I get help with streaming issues?
 
 [Our Discord server](https://moonlight-stream.org/discord) is the best place to find help from Moonlight developers and the community.
@@ -104,3 +114,9 @@ Other video applications like Netflix or YouTube keep a buffer of some data whic
 There is a bug in GeForce Experience which causes it to believe that RTX 3000-series GPUs do not support HEVC encoding.
 
 A hotfix from NVIDIA is [available here](https://nvidia.custhelp.com/app/answers/detail/a_id/5106).
+
+## Why is my frame rate low when streaming my desktop on a laptop with NVIDIA Optimus?
+
+There is extra overhead to stream the desktop when Optimus is enabled, because each frame must be copied back from the iGPU to the NVIDIA GPU for NVENC to encode it. This extra copying overhead usually results in frame rates between 25 and 40 FPS while streaming the desktop.
+
+Once you start a full-screen game, the streaming performance should go back to normal. If it doesn't, make sure your game is set to run on the NVIDIA GPU and that your game is set to use full-screen exclusive mode instead of borderless windowed mode.
