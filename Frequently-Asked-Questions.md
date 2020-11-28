@@ -15,6 +15,51 @@ We have official clients for [Windows, macOS, Linux, Raspberry Pi 4, Steam Link 
 
 The community has created unofficial ports for [PS Vita](https://github.com/xyzz/vita-moonlight/releases/) and many [embedded Linux devices](https://github.com/irtimmer/moonlight-embedded/wiki/Packages).
 
+## Is there a Moonlight web client?
+
+No, while there is a ChromeOS app that runs on Chromebooks, there is not a pure web-based Moonlight client. The GameStream protocol requires us to use raw TCP and UDP sockets which is not currently supported in web browsers. Fortunately, there is a proposed [Direct Sockets web standard](https://github.com/WICG/raw-sockets/blob/master/docs/explainer.md) in development that could make it possible to implement a web-based Moonlight client in the future.
+
+While we would like to offer a web-based client as an option, we believe that native apps currently provide the most feature-rich and performant clients. Optimizations like changing the display refresh rate to match the stream frame rate, communicating with gamepads that aren't natively supported by the OS or browser, and using full-screen exclusive mode for lower latency are not currently available to web apps. Web browsers are also often forced to make tradeoffs to cater to the most common use-cases at the expense of others. For example, a design tradeoff for better battery life for video playback or smoother web animations might result in an increase to rendering latency.
+
+## How can I see on-screen statistics about my streaming performance?
+
+On Windows and macOS, you can press Ctrl+Alt+Shift+S to enable the stats overlay while streaming. Linux and Steam Link do not current have overlay support, but you can see the same stats in the log file after you end your stream.
+
+On Android and iOS, you can enable the on-screen overlay in the Moonlight settings.
+
+## What do the numbers mean in the on-screen connection statistics?
+
+Notes about these numbers:
+- Due to limitations of the various decoding APIs available on each platform, not all latency and frame drop numbers will be available on all Moonlight clients.
+- Client performance can vary significantly depending on the selected frame rate, resolution, client hardware, etc. You can tweak these settings to improve your performance.
+- These numbers can't be used to compare to other non-Moonlight clients, since each value may not be measuring the same thing, despite potentially having the same name.
+- There is additional system latency that can't be measured by apps (compositor latency, display latency, input device latency, etc). For the most accurate results, you should always measure using external testing hardware.
+
+### Latency numbers
+- Receive latency
+    - This is the average amount of time it takes to receive a single frame, measured from the first packet received to the last.
+    - A faster connection between your host and client will decrease this value and a higher bitrate setting will typically increase it.
+    - This is NOT your end-to-end connection latency. That value is not currently available in the GameStream protocol.
+- Decode latency
+    - This is the average amount of time it takes for a frame to be decoded and ready for rendering.
+    - This number varies widely depending on your client hardware, bitrate, stream frame rate, and stream resolution.
+    - Increasing the frame rate to 90 or 120 FPS may decrease decode latency on some devices.
+- Frame queue latency
+    - This is the average amount of time that frames wait to be rendered after decoding. The wait is usually because the previous frame is still being rendered or waiting for V-Sync.
+    - It should usually stay under a frame interval (16 ms for 60 FPS), but in rare cases, driver issues can cause it to rise significantly if rendering is not progressing at the normal rate.
+- Render latency
+    - This is the average amount of time it takes for a decoded frame to be rendered to the display.
+    - If you have V-Sync enabled, this will typically include a V-sync period (16 ms for a 60 Hz display) in addition to the actual render latency. This is because Moonlight must wait for V-Sync to render.
+
+### Frame drop numbers
+- Frames dropped by network connection
+    - This indicates the percentage of frames that are sent from the host and don't successfully reach the client. It should stay very close to 0% most of the time.
+    - High values indicate an unreliable network connection (like 2.4 GHz WiFi or powerline networking) or that your connection is not capable of streaming at the bitrate settings you've chosen.
+- Frames dropped due to network jitter
+    - This indicates the percentage of frames dropped because they are too early or too late to render.
+    - Rather than coming at a smooth 16ms-16ms-16ms-16ms... for each frame, network variance may cause patterns like 20ms-12ms-18ms-14ms... which forces Moonlight to skip or drop frames to stay in sync with the client display.
+    - It is typically caused by high network jitter but it can also be caused by hardware limitations or software issues (especially if very high).
+
 ## Can I stream from my PC while outside my house?
 
 Yes, for many ISPs, it's as simple as [installing the Moonlight Internet Hosting Tool on your PC](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#automatic-configuration-recommended-for-most-users).
