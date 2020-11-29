@@ -74,9 +74,9 @@ You should use ZeroTier if you are in one of the following situations:
 
 To set it up:
 1. [Create an account](https://my.zerotier.com/login) on the ZeroTier website. The free service is perfectly fine for Moonlight.
-2. Download the Windows version for your PC from the [Downloads page](http://www.zerotier.com/download.shtml) and install it on your host gaming PC.
+2. Download the Windows version for your PC from the [Downloads page](https://www.zerotier.com/download.shtml) and install it on your host gaming PC.
 3. Install ZeroTier on your client device.
-    * If using Moonlight on a PC or Mac, download and install the appropriate version from the [Downloads page](http://www.zerotier.com/download.shtml).
+    * If using Moonlight on a PC or Mac, download and install the appropriate version from the [Downloads page](https://www.zerotier.com/download.shtml).
     * If using Moonlight on Android or iOS, the apps are available on the [Google Play Store](https://play.google.com/store/apps/details?id=com.zerotier.one) and [Apple App Store](https://itunes.apple.com/us/app/zerotier-one/id1084101492).
 4. Go to the [Networks tab](https://my.zerotier.com/network) then create a new network.
     * Uncheck all checkboxes in the "IPv6 Auto-Assign" section (if checked)
@@ -97,9 +97,9 @@ If the automatic tool doesn't work, you can try manually forwarding the followin
 
 If your router has separate options for "internal port" and "external port", you should set them to the same values. For example, your port forward for TCP 47989 would be set as internal port 47989 and external port 47989.
 
-To verify the basic port forwarding was done correctly, visit http://www.canyouseeme.org/ and test port 47984 and 47989. If port forwarding is working, they should both report "Success" when you test them. The other ports are only active during streaming, so the only way to test them is via Moonlight.
+To verify the basic port forwarding was done correctly, visit https://www.canyouseeme.org/ and test port 47984 and 47989. If port forwarding is working, they should both report "Success" when you test them. The other ports are only active during streaming, so the only way to test them is via Moonlight.
 
-If Moonlight already found your gaming PC automatically while on the same network, it should connect to your PC over the Internet without any additional steps. If you're not on the same network as your PC, go to http://www.whatsmyip.org/ from your gaming PC, then enter the IP address you get there into Moonlight. If you don't get an error, you should be all set.
+If Moonlight already found your gaming PC automatically while on the same network, it should connect to your PC over the Internet without any additional steps. If you're not on the same network as your PC, go to https://www.whatsmyip.org/ from your gaming PC, then enter the IP address you get there into Moonlight. If you don't get an error, you should be all set.
 
 ### IPv6 (advanced - certain ISPs only)
 
@@ -111,11 +111,13 @@ If you are lucky enough to have native IPv6 connectivity to your host gaming PC,
 
     * If you can't get your host gaming PC to 10/10, you won't be able to use this method for streaming over the Internet with your ISP.
 
-    * If your client device doesn't score 10/10 but your host PC does, you can try the [Cloudflare 1.1.1.1 app for iOS and Android](https://1.1.1.1/) with the free 'WARP' feature to gain IPv6 connectivity on networks that don't natively support it.
+    * If your client device doesn't score 10/10 but your host PC does, you can try the [Cloudflare 1.1.1.1 app for Windows, macOS, iOS, and Android](https://1.1.1.1/) with the free 'WARP' feature to gain IPv6 connectivity on networks that don't natively support it.
 
 2. Install the [GameStream IPv6 Forwarder](https://github.com/moonlight-stream/GS-IPv6-Forwarder#instructions) on your host gaming PC (same PC that runs GeForce Experience). This step is only required if you do not have the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) already installed.
 
-3. If Moonlight already found your gaming PC automatically while on the same network, it should connect to your PC over IPv6 without any additional steps. If you haven't already paired to your gaming PC while on the same network, click Add PC and type the IPv6 address of your host gaming PC.
+3. If your router has an IPv6 firewall, you may need to create IPv6 firewall rules on your router to allow TCP ports 47984-48010 and UDP ports 47998-48010 through the firewall. The GameStream IPv6 Forwarder will create the rules for you if possible, but not many routers support this feature. If your IPv6 Moonlight connection is failing, this is most likely the reason.
+
+4. If Moonlight already found your gaming PC automatically while on the same network, it should connect to your PC over IPv6 without any additional steps. If you haven't already paired to your gaming PC while on the same network, click Add PC and type the IPv6 address of your host gaming PC.
 
 All officially supported Moonlight clients (iOS/tvOS, PC, Android) support streaming from servers over IPv6. Unofficial clients (Embedded, Vita) may not.
 
@@ -153,7 +155,7 @@ For other firewall products, you should follow their instructions to create exce
 
 **Internet and Network Requirements**
 
-To have a good experience, you need a mid to high-end wireless router with a good wireless connection to your client device (5 Gigahertz (GHz) highly recommended, Wireless-N (802.11n) or better strongly recommended) and a good connection from your PC server to your router (Ethernet/wired connections highly recommended).
+To have a good experience, you need a mid to high-end wireless router with a good wireless connection to your client device (5 GHz WiFi 5 (802.11ac) or WiFi 6 (802.11ax) strongly recommended) and a good connection from your PC server to your router (Ethernet/wired connections highly recommended).
 
 ## Keyboard/Mouse/Gamepad Input Options
 
@@ -197,7 +199,7 @@ iPadOS 13.4 adds support for mouse input, though it is limited by the OS such th
 
 You can use the Apple TV remote as a touchpad to move the mouse cursor and click.
 
-To disconnect from your PC while streaming on iOS, swipe from the left edge of the screen. To disconnect on tvOS, double-tap the Menu button on your Apple TV Remote or press the Xbox/PS button on your gamepad.
+To disconnect from your PC while streaming on iOS, swipe from the left edge of the screen. To disconnect on tvOS, double-tap the Menu button on your Apple TV Remote.
 
 iCade gamepads (old iOS gamepads that fake a Bluetooth keyboard) are not supported by Moonlight.
 
