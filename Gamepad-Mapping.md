@@ -4,6 +4,6 @@ If your gamepad mapping isn't included in Moonlight or SDL, you will need to map
 
 ### Mapping Instructions
 
-1. Run this [SDL gamepad mapping tool](http://generalarcade.com/gamepadtool/)
+1. Run this [SDL gamepad mapping tool](https://generalarcade.com/gamepadtool/)
 2. Select the controller without a mapping, then click "Create a new mapping"
 3. After mapping, click "Set Mapping As Environment Variable" and start Moonlight
