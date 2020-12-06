@@ -8,7 +8,7 @@ Requirements:
 - Raspberry Pi 4 (earlier Raspberry Pi models may not perform well with the current beta)
 - Raspbian Buster
 
-### Installation
+## Installation
 Run the following commands to install Moonlight Qt to your Raspberry Pi:
 ```
 echo "deb https://dl.bintray.com/moonlight-stream/moonlight-raspbian buster main" | sudo tee /etc/apt/sources.list.d/moonlight-raspbian.list 
@@ -18,6 +18,24 @@ sudo apt install moonlight-qt
 ```
 
 You can then launch Moonlight from your Raspberry Pi's desktop or via the `moonlight-qt` command in the terminal.
+
+## Common problems and solutions
+
+### No audio output
+
+The Raspberry Pi OS folks have [recently released an update](https://www.raspberrypi.org/blog/new-raspberry-pi-os-release-december-2020/) that switches from ALSA to PulseAudio for audio output. By default, Moonlight uses ALSA for audio output on the Raspberry Pi. This change to PulseAudio causes audio output to stop working, unless you configure Moonlight to use PulseAudio instead of ALSA.
+
+To work around this problem, run Moonlight using the following command:
+```
+SDL_AUDIODRIVER=pulseaudio moonlight-qt
+```
+
+This will no longer be necessary in the next release of Moonlight Qt which will use PulseAudio by default.
+
+### GUI not appearing when launched from the console
+The GUI will appear on the monitor connected to the mini-HDMI port _closest to the USB-C power cable_. This is the primary display output port.
+
+Make sure your monitor is connected to the correct port if you don't see the UI appear when you start Moonlight from outside the Raspberry Pi desktop environment.
 
 ### Decoder Errors with a 4K 60 Hz Monitor
 If your Raspberry Pi is configured for 4K 60 Hz output, you will need to increase the amount of GPU memory for the hardware video decoder to work.
