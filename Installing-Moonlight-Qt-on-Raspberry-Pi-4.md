@@ -19,11 +19,18 @@ sudo apt install moonlight-qt
 
 You can then launch Moonlight from your Raspberry Pi's desktop or via the `moonlight-qt` command in the terminal.
 
+### Updates
+To update Moonlight Qt after you've installed it, run:
+```
+sudo apt update
+sudo apt upgrade
+```
+
 ## Common problems and solutions
 
 ### No audio output
 
-The Raspberry Pi OS folks have [recently released an update](https://www.raspberrypi.org/blog/new-raspberry-pi-os-release-december-2020/) that switches from ALSA to PulseAudio for audio output. By default, Moonlight uses ALSA for audio output on the Raspberry Pi. This change to PulseAudio causes audio output to stop working, unless you configure Moonlight to use PulseAudio instead of ALSA.
+The Raspberry Pi OS team has [recently released an update](https://www.raspberrypi.org/blog/new-raspberry-pi-os-release-december-2020/) that switches from ALSA to PulseAudio for audio output. By default, Moonlight uses ALSA for audio output on the Raspberry Pi. This change to PulseAudio causes audio output to stop working, unless you configure Moonlight to use PulseAudio instead of ALSA.
 
 To work around this problem, run Moonlight using the following command:
 ```
@@ -47,10 +54,3 @@ sudo reboot
 ```
 
 NOTE: The Raspberry Pi 4's H.264 decoder is still limited to 1080p. 4K streaming is only available using HEVC, which is not yet supported on the Raspberry Pi.
-
-### Updates
-To update Moonlight Qt after you've installed it, run:
-```
-sudo apt update
-sudo apt upgrade
-```
