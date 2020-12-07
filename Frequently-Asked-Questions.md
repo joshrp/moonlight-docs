@@ -6,8 +6,14 @@ Moonlight is an unofficial third-party open-source client for the NVIDIA SHIELD 
 
 Per NVIDIA's GameStream system requirements, your host needs:
 - Windows 7 or later
-- A 600-series NVIDIA GeForce GTX GPU or later (GT series GPUs are not supported)
+- NVIDIA GeForce GTX/RTX GPU 600-series or later (GT series GPUs are not supported)
 - NVIDIA GeForce Experience
+
+Recently, NVIDIA has also released streaming support for Quadro cards:
+- NVIDIA Quadro GPU (Kepler or later)
+- NVIDIA Quadro Experience
+
+If you'd like to run your own gaming server in the cloud, there is an unofficial workaround for [enabling GameStream on NVIDIA Tesla cards](https://github.com/acceleration3/cloudgamestream) like those often used in Amazon EC2, Microsoft Azure, and Google Cloud Platform (GCP).
 
 ## What devices can I run Moonlight on?
 
