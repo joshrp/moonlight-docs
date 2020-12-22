@@ -81,6 +81,16 @@ The Moonlight source code is on our [GitHub page](https://github.com/moonlight-s
 
 We welcome pull requests. If you'd like to port Moonlight to a new platform, please [join our Discord server](https://moonlight-stream.org/discord). We would be happy to share our knowledge with you to help you bring Moonlight to a new platform.
 
+## Why doesn't my audio work after I stop streaming?
+
+This is almost always because you haven't truly ended your streaming session; you've just disconnected from it.
+
+When you just exit the stream or close Moonlight, the session remains running on your host PC to ensure you don't lose progress in the game or application that you're streaming. This behavior also allows you to seamlessly pick up your streaming session from a totally different device without having to restart your game.
+
+If you select your PC in Moonlight, you will see that the app you were streaming still has the Play button icon on it, which indicates the session for that app is still active.
+
+To end your streaming session, select the running game and choose Quit App. Keep in mind that this will forcefully terminate the app on your host PC, so ensure you've saved your progress first!
+
 ## Why does my host PC resolution change to 720p when I start streaming?
 
 GeForce Experience only officially supports 720p, 1080p, and 4K streaming resolutions. Moonlight allows users to pick resolutions to stream that aren't on that officially supported list, but these will cause GeForce Experience to set the host PC resolution to 720p when streaming starts.
@@ -118,6 +128,14 @@ Android's mouse capture API does not allow apps to opt-out of mouse acceleration
 If possible, you can disable mouse acceleration in your game as a workaround.
 
 NVIDIA has implemented a custom method for disabling mouse acceleration on their own SHIELD Android devices. Moonlight uses this support to provide proper non-accelerated mouse support on NVIDIA Shield Android devices. Unfortunately, there is no generic solution for other Android devices.
+
+## Why does my host's mouse acceleration change while streaming?
+
+When GeForce Experience starts a GameStream session, it adjusts the Windows mouse acceleration and pointer speed options to some predefined settings. We don't know exactly why NVIDIA's software does this, but there is nothing Moonlight can do to opt out of it.
+
+The adjusted mouse acceleration is not generally a problem in games, because most games disable Windows' mouse acceleration or implement their own custom mouse acceleration internally. If your mouse is misbehaving in game, look for an option to enable "raw input", disable "mouse acceleration", or similar options.
+
+For remote desktop usage, Moonlight has a remote desktop optimized mouse mode that can be enabled in the Moonlight's input settings. In remote desktop mouse mode, your host's mouse cursor will directly track at the same position as your client's cursor. Not only does this avoid host mouse acceleration problems, but it also allows your cursor to seamlessly enter and exit the Moonlight window without having to bind and unbind your mouse. In this configuration, Moonlight behaves very similarly to Microsoft Remote Desktop or Chrome Remote Desktop.
 
 ## Why do I see periodic stutters on macOS when streaming over WiFi?
 
