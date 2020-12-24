@@ -157,6 +157,16 @@ There is extra overhead to stream the desktop when Optimus is enabled, because e
 
 Once you start a full-screen game, the streaming performance should go back to normal. If it doesn't, make sure your game is set to run on the NVIDIA GPU and that your game is set to use full-screen exclusive mode instead of borderless windowed mode.
 
+## Why doesn't the bitrate slider go beyond 150 Mbps?
+
+There are a few hardware and software limitations at play.
+
+The hardware video decoder on the client must have the capability to actually handle the video bitrate you specify. Since almost no content is produced at a bitrate above 100 Mbps, it's unlikely that the hardware decoder and driver could handle a 1 Gbps video stream even if you have a 1 Gbps network connection.
+
+Encoders also have limitations regarding the amount of data they can encode from the source video. NVIDIA's GameStream tuning for NVENC is optimized for very fast encode times to ensure low latency. While this ensures frames are delivered to the client as fast as possible, it also limits the encoding hardware in terms of how much encoding it can do in the time window.
+
+Finally, GeForce Experience itself also caps the bitrate that it will use for encoding, regardless of what Moonlight asks for. This is likely due to the encoding limitations above.
+
 ## How can I see on-screen statistics about my streaming performance?
 
 On Windows and macOS, you can press Ctrl+Alt+Shift+S to enable the stats overlay while streaming. Linux and Steam Link do not current have overlay support, but you can see the same stats in the log file after you end your stream.
