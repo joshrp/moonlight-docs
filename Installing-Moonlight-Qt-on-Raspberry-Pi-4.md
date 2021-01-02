@@ -44,6 +44,11 @@ The GUI will appear on the monitor connected to the mini-HDMI port _closest to t
 
 Make sure your monitor is connected to the correct port if you don't see the UI appear when you start Moonlight from outside the Raspberry Pi desktop environment.
 
+If your monitor is plugged into the primary HDMI output and you still don't see the UI when you start Moonlight from the console, try starting Moonlight with the following command:
+```
+QT_QPA_EGLFS_ALWAYS_SET_MODE=1 moonlight-qt
+```
+
 ### Decoder Errors with a 4K 60 Hz Monitor
 If your Raspberry Pi is configured for 4K 60 Hz output, you will need to increase the amount of GPU memory for the hardware video decoder to work.
 
