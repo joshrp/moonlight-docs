@@ -28,16 +28,21 @@ sudo apt upgrade
 
 ## Common problems and solutions
 
-### No audio output
+### No audio output or crackly audio output
 
-The Raspberry Pi OS team has [recently released an update](https://www.raspberrypi.org/blog/new-raspberry-pi-os-release-december-2020/) that switches from ALSA to PulseAudio for audio output. By default, Moonlight uses ALSA for audio output on the Raspberry Pi. This change to PulseAudio causes audio output to stop working, unless you configure Moonlight to use PulseAudio instead of ALSA.
+The Raspberry Pi OS team has [recently released an update](https://www.raspberrypi.org/blog/new-raspberry-pi-os-release-december-2020/) that switches from ALSA to PulseAudio for audio output. In response, Moonlight Qt v3.0.0 now defaults to using PulseAudio on the Raspberry Pi.
 
-To work around this problem, run Moonlight using the following command:
+If you're running Raspberry Pi OS and experiencing audio problems with Moonlight, you should run the following commands to upgrade your OS with support for PulseAudio:
 ```
-SDL_AUDIODRIVER=pulseaudio moonlight-qt
+sudo apt update
+sudo apt upgrade
+sudo reboot
 ```
 
-This will no longer be necessary in the next release of Moonlight Qt which will use PulseAudio by default.
+For older distros that still use ALSA, you may find that audio doesn't work correctly with Moonlight Qt v3.0.0 or later. If that's the case, you can tell Moonlight to use ALSA by running with:
+```
+PULSE_SERVER=none moonlight-qt
+```
 
 ### GUI not appearing when launched from the console
 The GUI will appear on the monitor connected to the mini-HDMI port _closest to the USB-C power cable_. This is the primary display output port.
