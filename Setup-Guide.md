@@ -163,10 +163,11 @@ To have a good experience, you need a mid to high-end wireless router with a goo
 
 PC clients support keyboard, mouse, and touchscreen input and up to 4 game controllers (with mappings for most common gamepads included).
 
-* Ctrl+Alt+Shift+Z - Toggle mouse pointer capture
-* Ctrl+Alt+Shift+X - Toggle between full-screen and windowed mode
 * Ctrl+Alt+Shift+Q - Quit the streaming session (leaving the game running on the host PC)
-* Ctrl+Alt+Shift+S - Open performance stats overlay (currently implemented for Windows and macOS clients only)
+* Ctrl+Alt+Shift+Z - Toggle mouse and keyboard capture
+* Ctrl+Alt+Shift+X - Toggle between full-screen and windowed mode
+* Ctrl+Alt+Shift+S - Open performance stats overlay (not supported on Steam Link or Raspberry Pi)
+* Ctrl+Alt+Shift+M - Toggle mouse mode (pointer capture or direct control)
 
 **Touchscreen controls**
 
