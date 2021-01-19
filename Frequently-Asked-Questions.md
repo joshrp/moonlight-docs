@@ -169,7 +169,7 @@ Finally, GeForce Experience itself also caps the bitrate that it will use for en
 
 ## How can I see on-screen statistics about my streaming performance?
 
-On Windows and macOS, you can press Ctrl+Alt+Shift+S to enable the stats overlay while streaming. Linux and Steam Link do not current have overlay support, but you can see the same stats in the log file after you end your stream.
+On the PC client, you can press Ctrl+Alt+Shift+S to enable the stats overlay while streaming. Raspberry Pi and Steam Link do not current have overlay support, but you can see the same stats in the log file after you end your stream.
 
 On Android and iOS, you can enable the on-screen overlay in the Moonlight settings.
 
