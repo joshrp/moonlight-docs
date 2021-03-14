@@ -168,6 +168,9 @@ PC clients support keyboard, mouse, and touchscreen input and up to 4 game contr
 * Ctrl+Alt+Shift+X - Toggle between full-screen and windowed mode
 * Ctrl+Alt+Shift+S - Open performance stats overlay (not supported on Steam Link or Raspberry Pi)
 * Ctrl+Alt+Shift+M - Toggle mouse mode (pointer capture or direct control)
+* Ctrl+Alt+Shift+V - Type clipboard text on the host
+* Ctrl+Alt+Shift+D - Minimize the stream window
+* Ctrl+Alt+Shift+C - Toggle local cursor display in remote desktop mouse mode (remote cursor will always show up due to GameStream limitations)
 
 **Touchscreen controls**
 
