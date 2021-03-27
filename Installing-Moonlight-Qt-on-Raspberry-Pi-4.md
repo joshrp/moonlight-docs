@@ -8,11 +8,12 @@ Requirements:
 - Raspberry Pi 4 (earlier Raspberry Pi models may not perform well with the current beta)
 - Raspbian Buster
 
+[![Hosted By: Cloudsmith](https://img.shields.io/badge/OSS%20hosting%20by-cloudsmith-blue?logo=cloudsmith&style=for-the-badge)](https://cloudsmith.com)
+
 ## Installation
 Run the following commands to install Moonlight Qt to your Raspberry Pi:
 ```
-echo "deb https://dl.bintray.com/moonlight-stream/moonlight-raspbian buster main" | sudo tee /etc/apt/sources.list.d/moonlight-raspbian.list 
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61
+curl -1sLf 'https://dl.cloudsmith.io/public/moonlight-game-streaming/moonlight-qt/setup.deb.sh' | sudo -E bash
 sudo apt update
 sudo apt install moonlight-qt
 ```
