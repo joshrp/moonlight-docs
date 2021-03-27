@@ -11,7 +11,6 @@ Requirements:
 Run the following commands to install Moonlight Qt to your L4T device:
 ```
 curl -1sLf 'https://dl.cloudsmith.io/public/moonlight-game-streaming/moonlight-l4t/setup.deb.sh' | sudo -E bash
-sudo apt update
 sudo apt install moonlight-qt
 ```
 
