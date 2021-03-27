@@ -2,14 +2,15 @@ Beginning with Moonlight Qt v2.0.0, support for L4T devices such as the [Nintend
 
 NOTE: If you installed an earlier preview version of Moonlight Qt prior to v2.0.0, you must switch to the official repository to receive the update to v2.0.0 and future updates. To do so, you must first run `sudo apt remove moonlight` then run the commands listed in the installation section to install the new `moonlight-qt` package.
 
+[![Hosted By: Cloudsmith](https://img.shields.io/badge/OSS%20hosting%20by-cloudsmith-blue?logo=cloudsmith&style=for-the-badge)](https://cloudsmith.com)
+
 Requirements:
 * Linux4Tegra OS based on Ubuntu 18.04
 
 ### Installation
 Run the following commands to install Moonlight Qt to your L4T device:
 ```
-echo "deb https://dl.bintray.com/moonlight-stream/moonlight-l4t bionic main" | sudo tee /etc/apt/sources.list.d/moonlight-l4t.list 
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61
+curl -1sLf 'https://dl.cloudsmith.io/public/moonlight-game-streaming/moonlight-l4t/setup.deb.sh' | sudo -E bash
 sudo apt update
 sudo apt install moonlight-qt
 ```
