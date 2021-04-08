@@ -4,6 +4,8 @@ You can chat with Moonlight developers and other users to help you resolve strea
 
 <a href="https://moonlight-stream.org/discord"><img src="https://moonlight-stream.org/images/discord.png" height="70" alt="Join our Discord"></a>
 
+### Known issue: Moonlight is not yet compatible with GeForce Experience Beta 3.22.0.28. Reinstall the latest official release (3.21.0.36) from Nvidia's website to continue to stream in the meantime.
+
 Look at the troubleshooting steps for each of the following issues: 
 
 * [Unable to stream at all on the same network as the PC](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#unable-to-stream-at-all-on-the-same-network-as-the-pc)
