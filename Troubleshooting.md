@@ -4,7 +4,7 @@ You can chat with Moonlight developers and other users to help you resolve strea
 
 <a href="https://moonlight-stream.org/discord"><img src="https://moonlight-stream.org/images/discord.png" height="70" alt="Join our Discord"></a>
 
-### Known issue: Moonlight is not yet compatible with GeForce Experience Beta 3.22.0.28. Reinstall the latest official release (3.21.0.36) from Nvidia's website to continue to stream in the meantime.
+### You must update Moonlight to stream with GeForce Experience 3.22. Make sure Moonlight is up to date if you receive an RTSP handshake error 500.
 
 Look at the troubleshooting steps for each of the following issues: 
 
