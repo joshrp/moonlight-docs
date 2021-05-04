@@ -26,6 +26,13 @@ sudo apt update
 sudo apt upgrade
 ```
 
+### HEVC support
+Beginning with Moonlight Qt v3.1.2, the Raspberry Pi 4 builds have experimental support for streaming HEVC video using hardware decoding.
+
+To enable HEVC support:
+- Add `dtoverlay=rpivid-v4l2` to your `/boot/config.txt` and reboot your Pi.
+- You must run Moonlight directly from the console for HEVC support to be enabled. If you have your Pi set to boot to GUI, you can press Ctrl+Alt+F1 to switch to TTY 1 and run moonlight-qt from there.
+
 ## Common problems and solutions
 
 ### No audio output or crackly audio output
