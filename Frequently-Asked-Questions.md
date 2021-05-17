@@ -182,10 +182,19 @@ Notes about these numbers:
 - There is additional system latency that can't be measured by apps (compositor latency, display latency, input device latency, etc). For the most accurate results, you should always measure using external testing hardware.
 
 ### Latency numbers
+- Network latency
+    - This is your "ping" time to your host - the time it takes for one packet to be sent from client -> host -> client.
+    - In more concrete terms, this is the amount of network delay for user input (like a key press) to reach the host, then for the resulting video and audio from the host to reach the client.
+    - Network latency usually increases as the geographic distance from your host increases.
+    - Network latency can also increase if your bitrate is set higher than your connection can handle well.
+    - Many cellular networks (3G, 4G/LTE, 5G) tend to have higher network latency than traditional Internet connections.
+- Network latency variance
+    - This measures the amount of variance between the network latency of each packet (also known as: jitter).
+    - Latency variance/jitter depends on how well the connection to your host is handling the network load from streaming.
+    - If this value is very high or jumps around a lot, try lowering the bitrate in Moonlight or streaming from a more stable connection.
 - Receive latency
     - This is the average amount of time it takes to receive a single frame, measured from the first packet received to the last.
     - A faster connection between your host and client will decrease this value and a higher bitrate setting will typically increase it.
-    - This is NOT your end-to-end connection latency. That value is not currently available in the GameStream protocol.
 - Decode latency
     - This is the average amount of time it takes for a frame to be decoded and ready for rendering.
     - This number varies widely depending on your client hardware, bitrate, stream frame rate, and stream resolution.
