@@ -99,6 +99,7 @@ If you have one of the following, try disabling or uninstalling it:
 * ASUS KeyBot
 * ASUS GameFirst
 * NVIDIA RTX Voice
+* Lenovo Vantage
 
 ### Pairing dialog won't show up on PC
 * Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
