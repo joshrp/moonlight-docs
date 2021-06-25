@@ -174,14 +174,23 @@ PC clients support keyboard, mouse, and touchscreen input and up to 4 game contr
 
 **Touchscreen controls**
 
-Moonlight for Android, iOS, and PC use the touch screen as a way of controlling the mouse cursor. Multi-touch devices can emulate more mouse functions than single-touch devices.
+Moonlight for Android, iOS, and PC use the touch screen as a way of controlling the mouse cursor. Multi-touch devices can emulate more mouse functions than single-touch devices. There are two modes of touchscreen operation that you can choose between in Moonlight - one uses the touchscreen as a trackpad and the other emulates direct touchscreen input. 
 
-* Swiping across the screen moves the mouse cursor in the direction of the swipe.
-* Tap once with one finger to left-click.
-* Tap and hold in the same place to start a click and drag. After a short while, swipe the finger to drag in the direction of the swipe.
-* Hold one finger down and tap a second finger to right-click.
-* Tap with three fingers to open the on-screen keyboard (Android and iOS only).
-* Scroll vertically by dragging with 2 fingers (iOS only for now).
+Trackpad mode:
+* Move cursor: Swiping across the screen moves the mouse cursor in the direction of the swipe.
+* Left click: Tap with one finger.
+* Right click: While holding one finger down, tap a second finger.
+* Click and drag: Long press with one finger, then start to drag after holding for about half a second.
+* Scroll: Drag 2 fingers vertically.
+* Show Keyboard: Tap with three fingers (Android and iOS only).
+
+Touchscreen mode:
+* Move cursor and left click: Tap the location where you would like to left click.
+* Right click: Long press the location where you would like to right click.
+* Click and drag: Tap a location and drag your finger across the screen.
+* Show Keyboard: Tap with three fingers (Android and iOS only).
+* Zoom: Pinch with 2 fingers (iOS only).
+* Pan: Drag with 2 fingers (iOS only).
 
 **Android client**
 
