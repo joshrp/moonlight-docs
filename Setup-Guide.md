@@ -93,7 +93,7 @@ Don't forget to connect to your ZeroTier network when you want to stream over th
 ### Manual port forwarding (advanced)
 If the automatic tool doesn't work, you can try manually forwarding the following ports through your router to your host gaming PC's IP address for streaming to work over the Internet:
 * **TCP** 47984, 47989, 48010
-* **UDP** 47998, 47999, 48000, 48010
+* **UDP** 47998, 47999, 48000, 48002, 48010
 
 If your router has separate options for "internal port" and "external port", you should set them to the same values. For example, your port forward for TCP 47989 would be set as internal port 47989 and external port 47989.
 
