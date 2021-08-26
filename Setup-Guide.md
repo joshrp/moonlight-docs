@@ -101,7 +101,7 @@ To verify the basic port forwarding was done correctly, visit https://www.canyou
 
 If Moonlight already found your gaming PC automatically while on the same network, it should connect to your PC over the Internet without any additional steps. If you're not on the same network as your PC, go to https://www.whatsmyip.org/ from your gaming PC, then enter the IP address you get there into Moonlight. If you don't get an error, you should be all set.
 
-### static DHCP reservation
+### Static DHCP reservation
 
 On many routers it will also be necessary to make a static DHCP reservation to ensure the host always has the same network IP address. This makes sure the ports you have forwarded remain forwarded to the correct machine. Some routers will do this automatically when port forwarding is done. But many do not and it must be done manually. Router makers also try to make there routers “user friendly” and call this function differently such as static IP, Reservations, fixed IP and so on. They also like to put the setting in different places. Common places are DHCP settings, Client lists, and NAT/LAN settings. What your looking for is the ability to set a client to have a certain IP whether that be via MAC address or client list.
 
