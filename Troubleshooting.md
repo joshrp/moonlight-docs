@@ -4,7 +4,7 @@ You can chat with Moonlight developers and other users to help you resolve strea
 
 <a href="https://moonlight-stream.org/discord"><img src="https://moonlight-stream.org/images/discord.png" height="70" alt="Join our Discord"></a>
 
-### You must update Moonlight to stream with GeForce Experience 3.22. Make sure Moonlight is up to date if you receive an RTSP handshake error 500.
+### If you're running the 496.13 NVIDIA driver on your host PC and you have issues with the video getting stuck while streaming, downgrade your drivers to 472.12. NVIDIA is working on a fix.
 
 Look at the troubleshooting steps for each of the following issues: 
 
@@ -47,6 +47,7 @@ Look at the troubleshooting steps for each of the following issues:
 * Ask for help on our [Discord server](https://moonlight-stream.org/discord)
 
 ### Video is choppy or laggy
+* If you're running the 496.13 NVIDIA driver on your host PC and you have issues with the video getting stuck while streaming, downgrade your drivers to 472.12. NVIDIA is working on a fix.
 * Try streaming with Bluetooth disabled to see if your device has the Bluetooth issue detailed below.
 * Make sure your client device is connected on 5 GHz WiFi or Ethernet, and your PC is wired to your router if possible.
 * If you're streaming to a Mac over WiFi, try [disabling Location Services and AirDrop](https://github.com/moonlight-stream/moonlight-qt/issues/159#issuecomment-452675992).
