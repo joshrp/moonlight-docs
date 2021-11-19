@@ -6,7 +6,7 @@ NOTE: If you installed an earlier preview version of Moonlight Qt prior to v2.0.
 
 Requirements:
 - Raspberry Pi 4 (earlier Raspberry Pi models may not perform well with the current beta)
-- Raspbian Buster or Bullseye (see special Bullseye instructions below)
+- Raspbian Buster or Bullseye (**see special Bullseye instructions below**)
 
 [![Hosted By: Cloudsmith](https://img.shields.io/badge/OSS%20hosting%20by-cloudsmith-blue?logo=cloudsmith&style=for-the-badge)](https://cloudsmith.com)
 
