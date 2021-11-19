@@ -6,14 +6,14 @@ NOTE: If you installed an earlier preview version of Moonlight Qt prior to v2.0.
 
 Requirements:
 - Raspberry Pi 4 (earlier Raspberry Pi models may not perform well with the current beta)
-- Raspbian Buster
+- Raspbian Buster or Bullseye (see special Bullseye instructions below)
 
 [![Hosted By: Cloudsmith](https://img.shields.io/badge/OSS%20hosting%20by-cloudsmith-blue?logo=cloudsmith&style=for-the-badge)](https://cloudsmith.com)
 
 ## Installation
 Run the following commands to install Moonlight Qt to your Raspberry Pi:
 ```
-curl -1sLf 'https://dl.cloudsmith.io/public/moonlight-game-streaming/moonlight-qt/setup.deb.sh' | sudo -E bash
+curl -1sLf 'https://dl.cloudsmith.io/public/moonlight-game-streaming/moonlight-qt/setup.deb.sh' | distro=raspbian codename=buster sudo -E bash
 sudo apt install moonlight-qt
 ```
 
@@ -33,7 +33,22 @@ To enable HEVC support:
 - Add `dtoverlay=rpivid-v4l2` to your `/boot/config.txt` and reboot your Pi.
 - You must run Moonlight directly from the console for HEVC support to be enabled. If you have your Pi set to boot to GUI, you can press Ctrl+Alt+F1 to switch to TTY 1 and run moonlight-qt from there.
 
+### Raspbian Bullseye
+The newest Raspberry Pi OS (Bullseye) defaults to a display driver that doesn't support Moonlight's renderer.
+
+To fix this, you can edit the `/boot/config.txt` file:
+1. Run `sudo nano /boot/config.txt`
+2. Scroll down using the arrow keys until you see the line that says `dtoverlay=vc4-kms-v3d`
+3. Type a `#` at the start of that line
+4. Press Ctrl+X, press Y, then press Enter
+5. Reboot your Pi
+
 ## Common problems and solutions
+
+### No video while streaming
+This is most likely because you're running Raspbian Bullseye or another Linux distro that enables the Full KMS display driver by default.
+
+To fix this, you can follow the steps above in the Raspbian Bullseye section.
 
 ### No audio output or crackly audio output
 
