@@ -39,7 +39,7 @@ The newest Raspberry Pi OS (Bullseye) defaults to a display driver that doesn't 
 To fix this, you can edit the `/boot/config.txt` file:
 1. Run `sudo nano /boot/config.txt`
 2. Scroll down using the arrow keys until you see the line that says `dtoverlay=vc4-kms-v3d`
-3. Type a `#` at the start of that line
+3. Change that line to `dtoverlay=vc4-fkms-v3d`
 4. Press Ctrl+X, press Y, then press Enter
 5. Reboot your Pi
 
