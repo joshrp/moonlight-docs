@@ -41,7 +41,7 @@ To fix this, you can edit the `/boot/config.txt` file:
 
 ## Common problems and solutions
 
-### Video decoder error dialog when starting Moonlight
+### Video decoder error dialog when starting Moonlight or black screen when streaming
 This is most likely because you're running Raspbian Bullseye or another Linux distro that enables the Full KMS display driver by default.
 
 To fix this, you can follow the steps above in the Raspbian Bullseye section.
