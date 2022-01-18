@@ -1,7 +1,3 @@
-Beginning with Moonlight Qt v2.0.0, Raspberry Pi 4 support is in beta. As is typical with beta releases, the usual caveats apply: this may not perform well for you; it may crash/hang or just not work at all. Please [report bugs](https://github.com/moonlight-stream/moonlight-qt/issues) if you encounter issues.
-
-[Moonlight Qt](https://github.com/moonlight-stream/moonlight-qt) differs from [Moonlight Embedded](https://github.com/irtimmer/moonlight-embedded) in that it provides a graphical user interface for Moonlight (even without X running), while Moonlight Embedded is command-line only. If you experience issues streaming to your Pi, trying the other client might resolve the problem. You can have both clients installed at the same time and switch between the two by running `moonlight` (Moonlight Embedded) or `moonlight-qt` (Moonlight Qt).
-
 NOTE: If you installed an earlier preview version of Moonlight Qt prior to v2.0.0, you must switch to the official repository to receive the update to v2.0.0 and future updates. To do so, run the the commands listed in the installation section and then those listed in the updates section.
 
 Requirements:
@@ -45,7 +41,7 @@ To fix this, you can edit the `/boot/config.txt` file:
 
 ## Common problems and solutions
 
-### No video while streaming
+### Video decoder error dialog when starting Moonlight
 This is most likely because you're running Raspbian Bullseye or another Linux distro that enables the Full KMS display driver by default.
 
 To fix this, you can follow the steps above in the Raspbian Bullseye section.
