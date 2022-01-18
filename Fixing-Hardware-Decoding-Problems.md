@@ -14,7 +14,7 @@ Moonlight uses VideoToolbox for hardware acceleration on macOS. All Macs capable
 If you are using Hackintosh machine, you'll need to find a GPU driver (if available) that correctly implements VideoToolbox decoding for H.264 video.
 
 # Linux
-Moonlight uses VAAPI, VDPAU, and NVDEC for hardware acceleration on Linux. One of those APIs should be compatible with any modern GPU. The most common issue preventing it from working properly is a missing driver package for your GPU.
+Moonlight uses VAAPI, VDPAU, and NVDEC for hardware acceleration on Linux. One of those APIs should be compatible with any modern desktop GPU. The most common issue preventing it from working properly is a missing driver package for your GPU.
 
 * Hardware acceleration support may differ between included libraries within the Flatpak, Snap, and AppImage packages. If you have hardware acceleration issues, trying a different Moonlight package may resolve the issue.
 
@@ -23,14 +23,16 @@ Moonlight uses VAAPI, VDPAU, and NVDEC for hardware acceleration on Linux. One o
 * If you installed Moonlight via Flatpak, run `flatpak update` to ensure the Flatpak runtime has installed the matching extension for your current GPU.
 
 * If you are running Wayland on GNOME, you may need to launch Moonlight with the `-platform wayland` option to ensure hardware acceleration works.
-    * If you installed Moonlight via Flatpak, you would run `flatpak run com.moonlight_stream.Moonlight -platform wayland`
-    * The Snap package of Moonlight does not currently support hardware acceleration on Wayland.
+    * If you installed Moonlight via Snap, run `moonlight -platform wayland`.
+    * If you installed Moonlight via Flatpak, it runs under Wayland by default.
     * Decoding performance under Wayland may not be as good as X11, so try X11 if you experience performance issues.
 
 # Raspberry Pi
-Moonlight uses the Raspberry Pi's H.264 hardware decoder using the MMAL decoder library. MMAL requires enough GPU memory to be allocated to store video frames.
+Moonlight uses the Raspberry Pi's H.264 hardware decoder using the MMAL decoder library. It can also use the HEVC decoder in the Raspberry Pi 4 and later hardware, as long as you've [followed the steps to enable it](https://github.com/moonlight-stream/moonlight-docs/wiki/Installing-Moonlight-Qt-on-Raspberry-Pi-4#hevc-support) and you're running Moonlight outside of the desktop environment.
 
-If the H.264 decoder fails to initialize, this usually means that the amount of reserved GPU memory is insufficient.
+**First, ensure you have [followed the instructions here](https://github.com/moonlight-stream/moonlight-docs/wiki/Installing-Moonlight-Qt-on-Raspberry-Pi-4#raspbian-bullseye) to ensure you're using the correct display driver for streaming.** Without this step, the H.264 decoder will not work!
+
+If the H.264 decoder still fails to initialize after following the above steps, this usually means that the amount of reserved GPU memory is insufficient.
 
 To increase the reserved GPU memory, run the following commands:
 ```
