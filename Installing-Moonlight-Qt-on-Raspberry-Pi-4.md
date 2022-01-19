@@ -30,9 +30,9 @@ To enable HEVC support:
 - You must run Moonlight directly from the console for HEVC support to be enabled. If you have your Pi set to boot to GUI, you can press Ctrl+Alt+F1 to switch to TTY 1 and run moonlight-qt from there.
 
 ### Raspbian Bullseye
-The newest Raspberry Pi OS (Bullseye) defaults to a display driver that doesn't support Moonlight's low-latency H.264 decoder.
+The newest Raspberry Pi OS (Bullseye) defaults to a display driver that doesn't support Moonlight's low-latency H.264 decoder. Unless you have incompatible software on your Pi (like Kodi v19), we strongly recommend enabling the alternate driver as detailed below.
 
-To fix this, you can edit the `/boot/config.txt` file:
+To fix this issue, you can edit the `/boot/config.txt` file:
 1. Run `sudo nano /boot/config.txt`
 2. Scroll down using the arrow keys until you see the line that says `dtoverlay=vc4-kms-v3d`
 3. Change that line to `dtoverlay=vc4-fkms-v3d`
@@ -43,7 +43,10 @@ To fix this, you can edit the `/boot/config.txt` file:
 
 If you are using software that requires `vc4-kms-v3d` (such as Kodi v19 or later), you can force Moonlight to use the slower V4L2M2M decoder to enable it to function in this scenario. V4L2M2M adds between 1 and 2 frames of additional latency at 1080p compared to the optimal solution above (using `vc4-fkms-v3d`).
 
-To enable the V4L2M2M decoder, launch Moonlight with the following command: `H264_DECODER_HINT=h264_v4l2m2m DRM_FORCE_DIRECT=1 moonlight-qt`
+To enable the V4L2M2M decoder, launch Moonlight with the following command:
+```
+H264_DECODER_HINT=h264_v4l2m2m DRM_FORCE_DIRECT=1 moonlight-qt
+```
 
 It is _highly_ recommended that you enable the HEVC decoder (see "HEVC support" above) to avoid the performance cost of V4L2M2M for host PCs that support HEVC encoding (GTX 900 series and newer).
 
