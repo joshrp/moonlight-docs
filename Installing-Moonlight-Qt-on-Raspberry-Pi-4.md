@@ -1,7 +1,7 @@
 NOTE: If you installed an earlier preview version of Moonlight Qt prior to v2.0.0, you must switch to the official repository to receive the update to v2.0.0 and future updates. To do so, run the the commands listed in the installation section and then those listed in the updates section.
 
 Requirements:
-- Raspberry Pi 4 (earlier Raspberry Pi models may not perform well with the current beta)
+- Raspberry Pi 4 (earlier Raspberry Pi models may not perform well)
 - Raspbian Buster or Bullseye (**see special Bullseye instructions below**)
 
 [![Hosted By: Cloudsmith](https://img.shields.io/badge/OSS%20hosting%20by-cloudsmith-blue?logo=cloudsmith&style=for-the-badge)](https://cloudsmith.com)
@@ -30,7 +30,7 @@ To enable HEVC support:
 - You must run Moonlight directly from the console for HEVC support to be enabled. If you have your Pi set to boot to GUI, you can press Ctrl+Alt+F1 to switch to TTY 1 and run moonlight-qt from there.
 
 ### Raspbian Bullseye
-The newest Raspberry Pi OS (Bullseye) defaults to a display driver that doesn't support Moonlight's renderer.
+The newest Raspberry Pi OS (Bullseye) defaults to a display driver that doesn't support Moonlight's low-latency H.264 decoder.
 
 To fix this, you can edit the `/boot/config.txt` file:
 1. Run `sudo nano /boot/config.txt`
@@ -38,6 +38,14 @@ To fix this, you can edit the `/boot/config.txt` file:
 3. Change that line to `dtoverlay=vc4-fkms-v3d`
 4. Press Ctrl+X, press Y, then press Enter
 5. Reboot your Pi
+
+**Workarounds for incompatible software (Kodi v19+)**
+
+If you are using software that requires `vc4-kms-v3d` (such as Kodi v19 or later), you can force Moonlight to use the slower V4L2M2M decoder to enable it to function in this scenario. V4L2M2M adds between 1 and 2 frames of additional latency at 1080p compared to the optimal solution above (using `vc4-fkms-v3d`).
+
+To enable the V4L2M2M decoder, launch Moonlight with the following command: `H264_DECODER_HINT=h264_v4l2m2m DRM_FORCE_DIRECT=1 moonlight-qt`
+
+It is _highly_ recommended that you enable the HEVC decoder (see "HEVC support" above) to avoid the performance cost of V4L2M2M for host PCs that support HEVC encoding (GTX 900 series and newer).
 
 ## Common problems and solutions
 
