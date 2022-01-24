@@ -192,9 +192,6 @@ Notes about these numbers:
     - This measures the amount of variance between the network latency of each packet (also known as: jitter).
     - Latency variance/jitter depends on how well the connection to your host is handling the network load from streaming.
     - If this value is very high or jumps around a lot, try lowering the bitrate in Moonlight or streaming from a more stable connection.
-- Receive latency
-    - This is the average amount of time it takes to receive a single frame, measured from the first packet received to the last.
-    - A faster connection between your host and client will decrease this value and a higher bitrate setting will typically increase it.
 - Decode latency
     - This is the average amount of time it takes for a frame to be decoded and ready for rendering.
     - This number varies widely depending on your client hardware, bitrate, stream frame rate, and stream resolution.
