@@ -4,7 +4,7 @@ You can chat with Moonlight developers and other users to help you resolve strea
 
 <a href="https://moonlight-stream.org/discord"><img src="https://moonlight-stream.org/images/discord.png" height="70" alt="Join our Discord"></a>
 
-### If you're running the 496.13 NVIDIA driver on your host PC and you have issues with the video getting stuck while streaming, downgrade your drivers to 472.12. NVIDIA is working on a fix.
+### If you have issues with the video getting stuck while streaming, disable hardware-accelerated GPU scheduling on your host PC
 
 Look at the troubleshooting steps for each of the following issues: 
 
@@ -47,10 +47,11 @@ Look at the troubleshooting steps for each of the following issues:
 * Ask for help on our [Discord server](https://moonlight-stream.org/discord)
 
 ### Video is choppy or laggy
-* If you're running the 496.13 NVIDIA driver on your host PC and you have issues with the video getting stuck while streaming, downgrade your drivers to 472.12. NVIDIA is working on a fix.
+* If you have issues with the video getting stuck while streaming, disable hardware-accelerated GPU scheduling on your host PC.
 * Try streaming with Bluetooth disabled to see if your device has the Bluetooth issue detailed below.
 * Make sure your client device is connected on 5 GHz WiFi or Ethernet, and your PC is wired to your router if possible.
 * If you're streaming to a Mac over WiFi, try [disabling Location Services and AirDrop](https://github.com/moonlight-stream/moonlight-qt/issues/159#issuecomment-452675992).
+* If your'e streaming to a Windows PC over WiFi with an Intel wireless adapter, try setting "Global BG scan blocking" to "Always" in the Device Manager Properties for your network adapter.
 * Ensure your Nvidia GPU is not being underclocked (which can impact NVENC performance). You may also try a modest overclock or raising the GPU power limit if you are comfortable with that.
 * Lower the bitrate slider to determine if it's a bandwidth issue.
 * Try using 720p30 which has the lowest requirements.
