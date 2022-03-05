@@ -51,7 +51,7 @@ Look at the troubleshooting steps for each of the following issues:
 * Try streaming with Bluetooth disabled to see if your device has the Bluetooth issue detailed below.
 * Make sure your client device is connected on 5 GHz WiFi or Ethernet, and your PC is wired to your router if possible.
 * If you're streaming to a Mac over WiFi, try [disabling Location Services and AirDrop](https://github.com/moonlight-stream/moonlight-qt/issues/159#issuecomment-452675992).
-* If your'e streaming to a Windows PC over WiFi with an Intel wireless adapter, try setting "Global BG scan blocking" to "Always" in the Device Manager Properties for your network adapter.
+* If you're streaming to a Windows PC with an Intel WiFi adapter, try setting "Global BG scan blocking" to "Always" in the Device Manager Properties for the WiFi adapter.
 * Ensure your Nvidia GPU is not being underclocked (which can impact NVENC performance). You may also try a modest overclock or raising the GPU power limit if you are comfortable with that.
 * Lower the bitrate slider to determine if it's a bandwidth issue.
 * Try using 720p30 which has the lowest requirements.
