@@ -177,18 +177,19 @@ If the HDR requirements are not met, the HDR option in Moonlight may appear gray
 
 **iOS and Apple TV client requirements for HDR streaming**
 - iOS/tvOS 11.3 or later
-- Client device/display must support HDR10 output
-  - For iOS devices, this applies to devices with "XDR" displays
+- HDR10-compatible display
+  - For iOS devices, this means devices with "XDR" displays
   - For Apple TV devices, the connected TV must support HDR10
 
 **Android client requirements for HDR streaming**
 - Android 7.0 or later
-- Device must support decoding HEVC Main10
-- Client device/display must support HDR10 output
+- HEVC Main10 hardware decoder
+- HDR10-compatible display
 
 **Windows client requirements for HDR streaming**
 - Windows 10 1703 (Creators Update) or later
-- Client GPU must support both HEVC Main10 and HDR10 output
+- HDR10-compatible display
+- Client GPU must support both HEVC Main10 decoding and HDR10 output
   - For Intel GPUs, this is 7th-generation (Kaby Lake) iGPUs and later
   - For NVIDIA GPUs, this is 1000-series (Pascal) GPUs and later
   - For AMD GPUs, this is RX 400-series (Polaris) GPUs and later
@@ -201,11 +202,12 @@ If the HDR requirements are not met, the HDR option in Moonlight may appear gray
 - Moonlight must be launched directly from the console, rather than within a desktop environment
   - This is required to allow Moonlight to directly configure the display for HDR
 - Intel GPU (other vendors may work but are untested)
-- Display must support HDR10 output
+- HDR10-compatible display
 
 **Raspberry Pi 4 requirements for HDR streaming**
 - Moonlight must be launched directly from the console, rather than within a desktop environment
   - This is required to allow Moonlight to directly configure the display for HDR
+- HDR10-compatible display
 - See [HDR and HEVC support on the Raspberry Pi 4](https://github.com/moonlight-stream/moonlight-docs/wiki/Installing-Moonlight-Qt-on-Raspberry-Pi-4#hevc-and-hdr-support) for configuration steps
 
 ## Keyboard/Mouse/Gamepad Input Options
