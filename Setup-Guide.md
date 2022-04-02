@@ -162,6 +162,47 @@ For other firewall products, you should follow their instructions to create exce
 
 To have a good experience, you need a mid to high-end wireless router with a good wireless connection to your client device (5 GHz WiFi 5 (802.11ac) or WiFi 6 (802.11ax) strongly recommended) and a good connection from your PC server to your router (Ethernet/wired connections highly recommended).
 
+## Additional requirements for HDR streaming
+
+HDR streaming is supported on certain Moonlight clients as long as some hardware and software requirements are met.
+
+If the HDR requirements are not met, the HDR option in Moonlight may appear grayed out or not appear at all.
+
+**Host PC requirements for HDR streaming**
+- NVIDIA GeForce GTX/RTX 1000-series or later
+- Some newer games may require an HDR display or HDR10-compatible EDID emulator dongle connected to your host PC for HDR options to be available
+
+**iOS and Apple TV client requirements for HDR streaming**
+- iOS/tvOS 11.3 or later
+- Client display must support HDR output
+  - For iOS devices, this applies to devices with "XDR" displays
+  - For Apple TV devices, the connected TV must support HDR10
+
+**Android client requirements for HDR streaming**
+- Android 7.0 or later
+- Device must support decoding HEVC Main10
+- Client display must support HDR output
+
+**Windows client requirements for HDR streaming**
+- Windows 10 1703 (Creators Update) or later
+- Client GPU must support both HEVC Main10 and HDR output
+  - For Intel GPUs, this is 7th-generation (Kaby Lake) iGPUs and later
+  - For NVIDIA GPUs, this is 1000-series (Pascal) GPUs and later
+  - For AMD GPUs, this is RX 400-series (Polaris) GPUs and later
+
+**macOS client requirements for HDR streaming**
+- macOS Catalina or later
+- See [Apple's documentation](https://support.apple.com/en-us/HT210980) for additional requirements and recommendations
+
+**Linux client requirements for HDR streaming**
+- Moonlight must be launched directly from the console, rather than within a desktop environment
+  - This is required to allow Moonlight to directly configure the display for HDR
+- Intel GPU (other vendors may work but are untested)
+- Display must support HDR10 output
+
+**Raspberry Pi 4 requirements for HDR streaming**
+- See [HDR and HEVC support on the Raspberry Pi 4](https://github.com/moonlight-stream/moonlight-docs/wiki/Installing-Moonlight-Qt-on-Raspberry-Pi-4#hevc-and-hdr-support) for configuration steps
+
 ## Keyboard/Mouse/Gamepad Input Options
 
 **PC client**
