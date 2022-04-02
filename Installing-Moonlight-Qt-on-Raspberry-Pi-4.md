@@ -22,15 +22,20 @@ sudo apt update
 sudo apt upgrade
 ```
 
-### HEVC support
+### HEVC and HDR support
 Beginning with Moonlight Qt v3.1.2, the Raspberry Pi 4 builds have experimental support for streaming HEVC video using hardware decoding.
 
 To enable HEVC support:
 - Add `dtoverlay=rpivid-v4l2` to your `/boot/config.txt` and reboot your Pi.
 - You must run Moonlight directly from the console for HEVC support to be enabled. If you have your Pi set to boot to GUI, you can press Ctrl+Alt+F1 to switch to TTY 1 and run moonlight-qt from there.
 
+If you would also like to stream HDR, perform these additional steps:
+- Open `/boot/config.txt`, change `dtoverlay=vc4-fkms-v3d` to `dtoverlay=vc4-kms-v3d`, then reboot your Pi
+
+NOTE: Performing the HDR setup steps will prevent Moonlight from working normally when run within your Pi's desktop environment. You will need to launch Moonlight directly from the console for the video renderer to work properly.
+
 ### Raspbian Bullseye
-The newest Raspberry Pi OS (Bullseye) defaults to a display driver that doesn't support Moonlight's low-latency H.264 decoder. Unless you have incompatible software on your Pi (like Kodi v19), we strongly recommend enabling the alternate driver as detailed below.
+The newest Raspberry Pi OS (Bullseye) defaults to a display driver that doesn't support Moonlight's low-latency H.264 decoder. Unless you have incompatible software on your Pi (like Kodi v19) or need HDR support, we strongly recommend enabling the alternate driver as detailed below.
 
 To fix this issue, you can edit the `/boot/config.txt` file:
 1. Run `sudo nano /boot/config.txt`
