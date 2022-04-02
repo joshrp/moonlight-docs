@@ -193,6 +193,7 @@ If the HDR requirements are not met, the HDR option in Moonlight may appear gray
   - For Intel GPUs, this is 7th-generation (Kaby Lake) iGPUs and later
   - For NVIDIA GPUs, this is 1000-series (Pascal) GPUs and later
   - For AMD GPUs, this is RX 400-series (Polaris) GPUs and later
+- HDR toggle in Windows must be enabled for streaming in windowed mode
 
 **macOS client requirements for HDR streaming**
 - macOS Catalina or later
