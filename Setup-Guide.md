@@ -3,6 +3,7 @@
 * [Quick Setup Instructions](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#quick-setup-instructions)
 * [Streaming over the Internet](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#streaming-over-the-internet)
 * [Moonlight Client Setup Instructions](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#moonlight-client-setup-instructions)
+* [Additional Requirements for HDR Streaming](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#additional-requirements-for-hdr-streaming)
 * [Keyboard/Mouse/Gamepad Input Options](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#keyboardmousegamepad-input-Options)
 * [Adding custom programs that are not automatically found](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#adding-custom-programs-that-are-not-automatically-found)
 * [Using Moonlight to stream your entire desktop](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-moonlight-to-stream-your-entire-desktop)
@@ -17,6 +18,8 @@
 * NVIDIA GeForce Experience (GFE) 2.1.1 or higher, or NVIDIA Quadro Experience
 * 720p or higher display (or headless display dongle) connected to the NVIDIA GPU
 * 5 Mbps or higher upload speed (only required for streaming outside your house)
+
+There are [additional host PC requirements](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#additional-requirements-for-hdr-streaming) for streaming HDR content.
 
 ## Quick Setup Instructions
 1. On your gaming PC, install the [GeForce Experience software](https://www.nvidia.com/en-us/geforce/geforce-experience/) from NVIDIA. Your PC may need a reboot after installation to finish setup.
