@@ -62,6 +62,14 @@ This is most likely because you're running Raspbian Bullseye or another Linux di
 
 To fix this, you can follow the steps above in the Raspbian Bullseye section.
 
+### HDR option cannot be enabled or display doesn't switch to HDR mode
+
+This is most likely because you have not correctly followed the steps in the [HEVC and HDR support](https://github.com/moonlight-stream/moonlight-docs/wiki/Installing-Moonlight-Qt-on-Raspberry-Pi-4#hevc-and-hdr-support) section.
+
+If the HDR option cannot be enabled, you have either not enabled the HEVC decoder properly or are running Moonlight from within the desktop environment. Moonlight must be run directly from the console for HDR to be available.
+
+If you can streaming HDR but it doesn't switch your TV to HDR mode, you are probably not using the Full KMS driver (`vc4-kms-v3d`) that is required for HDR metadata to be sent to your TV. Ensure your `/boot/config.txt` is updated to use `vc4-kms-v3d` and try again.
+
 ### No audio output or crackly audio output
 
 The Raspberry Pi OS team has [recently released an update](https://www.raspberrypi.org/blog/new-raspberry-pi-os-release-december-2020/) that switches from ALSA to PulseAudio for audio output. In response, Moonlight Qt v3.0.0 now defaults to using PulseAudio on the Raspberry Pi.
