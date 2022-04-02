@@ -204,6 +204,8 @@ If the HDR requirements are not met, the HDR option in Moonlight may appear gray
 - Display must support HDR10 output
 
 **Raspberry Pi 4 requirements for HDR streaming**
+- Moonlight must be launched directly from the console, rather than within a desktop environment
+  - This is required to allow Moonlight to directly configure the display for HDR
 - See [HDR and HEVC support on the Raspberry Pi 4](https://github.com/moonlight-stream/moonlight-docs/wiki/Installing-Moonlight-Qt-on-Raspberry-Pi-4#hevc-and-hdr-support) for configuration steps
 
 ## Keyboard/Mouse/Gamepad Input Options
