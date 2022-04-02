@@ -162,7 +162,7 @@ For other firewall products, you should follow their instructions to create exce
 
 To have a good experience, you need a mid to high-end wireless router with a good wireless connection to your client device (5 GHz WiFi 5 (802.11ac) or WiFi 6 (802.11ax) strongly recommended) and a good connection from your PC server to your router (Ethernet/wired connections highly recommended).
 
-## Additional requirements for HDR streaming
+## Additional Requirements for HDR Streaming
 
 HDR streaming is supported on certain Moonlight clients as long as some hardware and software requirements are met.
 
