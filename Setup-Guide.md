@@ -167,7 +167,7 @@ To have a good experience, you need a mid to high-end wireless router with a goo
 
 ## Additional Requirements for HDR Streaming
 
-HDR streaming is supported on certain Moonlight clients as long as some hardware and software requirements are met.
+HDR10 video streaming is supported on certain Moonlight clients as long as some hardware and software requirements are met.
 
 If the HDR requirements are not met, the HDR option in Moonlight may appear grayed out or not appear at all.
 
@@ -177,18 +177,18 @@ If the HDR requirements are not met, the HDR option in Moonlight may appear gray
 
 **iOS and Apple TV client requirements for HDR streaming**
 - iOS/tvOS 11.3 or later
-- Client display must support HDR output
+- Client device/display must support HDR10 output
   - For iOS devices, this applies to devices with "XDR" displays
   - For Apple TV devices, the connected TV must support HDR10
 
 **Android client requirements for HDR streaming**
 - Android 7.0 or later
 - Device must support decoding HEVC Main10
-- Client display must support HDR output
+- Client device/display must support HDR10 output
 
 **Windows client requirements for HDR streaming**
 - Windows 10 1703 (Creators Update) or later
-- Client GPU must support both HEVC Main10 and HDR output
+- Client GPU must support both HEVC Main10 and HDR10 output
   - For Intel GPUs, this is 7th-generation (Kaby Lake) iGPUs and later
   - For NVIDIA GPUs, this is 1000-series (Pascal) GPUs and later
   - For AMD GPUs, this is RX 400-series (Polaris) GPUs and later
