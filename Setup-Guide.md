@@ -225,6 +225,7 @@ PC clients support keyboard, mouse, and touchscreen input and up to 4 game contr
 * Ctrl+Alt+Shift+V - Type clipboard text on the host
 * Ctrl+Alt+Shift+D - Minimize the stream window
 * Ctrl+Alt+Shift+C - Toggle local cursor display in remote desktop mouse mode (remote cursor will always show up due to GameStream limitations)
+* Ctrl+Alt+Shift+L - Toggle locking the mouse pointer to the video area
 
 **Touchscreen controls**
 
