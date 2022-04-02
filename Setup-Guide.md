@@ -186,29 +186,9 @@ If the HDR requirements are not met, the HDR option in Moonlight may appear gray
 - HEVC Main10 hardware decoder
 - HDR10-compatible display
 
-**Windows client requirements for HDR streaming**
-- Windows 10 1703 (Creators Update) or later
-- HDR10-compatible display
-- Client GPU must support both HEVC Main10 decoding and HDR10 output
-  - For Intel GPUs, this is 7th-generation (Kaby Lake) iGPUs and later
-  - For NVIDIA GPUs, this is 1000-series (Pascal) GPUs and later
-  - For AMD GPUs, this is RX 400-series (Polaris) GPUs and later
-
 **macOS client requirements for HDR streaming**
 - macOS Catalina or later
 - See [Apple's documentation](https://support.apple.com/en-us/HT210980) for additional requirements and recommendations
-
-**Linux client requirements for HDR streaming**
-- Moonlight must be launched directly from the console, rather than within a desktop environment
-  - This is required to allow Moonlight to directly configure the display for HDR
-- Intel GPU (other vendors may work but are untested)
-- HDR10-compatible display
-
-**Raspberry Pi 4 requirements for HDR streaming**
-- Moonlight must be launched directly from the console, rather than within a desktop environment
-  - This is required to allow Moonlight to directly configure the display for HDR
-- HDR10-compatible display
-- See [HDR and HEVC support on the Raspberry Pi 4](https://github.com/moonlight-stream/moonlight-docs/wiki/Installing-Moonlight-Qt-on-Raspberry-Pi-4#hevc-and-hdr-support) for configuration steps
 
 ## Keyboard/Mouse/Gamepad Input Options
 
