@@ -167,7 +167,7 @@ To have a good experience, you need a mid to high-end wireless router with a goo
 
 ## Additional Requirements for HDR Streaming
 
-HDR10 video streaming is supported on certain Moonlight clients as long as some hardware and software requirements are met.
+HDR10 video streaming (beta) is supported on certain Moonlight clients as long as some hardware and software requirements are met.
 
 If the HDR requirements are not met, the HDR option in Moonlight may appear grayed out or not appear at all.
 
