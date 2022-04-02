@@ -64,7 +64,7 @@ To fix this, you can follow the steps above in the Raspbian Bullseye section.
 
 ### HDR option cannot be enabled or display doesn't switch to HDR mode
 
-This is most likely because you have not correctly followed the steps in the [HEVC and HDR support](https://github.com/moonlight-stream/moonlight-docs/wiki/Installing-Moonlight-Qt-on-Raspberry-Pi-4#hevc-and-hdr-support) section.
+This is most likely because you have not correctly followed all the steps in the [HEVC and HDR support](https://github.com/moonlight-stream/moonlight-docs/wiki/Installing-Moonlight-Qt-on-Raspberry-Pi-4#hevc-and-hdr-support) section.
 
 If the HDR option cannot be enabled, you have either not enabled the HEVC decoder properly or are running Moonlight from within the desktop environment. Moonlight must be run directly from the console for HDR to be available.
 
