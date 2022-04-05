@@ -104,5 +104,3 @@ Run the following commands:
 echo "gpu_mem=128" | sudo tee -a /boot/config.txt
 sudo reboot
 ```
-
-NOTE: The Raspberry Pi 4's H.264 decoder is still limited to 1080p. 4K streaming is only available using HEVC, which is not yet supported on the Raspberry Pi.
