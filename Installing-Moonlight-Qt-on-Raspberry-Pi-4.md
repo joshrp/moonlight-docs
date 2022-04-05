@@ -68,7 +68,7 @@ This is most likely because you have not correctly followed all the steps in the
 
 If the HDR option cannot be enabled, you have either not enabled the HEVC decoder properly or are running Moonlight from within the desktop environment. Moonlight must be run directly from the console for HDR to be available.
 
-If you can streaming HDR but it doesn't switch your TV to HDR mode, you are probably not using the Full KMS driver (`vc4-kms-v3d`) that is required for HDR metadata to be sent to your TV. Ensure your `/boot/config.txt` is updated to use `vc4-kms-v3d` and try again.
+If you can stream HDR but it doesn't switch your TV to HDR mode, you are probably not using the Full KMS driver (`vc4-kms-v3d`) that is required for HDR metadata to be sent to your TV. Ensure your `/boot/config.txt` is updated to use `vc4-kms-v3d` (not `vc4-fkms-v3d`) and try again.
 
 ### No audio output or crackly audio output
 
