@@ -88,6 +88,9 @@ Special-case issues:
     * Chrome Remote Desktop and TeamViewer can be used for remote access without breaking Moonlight
 * Teamspeak Gamepad Plugin
     * The gamepad plugin may cause [extra gamepads to appear in Device Manager](https://github.com/moonlight-stream/moonlight-qt/issues/304), but streaming works normally
+* Password managers (KeePass, iCloud Keychain, and potentially others)
+    * In order to improve security, some password managers report themselves as protected content (like DRM) to Windows. This can interfere with streaming.
+    * If you have trouble streaming while a password manager is running, check the password manager's settings to see if it's possible to turn this protection off.
 
 If you have one of the following, try disabling or uninstalling it:
 * 3rd-party Firewalls and Anti-virus
