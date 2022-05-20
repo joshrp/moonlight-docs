@@ -174,6 +174,7 @@ If the HDR requirements are not met, the HDR option in Moonlight may appear gray
 **Host PC requirements for HDR streaming**
 - NVIDIA GeForce GTX/RTX 1000-series or later
 - Some newer games may require an HDR display or HDR10-compatible EDID emulator dongle connected to your host PC for HDR options to be available
+- The stream resolution in Moonlight should be set to match the host PC's display resolution to prevent video scaling artifacts
 
 **iOS and Apple TV client requirements for HDR streaming**
 - iOS/tvOS 11.3 or later
