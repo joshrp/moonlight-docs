@@ -171,6 +171,12 @@ HDR10 video streaming (beta) is supported on certain Moonlight clients as long a
 
 If the HDR requirements are not met, the HDR option in Moonlight may appear grayed out or not appear at all.
 
+Known issues with GameStream HDR:
+- Running some games and applications may cause flashing color artifacts when HDR streaming is enabled
+- The video stream may not start until you move or click the mouse when HDR streaming is enabled 
+- You may see video scaling artifacts if the stream resolution doesn't match the host display resolution when HDR streaming is enabled
+- If HDR is already enabled on your host PC when streaming starts, you may need to toggle HDR off and back on for the stream to enter HDR mode properly
+
 **Host PC requirements for HDR streaming**
 - NVIDIA GeForce GTX/RTX 1000-series or later
 - Some newer games may require an HDR display or HDR10-compatible EDID emulator dongle connected to your host PC for HDR options to be available
