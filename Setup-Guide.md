@@ -259,7 +259,7 @@ Touchscreen mode:
 Moonlight supports gamepads that use the standard Android button mapping. It also supports some popular non-Android controllers like the Xbox 360, Xbox One, PS3, and PS4 controllers. However, we recommend testing these with your specific Android device first, because some controllers have latency or disconnection issues (particularly with PlayStation controllers over Bluetooth).
 
 For gamepads that are missing Select or Mode buttons, the following special button combos are available to emulate them:
-- Start+Select or R1+Start = Mode
+- Start+Select (for gamepads with a Select button) or R1+Start (for gamepads without a Select button) = Mode
 - L1+Start = Select
 
 For non-SHIELD devices and devices running Android 7.1 (Nougat) or earlier, using an external mouse with proper mouse capture on Android requires a rooted device. If you want to use an external mouse on your rooted device, you should download `app-root-release.apk` from the [GitHub releases page](https://github.com/moonlight-stream/moonlight-android/releases). NVIDIA SHIELD devices and Android 8.0 (Oreo) have mouse capturing built-in that Moonlight uses without needing root. Moonlight for Rooted Devices is not available for Android 8.0, since the non-root version contains all features that required root using the new Android Oreo APIs.
