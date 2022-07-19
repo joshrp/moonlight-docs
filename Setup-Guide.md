@@ -25,7 +25,7 @@ There are [additional host PC requirements](https://github.com/moonlight-stream/
 1. On your gaming PC, install the [GeForce Experience software](https://www.nvidia.com/en-us/geforce/geforce-experience/) from NVIDIA. Your PC may need a reboot after installation to finish setup.
     * If your PC has a Quadro GPU, install the [Quadro Experience software](https://www.nvidia.com/en-us/design-visualization/software/quadro-experience/) instead.
 
-2. To work around a [driver bug](https://github.com/moonlight-stream/nvidia-gamestream-issues/issues/27) that impacts NVIDIA GameStream on Windows 11, you will need to disable Hardware-accelerated GPU Scheduling on your host PC. Open "Graphics Settings" using the Start Menu, then click "Change default graphics settings", and set the "Hardware-accelerated GPU scheduling" option to Off.
+2. To work around a [GPU driver bug](https://github.com/moonlight-stream/nvidia-gamestream-issues/issues/27) that impacts NVIDIA GameStream hosts running Windows 11, you will need to disable Hardware-accelerated GPU Scheduling on your host PC. Open "Graphics Settings" using the Start Menu, then click "Change default graphics settings", and set the "Hardware-accelerated GPU scheduling" option to Off.
 
   <p align="center">
      <img src="https://github.com/moonlight-stream/moonlight-docs/wiki/images/hw-gpu-sched-small.png"/>
