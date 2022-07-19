@@ -25,19 +25,25 @@ There are [additional host PC requirements](https://github.com/moonlight-stream/
 1. On your gaming PC, install the [GeForce Experience software](https://www.nvidia.com/en-us/geforce/geforce-experience/) from NVIDIA. Your PC may need a reboot after installation to finish setup.
     * If your PC has a Quadro GPU, install the [Quadro Experience software](https://www.nvidia.com/en-us/design-visualization/software/quadro-experience/) instead.
 
-2. Start GeForce/Quadro Experience and click on the **Settings "gear" button**. Then choose the **SHIELD** option. Make sure the GameStream switch is in the **"on" position (green)**. If the SHIELD tab is not present, see the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
+2. To work around a [driver bug](https://github.com/moonlight-stream/nvidia-gamestream-issues/issues/27) that impacts NVIDIA GameStream on Windows 11, you will need to disable Hardware-accelerated GPU Scheduling on your host PC. Open "Graphics Settings" using the Start Menu, then click "Change default graphics settings", and set the "Hardware-accelerated GPU scheduling" option to Off.
+
+  <p align="center">
+     <img src="https://github.com/moonlight-stream/moonlight-docs/wiki/images/hw-gpu-sched.png"/>
+  </p>
+
+3. Start GeForce/Quadro Experience and click on the **Settings "gear" button**. Then choose the **SHIELD** option. Make sure the GameStream switch is in the **"on" position (green)**. If the SHIELD tab is not present, see the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
   <p align="center">
      <img src="https://github.com/moonlight-stream/moonlight-docs/wiki/images/gfe-gamestream-enable-small.png"/>
   </p>
 
-3. Start Moonlight and make sure your client is connected to the same network as your PC. In most cases, your gaming PC will show up automatically in the PC list after a few seconds. Click the entry in the PC list to start pairing.
+4. Start Moonlight and make sure your client is connected to the same network as your PC. In most cases, your gaming PC will show up automatically in the PC list after a few seconds. Click the entry in the PC list to start pairing.
 
-4. On your PC, enter the PIN displayed in Moonlight and accept the pairing dialog. If you don't see a pairing dialog, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
+5. On your PC, enter the PIN displayed in Moonlight and accept the pairing dialog. If you don't see a pairing dialog, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
-5. Try streaming a game or app to make sure everything is working. If you encounter issues, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
+6. Try streaming a game or app to make sure everything is working. If you encounter issues, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
-6. If you don't see the game you want to stream in Moonlight, you can [add it manually](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#adding-custom-programs-that-are-not-automatically-found). You can also [stream your desktop](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-moonlight-to-stream-your-entire-desktop) and launch anything you want.
+7. If you don't see the game you want to stream in Moonlight, you can [add it manually](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#adding-custom-programs-that-are-not-automatically-found). You can also [stream your desktop](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-moonlight-to-stream-your-entire-desktop) and launch anything you want.
 
 ## Streaming over the Internet
 
