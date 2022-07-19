@@ -28,7 +28,7 @@ There are [additional host PC requirements](https://github.com/moonlight-stream/
 2. To work around a [driver bug](https://github.com/moonlight-stream/nvidia-gamestream-issues/issues/27) that impacts NVIDIA GameStream on Windows 11, you will need to disable Hardware-accelerated GPU Scheduling on your host PC. Open "Graphics Settings" using the Start Menu, then click "Change default graphics settings", and set the "Hardware-accelerated GPU scheduling" option to Off.
 
   <p align="center">
-     <img src="https://github.com/moonlight-stream/moonlight-docs/wiki/images/hw-gpu-sched.png"/>
+     <img src="https://github.com/moonlight-stream/moonlight-docs/wiki/images/hw-gpu-sched-small.png"/>
   </p>
 
 3. Start GeForce/Quadro Experience and click on the **Settings "gear" button**. Then choose the **SHIELD** option. Make sure the GameStream switch is in the **"on" position (green)**. If the SHIELD tab is not present, see the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
