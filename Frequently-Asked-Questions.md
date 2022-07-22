@@ -211,3 +211,20 @@ Notes about these numbers:
     - This indicates the percentage of frames dropped because they are too early or too late to render.
     - Rather than coming at a smooth 16ms-16ms-16ms-16ms... for each frame, network variance may cause patterns like 20ms-12ms-18ms-14ms... which forces Moonlight to skip or drop frames to stay in sync with the client display.
     - It is typically caused by high network jitter but it can also be caused by hardware limitations or software issues (especially if very high).
+
+## What do the frame pacing options on the Android client mean?
+
+- Prefer lowest latency
+    - Renders a frame immediately after it has been decoded (dropping the last frame if it hasn't been displayed yet)
+    - Keeps the display refresh rate as high as possible
+- Balanced (recommended)
+    - Uses a [Choreographer frame callback](https://developer.android.com/reference/android/view/Choreographer.FrameCallback) to render when the next frame is due
+    - Up to 1 frame is buffered to smooth over network jitter and v-sync drift between host and client
+- Balanced with FPS limit
+    - Limits the FPS value to the display refresh rate - 1 and never drops frames
+    - If FPS > display refresh rate, it will behave like Balanced
+    - Devices with variable refresh rate displays may have issues with this pacing method due to fluctuations in display refresh rate
+    - This was the default frame pacing behavior before v10.0
+- Prefer smoothest video
+    - Never drops frames, even if the frame rate is equal or higher than the display
+    - Frames queue up until they hit an OS-defined limit, potentially leading to very high latency
