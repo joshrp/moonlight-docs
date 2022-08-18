@@ -94,7 +94,7 @@ Special-case issues:
     * Streaming may not work until the program is fully uninstalled
 * Microsoft Remote Desktop
     * Streaming will fail until you log back in at the physical machine after connecting via RDP
-    * Chrome Remote Desktop and TeamViewer can be used for remote access without breaking Moonlight
+    * Chrome Remote Desktop, TeamViewer, or VNC can be used for remote access without breaking Moonlight
 * Teamspeak Gamepad Plugin
     * The gamepad plugin may cause [extra gamepads to appear in Device Manager](https://github.com/moonlight-stream/moonlight-qt/issues/304), but streaming works normally
 * Password managers (KeePass, iCloud Keychain, and potentially others)
