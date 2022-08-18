@@ -90,6 +90,8 @@ Special-case issues:
 * NordVPN, TunnelBear, PIA, and other VPNs
     * Disable the VPN if Moonlight cannot discover your gaming PC or stream over the Internet
     * You may also need to [disable the setting to block local network access](https://github.com/moonlight-stream/moonlight-docs/wiki/Internet-Streaming-Errors#local-network-access-blocked-error).
+* Safing Portmaster
+    * Streaming may not work until the program is fully uninstalled
 * Microsoft Remote Desktop
     * Streaming will fail until you log back in at the physical machine after connecting via RDP
     * Chrome Remote Desktop and TeamViewer can be used for remote access without breaking Moonlight
