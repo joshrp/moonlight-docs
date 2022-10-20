@@ -114,6 +114,7 @@ If you have one of the following, try disabling or uninstalling it:
 * ASUS GameFirst
 * NVIDIA RTX Voice
 * Lenovo Vantage
+* Valorant (The kernel level DRM. A full Windows reinstall may be required to allow Gamestream to function.)
 
 ### Pairing dialog won't show up on PC
 * Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
