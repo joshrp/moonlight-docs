@@ -100,6 +100,7 @@ Special-case issues:
 * Password managers (KeePass, iCloud Keychain, and potentially others)
     * In order to improve security, some password managers report themselves as protected content (like DRM) to Windows. This can interfere with streaming.
     * If you have trouble streaming while a password manager is running, check the password manager's settings to see if it's possible to turn this protection off.
+* Valorant (The kernel level DRM. A full Windows reinstall may be required to allow Gamestream to function.)
 
 If you have one of the following, try disabling or uninstalling it:
 * 3rd-party Firewalls and Anti-virus
@@ -114,7 +115,6 @@ If you have one of the following, try disabling or uninstalling it:
 * ASUS GameFirst
 * NVIDIA RTX Voice
 * Lenovo Vantage
-* Valorant (The kernel level DRM. A full Windows reinstall may be required to allow Gamestream to function.)
 
 ### Pairing dialog won't show up on PC
 * Check the list of known application compatibility issues above. Uninstall any programs on that list, and reboot.
