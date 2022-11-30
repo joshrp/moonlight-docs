@@ -14,7 +14,7 @@ Moonlight uses VideoToolbox for hardware acceleration on macOS. All Macs capable
 If you are using Hackintosh machine, you'll need to find a GPU driver (if available) that correctly implements VideoToolbox decoding for H.264 video.
 
 # Linux
-Moonlight uses VAAPI, VDPAU, and NVDEC for hardware acceleration on Linux. One of those APIs should be compatible with any modern desktop GPU. The most common issue preventing it from working properly is a missing driver package for your GPU.
+Moonlight uses VAAPI, VDPAU, and NVDEC for hardware acceleration on Linux. One of those APIs should be compatible with any modern desktop GPU. The most common issue preventing it from working properly is a missing driver package for your GPU or if your distro doesn't include H.264 and HEVC decoding support in their Mesa package for AMD GPUs (openSUSE and Fedora don't).
 
 * Hardware acceleration support may differ between included libraries within the Flatpak, Snap, and AppImage packages. If you have hardware acceleration issues, trying a different Moonlight package may resolve the issue.
 
@@ -26,6 +26,15 @@ Moonlight uses VAAPI, VDPAU, and NVDEC for hardware acceleration on Linux. One o
     * If you installed Moonlight via Snap, run `moonlight -platform wayland`.
     * If you installed Moonlight via Flatpak, it runs under Wayland by default.
     * Decoding performance under Wayland may not be as good as X11, so try X11 if you experience performance issues.
+
+* For AMD GPU users on Fedora 37 or later, you will need to configure [RPM Fusion Free repositories](https://rpmfusion.org/Configuration) and follow the setup instructions in the "Hardware codecs with AMD" section in [this documentation](https://rpmfusion.org/Howto/Multimedia) to install drivers capable of hardware H.264 and HEVC decoding.
+
+# Steam Deck
+The current Steam OS Preview v3.4 disables H.264 and HEVC hardware decoding functionality. This affects both Moonlight and native Steam Link streaming.
+
+See https://github.com/ValveSoftware/SteamOS/issues/903 for details.
+
+If you are willing to risk modifying your OS, you can try the workaround in https://steamcommunity.com/app/1675200/discussions/0/3541546590709961979/
 
 # Raspberry Pi
 Moonlight uses the Raspberry Pi's H.264 hardware decoder using the MMAL decoder library. It can also use the HEVC decoder in the Raspberry Pi 4 and later hardware, as long as you've [followed the steps to enable it](https://github.com/moonlight-stream/moonlight-docs/wiki/Installing-Moonlight-Qt-on-Raspberry-Pi-4#hevc-support) and you're running Moonlight outside of the desktop environment.
