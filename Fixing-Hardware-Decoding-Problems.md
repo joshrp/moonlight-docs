@@ -1,12 +1,12 @@
 <a href="https://moonlight-stream.org/discord"><img src="https://moonlight-stream.org/images/discord.png" height="70" alt="Join our Discord"></a>
 
 # Windows
-Moonlight uses DXVA2 for hardware acceleration on Windows. All modern GPUs from AMD, NVIDIA, and Intel should support hardware decoding of H.264 via DXVA2 with the proper drivers installed.
+Moonlight uses either DXVA2 or D3D11VA for hardware acceleration on Windows, depending on hardware support and OS version. All modern GPUs from AMD, NVIDIA, and Intel should support hardware decoding of H.264 via DXVA2 or D3D11VA with the proper drivers installed.
 
 If you have issues with hardware decoding:
 * Ensure your client PC GPU drivers are properly installed and up-to-date from the GPU manufacturer or PC vendor's website.
 * If your client PC supports NVIDIA Optimus, try switching Moonlight to run on the integrated Intel GPU.
-* Ensure you're not using Remote Desktop to access your PC. This prevents your GPU from being usable for rendering.
+* Ensure you're not using Remote Desktop to access your PC. This can prevent your GPU from being usable for rendering.
 
 # Mac
 Moonlight uses VideoToolbox for hardware acceleration on macOS. All Macs capable of running the latest release of macOS should support hardware H.264 decoding without any work required.
