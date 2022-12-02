@@ -270,7 +270,7 @@ For gamepads that are missing Select or Mode buttons, the following special butt
 
 For non-SHIELD devices and devices running Android 7.1 (Nougat) or earlier, using an external mouse with proper mouse capture on Android requires a rooted device. If you want to use an external mouse on your rooted device, you should download `app-root-release.apk` from the [GitHub releases page](https://github.com/moonlight-stream/moonlight-android/releases). NVIDIA SHIELD devices and Android 8.0 (Oreo) have mouse capturing built-in that Moonlight uses without needing root. Moonlight for Rooted Devices is not available for Android 8.0, since the non-root version contains all features that required root using the new Android Oreo APIs.
 
-To toggle capturing the mouse cursor on Moonlight for Rooted Devices, press Ctrl+Alt+Z.
+To toggle capturing the mouse cursor on Moonlight for Rooted Devices, press Ctrl+Alt+Shift+Z.
 
 If you don't have a mouse connected to your Android device, you can emulate one using a game controller. Press and hold the Start button to toggle mouse emulation. When mouse emulation is on, you can use either analog stick to move the cursor. The A button left clicks and the B button right clicks.
 
