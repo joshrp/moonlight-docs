@@ -20,7 +20,9 @@ Moonlight uses VAAPI, VDPAU, and NVDEC for hardware acceleration on Linux. One o
 
 * If you are running Moonlight via AppImage, you will need to ensure the appropriate video acceleration drivers are installed on your system. On Debian-based distros like Ubuntu, run `apt-get install va-driver-all vdpau-driver-all`. On newer Intel hardware, you may need to also run `apt install intel-media-va-driver-non-free`.
 
-* If you installed Moonlight via Flatpak, run `flatpak update` to ensure the Flatpak runtime has installed the matching extension for your current GPU.
+* If you installed Moonlight via Flatpak, you may need extra packages to utilize hardware video decoding in Flatpak applications.
+    * For AMD GPUs, run `flatpak install flathub org.freedesktop.Platform.GL.default//22.08-extra` to install the required Mesa video codecs
+    * For Intel and Nvidia GPUs, run `flatpak update` to ensure the appropriate packages are installed and up-to-date.
 
 * If you are running Wayland on GNOME, you may need to launch Moonlight with the `-platform wayland` option to ensure hardware acceleration works.
     * If you installed Moonlight via Snap, run `moonlight -platform wayland`.
