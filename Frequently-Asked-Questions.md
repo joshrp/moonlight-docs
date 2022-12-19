@@ -1,3 +1,7 @@
+## Information on NVIDIA's GameStream End of Service Notification
+
+See the dedicated [GameStream End of Service Notification FAQ](https://github.com/moonlight-stream/moonlight-docs/wiki/NVIDIA-GameStream-End-Of-Service-Announcement-FAQ) page.
+
 ## What is Moonlight?
 
 Moonlight is an unofficial third-party open-source client for the NVIDIA SHIELD streaming software that comes included with GeForce Experience. GeForce Experience uses the NVENC hardware on NVIDIA GPUs and custom tuned software to provide low-latency high-quality PC streaming.
