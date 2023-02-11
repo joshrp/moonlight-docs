@@ -12,7 +12,7 @@ If/when NVIDIA removes the GameStream functionality from GeForce Experience, Moo
 
 In the short term, nothing. Moonlight will continue to be usable with host PCs running the latest version of GeForce Experience until at least mid-Feburary, according to NVIDIA's announcement.
 
-Inline with our long-term goal of providing an excellent open-source game streaming solution, we will increase our efforts to improve [the Sunshine project](https://github.com/LizardByte/Sunshine), which acts as an a free open-source host for Moonlight. In addition to NVIDIA GPUs on Windows, Sunshine supports hosting on AMD and Intel GPUs and on macOS and Linux. It's not at performance parity with GeForce Experience yet, but we hope that we can close the performance gap and improve ease of use by the time that support for GameStream in GeForce Experience is dropped.
+Inline with our long-term goal of providing an excellent open-source game streaming solution, we will increase our efforts to improve [the Sunshine project](https://github.com/LizardByte/Sunshine), which acts as an a free open-source host for Moonlight. In addition to NVIDIA GPUs on Windows, Sunshine supports hosting on AMD and Intel GPUs and on macOS and Linux. As of Sunshine v0.18, it meets or exceeds GeForce Experience in streaming performance in many configurations and also supports streaming games in HDR.
 
 By investing our time in making Sunshine a top-tier game streaming host, we can ensure that the whims of a single company cannot unilaterally impact the game streaming community again.
 
