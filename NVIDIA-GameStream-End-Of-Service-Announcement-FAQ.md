@@ -1,8 +1,13 @@
 This FAQ page covers frequently asked questions about [NVIDIA's GameStream End of Service Notification](https://nvidia.custhelp.com/app/answers/detail/a_id/5436).
 
+# What is happening?
+In late 2022, NVIDIA announced that they have chosen to discontinue their NVIDIA GameStream technology.
+
+You can read NVIDIA's official announcement [here](https://nvidia.custhelp.com/app/answers/detail/a_id/5436).
+
 # Why does NVIDIA's announcement impact Moonlight?
 
-The Moonlight project implements unofficial open-source clients for NVIDIA GameStream. The host software that Moonlight connects to is part of NVIDIA GeForce Experience, so it is under NVIDIA's control and depends on their ongoing effort to fix bugs and implement new host-side features. NVIDIA has recently announced that they will no longer be supporting the GameStream feature.
+The Moonlight project implements unofficial open-source clients for NVIDIA GameStream. The host software that Moonlight connects to is part of NVIDIA GeForce Experience, so it is under NVIDIA's control and depends on their ongoing effort to fix bugs and implement new host-side features.
 
 While NVIDIA's announcement is primarily centered around the removal of GameStream support from their official NVIDIA Games client, it's highly unlikely that they would continue to invest maintenance resources in the host software when no official clients exist. For this reason, we believe that NVIDIA will fully remove GameStream support in a future update to GeForce Experience.
 
