@@ -4,8 +4,6 @@ You can chat with Moonlight developers and other users to help you resolve strea
 
 <a href="https://moonlight-stream.org/discord"><img src="https://moonlight-stream.org/images/discord.png" height="70" alt="Join our Discord"></a>
 
-### If you have issues with the video getting stuck while streaming, disable hardware-accelerated GPU scheduling on your host PC
-
 Look at the troubleshooting steps for each of the following issues: 
 
 * [Unable to stream at all on the same network as the PC](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#unable-to-stream-at-all-on-the-same-network-as-the-pc)
