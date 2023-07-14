@@ -4,7 +4,7 @@
 * [Streaming over the Internet](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#streaming-over-the-internet)
 * [Moonlight Client Setup Instructions](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#moonlight-client-setup-instructions)
 * [Additional Requirements for HDR Streaming](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#additional-requirements-for-hdr-streaming)
-* [Keyboard/Mouse/Gamepad Input Options](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#keyboardmousegamepad-input-Options)
+* [Keyboard/Mouse/Gamepad Input Options](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#keyboardmousegamepad-input-options)
 * [Adding custom programs that are not automatically found](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#adding-custom-programs-that-are-not-automatically-found)
 * [Using Moonlight to stream your entire desktop](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-moonlight-to-stream-your-entire-desktop)
 * [Frequently Asked Questions](https://github.com/moonlight-stream/moonlight-docs/wiki/Frequently-Asked-Questions)
