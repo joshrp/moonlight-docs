@@ -18,11 +18,13 @@ Look for a setting usually found in "Power" or "PCI sub system" called "Power On
 
 ## Windows Setup
 Open Device Manager, You can do this by right-clicking the Windows Icon. Then navigate to "Network Adapters", Right-click your Adapter, and go to its properties. Then go to the Advanced tab. In the list look for "Wake on Magic Packet" and enable it, it is usually towards the bottom. "Wake on Magic Packet from system shutdown" allows for Waking from shutdown. __Wake on pattern should remain Disabled!__ Having it Enabled can result in random system wakes from normal network scans and such.
+
 ![Wake on Magic Packet 1](https://github.com/moonlight-stream/moonlight-docs/assets/48956874/e4f331c9-5fc3-48ab-91d0-4b8aee09bac1)
 
 If you do not see the options listed above then the NIC (Network Interface Card) does not support WOL.
 
 Also in the adapter properties under the "Power Management" tab enable "Allow this device to wake the computer" and its sub option.
+
 ![Wake on Magic Packet 2](https://github.com/moonlight-stream/moonlight-docs/assets/48956874/d5e5cfb5-9718-4564-a878-a5f418e17880)
 
 ## Linux Setup
