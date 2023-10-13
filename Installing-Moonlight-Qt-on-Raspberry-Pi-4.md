@@ -2,14 +2,14 @@ NOTE: If you installed an earlier preview version of Moonlight Qt prior to v2.0.
 
 Requirements:
 - Raspberry Pi 4 (earlier Raspberry Pi models may not perform well)
-- Raspbian Buster or Bullseye (**see special Bullseye instructions below**)
+- Raspberry Pi OS Buster or Bullseye (**see special Bullseye instructions below**)
 
 [![Hosted By: Cloudsmith](https://img.shields.io/badge/OSS%20hosting%20by-cloudsmith-blue?logo=cloudsmith&style=for-the-badge)](https://cloudsmith.com)
 
 ## Installation
 Run the following commands to install Moonlight Qt to your Raspberry Pi:
 ```
-curl -1sLf 'https://dl.cloudsmith.io/public/moonlight-game-streaming/moonlight-qt/setup.deb.sh' | distro=raspbian codename=buster sudo -E bash
+curl -1sLf 'https://dl.cloudsmith.io/public/moonlight-game-streaming/moonlight-qt/setup.deb.sh' | distro=raspbian sudo -E bash
 sudo apt install moonlight-qt
 ```
 
@@ -23,19 +23,21 @@ sudo apt upgrade
 ```
 
 ### HEVC and HDR support
-Beginning with Moonlight Qt v3.1.2, the Raspberry Pi 4 builds have experimental support for streaming HEVC video using hardware decoding.
+Beginning with Moonlight Qt v3.1.2, the Raspberry Pi builds have support for streaming HEVC video using hardware decoding. If you're running Raspberry Pi OS Buster or Bullseye, you may need to perform the steps below to enable this functionality. These steps are not required on the Raspberry Pi 5, Raspberry Pi OS Bookworm, or later OS versions.
 
-To enable HEVC support:
+To enable HEVC support (only required on older Raspberry Pi OS versions):
 - Add `dtoverlay=rpivid-v4l2` to your `/boot/config.txt` and reboot your Pi.
 - You must run Moonlight directly from the console for HEVC support to be enabled. If you have your Pi set to boot to GUI, you can press Ctrl+Alt+F1 to switch to TTY 1 and run moonlight-qt from there.
 
-If you would also like to stream HDR, perform these additional steps:
+If you would also like to stream HDR, perform these additional steps (only required on older Raspberry Pi OS versions):
 - Open `/boot/config.txt`, change `dtoverlay=vc4-fkms-v3d` to `dtoverlay=vc4-kms-v3d`, then reboot your Pi
 
 NOTE: Performing the HDR setup steps will prevent Moonlight from working normally when run within your Pi's desktop environment. You will need to launch Moonlight directly from the console for the video renderer to work properly.
 
-### Raspbian Bullseye
-The newest Raspberry Pi OS (Bullseye) defaults to a display driver that doesn't support Moonlight's low-latency H.264 decoder. Unless you have incompatible software on your Pi (like Kodi v19) or need HDR support, we strongly recommend enabling the alternate driver as detailed below.
+### Raspberry Pi OS Bullseye
+Raspberry Pi OS Bullseye defaults to a display driver that doesn't support Moonlight's low-latency H.264 decoder. Unless you have incompatible software on your Pi (like Kodi v19) or need HDR support, we recommend enabling the alternate driver as detailed below.
+
+**Do NOT perform these steps on the Raspberry Pi 5 or Raspberry Pi OS Bookworm! They are no longer required and may render your Pi unbootable!**
 
 To fix this issue, you can edit the `/boot/config.txt` file:
 1. Run `sudo nano /boot/config.txt`
@@ -46,7 +48,7 @@ To fix this issue, you can edit the `/boot/config.txt` file:
 
 **Workarounds for incompatible software (Kodi v19+)**
 
-If you are using software that requires `vc4-kms-v3d` (such as Kodi v19 or later), you can force Moonlight to use the slower V4L2M2M decoder to enable it to function in this scenario. V4L2M2M adds between 1 and 2 frames of additional latency at 1080p compared to the optimal solution above (using `vc4-fkms-v3d`).
+If you are using software that requires `vc4-kms-v3d` (such as Kodi v19 or later), you can force Moonlight to use the slower V4L2M2M decoder to enable it to function in this scenario. V4L2M2M adds between 1 and 2 frames of additional latency at 1080p compared to the optimal solution above (using `vc4-fkms-v3d`). This workaround is no longer required on Raspberry Pi 5 or Raspberry Pi OS Bookworm and later.
 
 To enable the V4L2M2M decoder, launch Moonlight with the following command:
 ```
@@ -58,9 +60,9 @@ It is _highly_ recommended that you enable the HEVC decoder (see "HEVC support" 
 ## Common problems and solutions
 
 ### Video decoder error dialog when starting Moonlight or black screen when streaming
-This is most likely because you're running Raspbian Bullseye or another Linux distro that enables the Full KMS display driver by default.
+This is most likely because you're running Raspberry Pi OS Bullseye or another Linux distro that enables the Full KMS display driver by default.
 
-To fix this, you can follow the steps above in the Raspbian Bullseye section.
+To fix this, you can follow the steps above in the Raspberry Pi OS Bullseye section.
 
 ### HDR option cannot be enabled or display doesn't switch to HDR mode
 
