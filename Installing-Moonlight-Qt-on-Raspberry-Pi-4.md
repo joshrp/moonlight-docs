@@ -15,6 +15,10 @@ sudo apt install moonlight-qt
 
 You can then launch Moonlight from your Raspberry Pi's desktop or via the `moonlight-qt` command in the terminal.
 
+For best performance, run Moonlight directly from a console/TTY. If you are currently in a desktop environment, you should be able to switch using Ctrl+Alt+(F1-F7). Usually your desktop will be at Ctrl+Alt+F1 or Ctrl+Alt+F7, so you can pick a different TTY that's not being used.
+
+**NOTE**: If you run Moonlight from a desktop environment with the Raspberry Pi 4, we recommend keeping your Raspberry Pi's display resolution set to 1080p or below. Due to GPU performance limitations on the Pi 4, streaming performance decreases significantly when the Moonlight window is scaled larger than 1080p, even if the stream resolution is 1080p or below. These restrictions do not apply when streaming directly from a console/TTY using the steps above.
+
 ### Updates
 To update Moonlight Qt after you've installed it, run:
 ```
