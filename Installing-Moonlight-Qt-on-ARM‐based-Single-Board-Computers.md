@@ -46,9 +46,17 @@ For the most part, these packages are provided without official support. We can 
 
 ### GUI doesn't start
 
-This most likely means your device lacks either a working DRI driver (check if a `/dev/dri/card*` device exists) or an OpenGL ES 2.0 driver (even a software one).
+This most likely means your device lacks either a working DRI driver (check if a `/dev/dri/card*` device exists) or an OpenGL ES 2.0 driver (even a software one) or that your user account lacks permission to open /dev/dri devices.
 
 The error message from Qt may give you a hint as to what the problem is. You may try adding `-platform linuxfb` to the end of the `moonlight-qt` command (which will somewhat break the UI, but may allow you to get far enough to stream) or try creating a EGLFS configuration json file [as detailed here](https://doc.qt.io/qt-5/embedded-linux.html#eglfs-with-the-eglfs-kms-backend).
+
+If you see an error like `Could not open DRM device /dev/dri/card0 (Permission denied)`, it's probably your account is not a member of the `video` group. To fix this, run `sudo usermod -a -G video $USER` and reboot.
+
+### Input devices aren't working
+
+This is probably because you're not a member of the `input` group, so Moonlight lacks permission to open input devices to receive input.
+
+To fix this, run `sudo usermod -a -G input $USER` and reboot.
 
 ### GUI is very slow/unresponsive
 
