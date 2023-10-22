@@ -18,7 +18,7 @@ Tested working devices:
 ## Installation
 Run the following commands to install Moonlight Qt to your device:
 ```
-curl -1sLf 'https://dl.cloudsmith.io/public/moonlight-game-streaming/moonlight-qt/setup.deb.sh' | sudo -E bash
+curl -1sLf 'https://dl.cloudsmith.io/public/moonlight-game-streaming/moonlight-qt/setup.deb.sh' | codename=sid sudo -E bash
 sudo apt install moonlight-qt
 ```
 
