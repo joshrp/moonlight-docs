@@ -39,6 +39,19 @@ For best performance, run Moonlight directly from a console/TTY. If you are curr
 
 ### VisionFive 2
 
+**Initial Setup**
+
+First, you will need to add your local user account to the `video` and `input` groups in order for Moonlight to be able to directly open video devices and read input devices, then logoff or reboot for the changes to take effect. You can do so using the following commands
+```
+sudo usermod -a -G video $USER
+sudo usermod -a -G input $USER
+sudo reboot
+```
+
+Note: Since `video` and `input` groups are used to enforce multi-user separation, adding unprivileged users to these groups is not recommended.
+
+**Setup Required After Reboots**
+
 The current Debian image for the VisionFive 2 board from StarFive defaults to OMX-based video decoding drivers rather than V4L2. This Moonlight build only supports V4L2 decoding, so leaving the OMX drivers loaded will lead to a video decoding warning in Moonlight.
 
 You can switch to the V4L2 driver using the following commands:
@@ -47,7 +60,26 @@ sudo modprobe -r vdec
 sudo modprobe wave5
 ```
 
-You will need to perform these commands each time you restart your VisionFive board.
+You will need to reactivate the Wave5 driver using these commands each time you restart your VisionFive board.
+
+**Launching Moonlight**
+
+Finally, to launch Moonlight, you will need to use the `-platform linuxfb` option since the order that the VisionFive drivers enumerate DRI devices isn't handled properly by Qt's EGLFS support (and EGLFS UI performance is poor anyway due to non-functional OpenGL ES support on current Debian images). 
+
+Because StarFive is hardcoding `SDL_VIDEODRIVER=wayland` in `/etc/environment` and overriding SDL's default video driver detection, you will also need to override that to allow SDL to use the KMSDRM video driver required to render outside of the desktop environment.
+
+In short, to launch Moonlight on the VisionFive board _after following the above steps_, switch to a different TTY with Ctrl+Alt+F2 then run:
+```
+SDL_VIDEODRIVER= moonlight-qt -platform linuxfb
+```
+
+If everything worked, you should get a GUI and no video decoder warning dialogs.
+
+Note: Due to the use of the LinuxFB Qt backend, you may see minor to moderate UI rendering issues. These will not impact the stream itself.
+
+**Other Notes**
+
+The default kernel used in the StarFive Debian images lacks the built-in drivers for most gamepads. You may have more success using a HID-compliant game controller, such as PS4/5 controllers (though extended features like motion sensors, LED control, and touchpad support will not be available due to the lack of the `hid-playstation` driver in the StarFive kernel.
 
 ## Support
 
@@ -55,9 +87,15 @@ For the most part, these packages are provided without official support. We can 
 
 ### GUI doesn't start
 
-This most likely means your device lacks either a working DRI driver (check if a `/dev/dri/card*` device exists) or an OpenGL ES 2.0 driver (even a software one).
+This most likely means your device lacks either a working DRI driver (check if a `/dev/dri/card*` device exists) or an OpenGL ES 2.0 driver (even a software one) or that your user account lacks permission to open /dev/dri devices.
 
 The error message from Qt may give you a hint as to what the problem is. You may try adding `-platform linuxfb` to the end of the `moonlight-qt` command (which will somewhat break the UI, but may allow you to get far enough to stream) or try creating a EGLFS configuration json file [as detailed here](https://doc.qt.io/qt-5/embedded-linux.html#eglfs-with-the-eglfs-kms-backend).
+
+If you see an error like `Could not open DRM device /dev/dri/card0 (Permission denied)`, it's probably your account is not a member of the `video` group. To fix this, run `sudo usermod -a -G video $USER` and reboot.
+
+### Input devices aren't working
+
+This is probably because you're not a member of the `input` group, so Moonlight lacks permission to open input devices to receive input. To fix this, run `sudo usermod -a -G input $USER` and reboot.
 
 ### GUI is very slow/unresponsive
 
