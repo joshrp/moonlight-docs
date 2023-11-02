@@ -2,7 +2,7 @@ NOTE: If you installed an earlier preview version of Moonlight Qt prior to v2.0.
 
 Requirements:
 - Raspberry Pi 4 (earlier Raspberry Pi models may not perform well)
-- Raspberry Pi OS Buster or Bullseye (**see special Bullseye instructions below**)
+- Raspberry Pi OS Buster or later (**see special Bullseye instructions below**)
 
 [![Hosted By: Cloudsmith](https://img.shields.io/badge/OSS%20hosting%20by-cloudsmith-blue?logo=cloudsmith&style=for-the-badge)](https://cloudsmith.com)
 
@@ -37,6 +37,15 @@ If you would also like to stream HDR, perform these additional steps (only requi
 - Open `/boot/config.txt`, change `dtoverlay=vc4-fkms-v3d` to `dtoverlay=vc4-kms-v3d`, then reboot your Pi
 
 NOTE: Performing the HDR setup steps will prevent Moonlight from working normally when run within your Pi's desktop environment. You will need to launch Moonlight directly from the console for the video renderer to work properly.
+
+### OSMC
+
+OSMC uses a different permission group for input devices than Raspberry Pi OS does. Input devices work, but you will not have any of the extended DS4/DS5 controller features by default.
+
+To fix this, run the following command and reboot:
+```
+sudo usermod -a -G input $USER
+```
 
 ### Raspberry Pi OS Bullseye
 Raspberry Pi OS Bullseye defaults to a display driver that doesn't support Moonlight's low-latency H.264 decoder. Unless you have incompatible software on your Pi (like Kodi v19) or need HDR support, we recommend enabling the alternate driver as detailed below.
@@ -75,6 +84,15 @@ This is most likely because you have not correctly followed all the steps in the
 If the HDR option cannot be enabled, you have either not enabled the HEVC decoder properly or are running Moonlight from within the desktop environment. Moonlight must be run directly from the console for HDR to be available.
 
 If you can stream HDR but it doesn't switch your TV to HDR mode, you are probably not using the Full KMS driver (`vc4-kms-v3d`) that is required for HDR metadata to be sent to your TV. Ensure your `/boot/config.txt` is updated to use `vc4-kms-v3d` (not `vc4-fkms-v3d`) and try again.
+
+### PS4/PS5 controller features aren't working
+
+This is likely caused by Moonlight not having permission to open `/dev/hidraw` devices on your Pi. This is a common issue on OSMC, which doesn't use the `input` group in the same way that Raspberry Pi OS does.
+
+To fix this, run the following command and reboot:
+```
+sudo usermod -a -G input $USER
+```
 
 ### No audio output or crackly audio output
 
