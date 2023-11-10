@@ -60,7 +60,6 @@ Look at the troubleshooting steps for each of the following issues:
 * Ensure your Nvidia GPU is not being underclocked (which can impact NVENC performance). You may also try a modest overclock or raising the GPU power limit if you are comfortable with that.
 * Lower the bitrate slider to determine if it's a bandwidth issue.
 * Try using 720p30 which has the lowest requirements.
-* Try forcing your host PC's Ethernet adapter to run at 100Mb Full Duplex in Device Manager.
 * Ask for help on our [Discord server](https://moonlight-stream.org/discord)
 
 ### No video (black screen)
