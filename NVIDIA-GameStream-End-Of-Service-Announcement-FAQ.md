@@ -17,7 +17,15 @@ If/when NVIDIA removes the GameStream functionality from GeForce Experience, Moo
 
 In the short term, nothing. Moonlight will continue to be usable with host PCs running the latest version of GeForce Experience until at least mid-Feburary, according to NVIDIA's announcement.
 
-Inline with our long-term goal of providing an excellent open-source game streaming solution, we will increase our efforts to improve [the Sunshine project](https://github.com/LizardByte/Sunshine), which acts as an a free open-source host for Moonlight. In addition to NVIDIA GPUs on Windows, Sunshine supports hosting on AMD and Intel GPUs and on macOS and Linux. As of Sunshine v0.18, it meets or exceeds GeForce Experience in streaming performance in many configurations and also supports streaming games in HDR.
+Inline with our long-term goal of providing an excellent open-source game streaming solution, we have increased our efforts to improve [the Sunshine project](https://github.com/LizardByte/Sunshine), which acts as an a free open-source host for Moonlight. 
+
+Sunshine now supports many features that were never possible with GeForce Experience, including:
+- Support for AMD, Intel, and NVIDIA GPUs
+- Full DualShock controller emulation, including motion sensors, touchpad, and light bar control
+- AV1 encoding for higher quality than HEVC or H.264 codecs
+- Built-in support for hosting on the Internet without requiring [a separate tool](https://github.com/moonlight-stream/Internet-Hosting-Tool)
+- Built-in support for IPv6 without requiring [a separate tool](https://github.com/moonlight-stream/GS-IPv6-Forwarder)
+- Host capture/encoding latency reporting that appears in Moonlight's on-screen performance overlay
 
 By investing our time in making Sunshine a top-tier game streaming host, we can ensure that the whims of a single company cannot unilaterally impact the game streaming community again.
 
@@ -36,14 +44,6 @@ Because GeForce Experience contains a list of GameStream-supported GPUs, it is l
 That will depend on how the removal works in practice and what our users want.
 
 While the performance and capabilities of GameStream in GeForce Experience was excellent, it did limit our capabilities in some ways. For example, microphone support was implemented for GeForce Now but never for GameStream. Similarly, major features like PS4 or Xbox One controller emulation, trigger rumble support, client-side cursor rendering, and AV1 encoding support were not possible due to host and GameStream protocol limitations. Now that we no longer have to worry about introducing compatibility issues with future versions of GameStream, we can implement features like these in Sunshine.
-
-Sunshine now supports many features that were never possible with GeForce Experience, such as:
-- Support for AMD, Intel, and NVIDIA GPUs
-- Full DualShock controller emulation, including motion sensors, touchpad, and light bar control
-- AV1 encoding for higher quality than HEVC or H.264 codecs
-- Built-in support for hosting on the Internet without requiring [a separate tool](https://github.com/moonlight-stream/Internet-Hosting-Tool)
-- Built-in support for IPv6 without requiring [a separate tool](https://github.com/moonlight-stream/GS-IPv6-Forwarder)
-- Host capture/encoding latency reporting that appears in Moonlight's on-screen performance overlay
 
 In any case, it is unlikely that we will remove support for streaming from GeForce Experience for the foreseeable future.
 
