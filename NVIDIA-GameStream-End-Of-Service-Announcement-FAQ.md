@@ -35,11 +35,17 @@ Because GeForce Experience contains a list of GameStream-supported GPUs, it is l
 
 That will depend on how the removal works in practice and what our users want.
 
-If the majority of users continue to stream from older versions of GeForce Experience, the changes to Moonlight will probably be minimal. If streaming from older GeForce Experience versions becomes impossible or impractical, we will focus on writing more [Sunshine](https://github.com/LizardByte/Sunshine)-specific features.
-
 While the performance and capabilities of GameStream in GeForce Experience was excellent, it did limit our capabilities in some ways. For example, microphone support was implemented for GeForce Now but never for GameStream. Similarly, major features like PS4 or Xbox One controller emulation, trigger rumble support, client-side cursor rendering, and AV1 encoding support were not possible due to host and GameStream protocol limitations. Now that we no longer have to worry about introducing compatibility issues with future versions of GameStream, we can implement features like these in Sunshine.
 
-In any case, it is unlikely that we will remove support for streaming from GeForce Experience for the foreseeable future, even if Sunshine becomes the preferred hosting solution for Moonlight.
+Sunshine now supports many features that were never possible with GeForce Experience, such as:
+- Support for AMD, Intel, and NVIDIA GPUs
+- Full DualShock controller emulation, including motion sensors, touchpad, and light bar control
+- AV1 encoding for higher quality than HEVC or H.264 codecs
+- Built-in support for hosting on the Internet without requiring [a separate tool](https://github.com/moonlight-stream/Internet-Hosting-Tool)
+- Built-in support for IPv6 without requiring [a separate tool](https://github.com/moonlight-stream/GS-IPv6-Forwarder)
+- Host capture/encoding latency reporting that appears in Moonlight's on-screen performance overlay
+
+In any case, it is unlikely that we will remove support for streaming from GeForce Experience for the foreseeable future.
 
 # Was the Moonlight team given advance notice of this?
 
