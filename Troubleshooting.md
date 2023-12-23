@@ -19,7 +19,8 @@ Look at the troubleshooting steps for each of the following issues:
 * [Controller input doesn't work when streaming](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#controller-input-doesnt-work-when-streaming)
 * [Bluetooth-related streaming issues](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#bluetooth-related-streaming-issues)
 
-### Known bugs in GeForce Experience (issues that can only be fixed by Nvidia)
+### Known bugs in GeForce Experience that _don't_ affect hosts using [Sunshine](https://app.lizardbyte.dev/Sunshine/)
+* [Streamed picture is stuck in the top-left corner](https://github.com/moonlight-stream/nvidia-gamestream-issues/issues/48)
 * [Pairing may fail if there are non-ASCII characters in your user name](https://github.com/moonlight-stream/nvidia-gamestream-issues/issues/30)
 * [Video freezes with hardware-accelerated GPU scheduling on the host](https://github.com/moonlight-stream/nvidia-gamestream-issues/issues/27)
 * [Host mouse cursor is invisible when a UAC dialog is displayed on Win10+](https://github.com/moonlight-stream/nvidia-gamestream-issues/issues/2)
