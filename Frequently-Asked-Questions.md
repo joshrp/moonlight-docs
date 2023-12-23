@@ -2,28 +2,26 @@
 
 See the dedicated [GameStream End of Service Notification FAQ](https://github.com/moonlight-stream/moonlight-docs/wiki/NVIDIA-GameStream-End-Of-Service-Announcement-FAQ) page.
 
+We recommend switching to [Sunshine](https://app.lizardbyte.dev/Sunshine/) for hosting, particularly if you experience issues with stream reliability from GeForce Experience. Unlike GeForce Experience, Sunshine is still receiving new features and bugfixes.
+
 ## What is Moonlight?
 
 Moonlight is an unofficial third-party open-source client for the NVIDIA SHIELD streaming software that comes included with GeForce Experience. GeForce Experience uses the NVENC hardware on NVIDIA GPUs and custom tuned software to provide low-latency high-quality PC streaming.
 
 ## What do I need for my host PC?
 
-Per NVIDIA's GameStream system requirements, your host needs:
-- Windows 7 or later
-- NVIDIA GeForce GTX/RTX GPU 600-series or later (GT series GPUs are not supported)
+The recommended hosting software [Sunshine](https://app.lizardbyte.dev/Sunshine/), which is fully open-source, supports more platforms and GPUs, and has more features, and lacks most of the annoying bugs in the older GeForce Experience hosting software.
+
+If you want to use GeForce Experience to host instead of Sunshine, your host needs:
+- Windows 10 or later
+- NVIDIA GeForce GTX/RTX GPU 600-series or later
 - NVIDIA GeForce Experience
-
-Recently, NVIDIA has also released streaming support for Quadro cards:
-- NVIDIA Quadro GPU (Kepler or later)
-- NVIDIA Quadro Experience
-
-If you'd like to run your own gaming server in the cloud, there is an unofficial workaround for [enabling GameStream on NVIDIA Tesla cards](https://github.com/acceleration3/cloudgamestream) like those often used in Amazon EC2, Microsoft Azure, and Google Cloud Platform (GCP).
 
 ## What devices can I run Moonlight on?
 
 We have official clients for [Windows, macOS, Linux, Raspberry Pi 4, Steam Link hardware](https://github.com/moonlight-stream/moonlight-qt/releases/), [Android](https://play.google.com/store/apps/details?id=com.limelight), [Amazon Fire tablets and TVs](https://www.amazon.com/gp/product/B00JK4MFN2), [iOS, Apple TV](https://apps.apple.com/us/app/moonlight-game-streaming/id1000551566), [and ChromeOS devices](https://chrome.google.com/webstore/detail/moonlight-game-streaming/gemamigbbenahjlfnmlfdjhdnkpbkfjj).
 
-The community has created unofficial ports for [PS Vita](https://github.com/xyzz/vita-moonlight/releases/) and many [embedded Linux devices](https://github.com/irtimmer/moonlight-embedded/wiki/Packages).
+The community has created unofficial ports for [PS Vita](https://github.com/xyzz/vita-moonlight/releases/), [Xbox consoles](https://apps.microsoft.com/detail/9MW1BS08ZBTH), [LG webOS TVs](https://github.com/mariotaku/moonlight-tv), and many [embedded Linux devices](https://github.com/irtimmer/moonlight-embedded/wiki/Packages).
 
 ## Is there a Moonlight web client?
 
@@ -49,7 +47,7 @@ If you're streaming from outside your home network, it is not always possible to
 
 Yes, many Moonlight users use it as a high performance remote desktop client.
 
-You can add an option to stream your full desktop [using these steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-moonlight-to-stream-your-entire-desktop).
+If you're using Sunshine on your host PC, you should see a "Desktop" option included out of the box. If you're using GeForce Experience, you can add an option to stream your full desktop [using these steps](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-moonlight-to-stream-your-entire-desktop).
 
 If you're using the PC client, you can also enable remote desktop mouse mode in the Moonlight settings for a seamless mouse experience when using other apps along with Moonlight.
 
@@ -77,7 +75,7 @@ For even more security, you can use Moonlight over a VPN connection [like ZeroTi
 
 You can [suggest improvements here](https://ideas.moonlight-stream.org). Please upvote suggestions to show your support. Only comment if you have something to add to the conversation.
 
-Be aware that not all suggestions can be implemented, since they may require host-side changes that can only be done by NVIDIA.
+Some new features will require the use of [Sunshine](https://github.com/LizardByte/Sunshine) for hosting, instead of GeForce Experience, since the latter is out of support from NVIDIA and is not receiving new feature work.
 
 ## Where can I find the Moonlight source code?
 
@@ -102,6 +100,8 @@ GeForce Experience only officially supports 720p, 1080p, and 4K streaming resolu
 This is usually not a problem, since you can configure your resolution in game to whatever you want and that will kick in when the game launches. If changing resolution in game isn't working, make sure your game is configured to use full-screen exclusive mode instead of borderless windowed mode.
 
 You can also [stream your full desktop](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#using-moonlight-to-stream-your-entire-desktop) which will not adjust your host PC resolution at all.
+
+Note: This issue doesn't affect hosts using [Sunshine](https://github.com/LizardByte/Sunshine) instead of GeForce Experience.
 
 ## Why doesn't Moonlight show all of my games?
 
@@ -141,6 +141,8 @@ The adjusted mouse acceleration is not generally a problem in games, because mos
 
 For remote desktop usage, Moonlight has a remote desktop optimized mouse mode that can be enabled in the Moonlight's input settings. In remote desktop mouse mode, your host's mouse cursor will directly track at the same position as your client's cursor. Not only does this avoid host mouse acceleration problems, but it also allows your cursor to seamlessly enter and exit the Moonlight window without having to bind and unbind your mouse. In this configuration, Moonlight behaves very similarly to Microsoft Remote Desktop or Chrome Remote Desktop.
 
+Note: This issue doesn't affect hosts using [Sunshine](https://github.com/LizardByte/Sunshine) instead of GeForce Experience.
+
 ## Why do I see periodic stutters on macOS when streaming over WiFi?
 
 macOS performs periodic background WiFi scans for Location and AirDrop. While the WiFi radio is scanning, it cannot send or receive traffic. The result is that video and audio data is delayed or dropped during these scans. The result is perceived as stuttering video and audio.
@@ -149,17 +151,19 @@ To minimize background scans that lead to stuttering, try disabling AirDrop and 
 
 Other video applications like Netflix or YouTube keep a buffer of some data which smooths over these small glitches. Real-time streaming apps like Moonlight can't buffer data because it would introduce significant latency. As a result, Moonlight and other game streaming apps are much more sensitive to small glitches in your network performance.
 
-## Why doesn't HEVC or HDR streaming work on my RTX 3000-series GPU?
-
-There is a bug in GeForce Experience which causes it to believe that RTX 3000-series GPUs do not support HEVC encoding.
-
-A hotfix from NVIDIA is [available here](https://nvidia.custhelp.com/app/answers/detail/a_id/5106).
-
 ## Why is my frame rate low when streaming my desktop on a laptop with NVIDIA Optimus?
 
 There is extra overhead to stream the desktop when Optimus is enabled, because each frame must be copied back from the iGPU to the NVIDIA GPU for NVENC to encode it. This extra copying overhead usually results in frame rates between 25 and 40 FPS while streaming the desktop.
 
 Once you start a full-screen game, the streaming performance should go back to normal. If it doesn't, make sure your game is set to run on the NVIDIA GPU and that your game is set to use full-screen exclusive mode instead of borderless windowed mode.
+
+Note: This issue doesn't affect hosts using [Sunshine](https://github.com/LizardByte/Sunshine) instead of GeForce Experience.
+
+## Why is my frame rate low when streaming static content from Sunshine?
+
+Unlike GeForce Experience which produces a fixed frame rate encode, Sunshine uses variable frame rate encoding to match the rate of content updates on the host. That means you'll see a low frame rate (typically around 10 FPS) when streaming static content. When content on the screen starts changing, the frame rate will increase to match the frame rate of the content displayed on the host PC, up to the maximum FPS set in Moonlight.
+
+Note: On some Android devices, this may cause the reported decoding latency numbers to be higher when content is static than it will be when actually gaming.
 
 ## Why doesn't the bitrate slider go beyond 150 Mbps?
 
