@@ -15,7 +15,7 @@ While NVIDIA's announcement is primarily centered around the removal of GameStre
 
 # What does this mean for Moonlight?
 
-In the short term, nothing. Moonlight will continue to be usable with host PCs running the latest version of GeForce Experience until at least mid-Feburary, according to NVIDIA's announcement.
+In the short term, nothing. Moonlight will continue to be usable with host PCs running the latest version of GeForce Experience until at least mid-Feburary 2023, according to NVIDIA's announcement.
 
 Inline with our long-term goal of providing an excellent open-source game streaming solution, we have increased our efforts to improve [the Sunshine project](https://github.com/LizardByte/Sunshine), which acts as an a free open-source host for Moonlight. 
 
@@ -31,7 +31,7 @@ By investing our time in making Sunshine a top-tier game streaming host, we can 
 
 # What will happen to Moonlight in mid-February?
 
-Past mid-February, the status of the hosting GeForce Experience is unclear. It's likely that the GameStream functionality will be present in GeForce Experience for a little longer, since major GeForce Experience updates don't arrive very often.
+Past mid-February 2023, the status of the hosting GeForce Experience is unclear. It's likely that the GameStream functionality will be present in GeForce Experience for a little longer, since major GeForce Experience updates don't arrive very often.
 
 Even when the functionality is removed in GeForce Experience, it is likely that GameStream can still be used by running older versions of GeForce Experience (and blocking the automatic update mechanism). This might also require older GPU drivers, but historically older GeForce Experience versions and GameStream have been compatible with newer drivers without issue.
 
