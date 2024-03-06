@@ -63,9 +63,9 @@ NVIDIA GameStream uses a secure pairing process to establish trust between clien
 
 Moonlight client keys are generated and stored locally on each client. We never receive your unique client keys, so there is no online account system that could possibly be compromised to gain access to your PC.
 
-Keyboard, mouse, and gamepad data is sent back to the host PC over an encrypted connection to prevent the possibility of this data being intercepted when travelling over an insecure network.
+Keyboard, mouse, and gamepad data is sent back to the host PC over an encrypted connection to prevent the possibility of this data being intercepted when travelling over an insecure network. For even more security, you can use Moonlight over a VPN connection [like ZeroTier](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#zerotier) which encrypts all traffic.
 
-For even more security, you can use Moonlight over a VPN connection [like ZeroTier](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#zerotier) which encrypts all traffic.
+Beginning in Sunshine v0.22, full end-to-end encryption is supported. This includes all video, audio, control, and connection setup traffic. By default, full encryption is enabled for capable devices when streaming over the Internet. Encryption can be disabled or made mandatory for LAN and WAN connections independently in the Sunshine configuration.
 
 ## Where can I get help with streaming issues?
 
