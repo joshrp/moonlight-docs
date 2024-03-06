@@ -9,9 +9,9 @@ You can read NVIDIA's official announcement [here](https://nvidia.custhelp.com/a
 
 The Moonlight project implements unofficial open-source clients for NVIDIA GameStream. The host software that Moonlight connects to is part of NVIDIA GeForce Experience, so it is under NVIDIA's control and depends on their ongoing effort to fix bugs and implement new host-side features.
 
-While NVIDIA's announcement is primarily centered around the removal of GameStream support from their official NVIDIA Games client, it's highly unlikely that they would continue to invest maintenance resources in the host software when no official clients exist. For this reason, we believe that NVIDIA will fully remove GameStream support in a future update to GeForce Experience.
+While NVIDIA's announcement is primarily centered around the removal of GameStream support from their official NVIDIA Games client, it's highly unlikely that they would continue to invest maintenance resources in the host software when no official clients exist.
 
-If/when NVIDIA removes the GameStream functionality from GeForce Experience, Moonlight will no longer be able to connect to it for streaming.
+**2024 Update:** NVIDIA has announced that GeForce Experience itself will be discontinued in favor of their new [NVIDIA app](https://www.nvidia.com/en-us/software/nvidia-app/) which is currently in beta. This new NVIDIA app does not support GameStream and installing it will remove GeForce Experience. 
 
 # What does this mean for Moonlight?
 
@@ -31,13 +31,13 @@ By investing our time in making Sunshine a top-tier game streaming host, we can 
 
 # What will happen to Moonlight in mid-February?
 
-**NOTE: The following is educated speculation based on our experience with GeForce Experience updates. We may update this if new information arrives.**
-
 Past mid-February, the status of the hosting GeForce Experience is unclear. It's likely that the GameStream functionality will be present in GeForce Experience for a little longer, since major GeForce Experience updates don't arrive very often.
 
 Even when the functionality is removed in GeForce Experience, it is likely that GameStream can still be used by running older versions of GeForce Experience (and blocking the automatic update mechanism). This might also require older GPU drivers, but historically older GeForce Experience versions and GameStream have been compatible with newer drivers without issue.
 
 Because GeForce Experience contains a list of GameStream-supported GPUs, it is likely that GPUs launched after mid-February will not be usable for GameStream, even running older versions of GeForce Experience.
+
+**2024 Update:** NVIDIA has announced that GeForce Experience will be discontinued in favor of their new [NVIDIA app](https://www.nvidia.com/en-us/software/nvidia-app/) which is currently in beta. This new NVIDIA app does not support GameStream and installing it will remove GeForce Experience. 
 
 # How will Moonlight change after GameStream support is removed from GeForce Experience?
 
