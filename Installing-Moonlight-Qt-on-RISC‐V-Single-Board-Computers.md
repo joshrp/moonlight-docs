@@ -39,6 +39,11 @@ For best performance, run Moonlight directly from a console/TTY. If you are curr
 
 ### VisionFive 2
 
+
+**Recommendations**
+
+When using the [Debian image provided by StarFive](https://rvspace.org/en/project/VisionFive2_Debian_User_Guide), don't install their patched Qt package because it has a broken TLS implementation. Instead, you can simply use the Qt packages already provided by the existing APT repo from upstream Debian.
+
 **Initial Setup**
 
 First, you will need to add your local user account to the `video` and `input` groups in order for Moonlight to be able to directly open video devices and read input devices, then logoff or reboot for the changes to take effect. You can do so using the following commands
