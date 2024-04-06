@@ -9,7 +9,7 @@ Requirements:
 ## Installation
 Run the following commands to install Moonlight Qt to your Raspberry Pi:
 ```
-curl -1sLf 'https://dl.cloudsmith.io/public/moonlight-game-streaming/moonlight-qt/setup.deb.sh' | distro=raspbian sudo -E bash
+curl -1sLf 'https://dl.cloudsmith.io/public/moonlight-game-streaming/moonlight-qt/setup.deb.sh' | distro=raspbian codename=$(lsb_release -cs) sudo -E bash
 sudo apt install moonlight-qt
 ```
 
