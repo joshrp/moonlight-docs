@@ -21,7 +21,7 @@ Open Device Manager, You can do this by right-clicking the Windows Icon. Then na
 
 ![Wake on Magic Packet 1](https://github.com/moonlight-stream/moonlight-docs/assets/48956874/e4f331c9-5fc3-48ab-91d0-4b8aee09bac1)
 
-If you do not see the options listed above then the NIC (Network Interface Card) does not support WOL.
+If you do not see the options listed above then the NIC (Network Interface Card) either does not support WOL, or the drivers for the NIC are out of date or broken.
 
 Also in the adapter properties under the "Power Management" tab enable "Allow this device to wake the computer" and its sub option.
 
