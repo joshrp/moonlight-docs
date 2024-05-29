@@ -99,6 +99,38 @@ To connect additional clients or host PCs, just download ZeroTier on the device,
 
 Don't forget to connect to your ZeroTier network when you want to stream over the Internet!
 
+### NordVPN Meshnet
+
+Meshnet is a feature of the NordVPN app that allows linking devices from remote networks into secure, private virtual device networks. Once the devices are linked, they connect as if they were on the same LAN.
+
+Using Meshnet for Moonlight allows you to circumvent port forwarding, overcome CGNAT limitations, and stream over the Internet from multiple gaming PCs sharing the same Internet connection.
+
+First, you need to install and enable Meshnet on your host gaming PC:
+1. Visit the Nord Account sign-up page and create a free account. An active NordVPN subscription is not required.
+2. On your gaming PC, download and install the NordVPN app.
+3. Log in to NordVPN using your Nord account.
+4. On the left sidebar, select the "Devices in Meshnet" tab.
+5. Turn on Meshnet using the toggle.
+
+You should now see your gaming PC's unique Nord name and Meshnet IP address. You can use either to connect to the server with Moonlight.
+
+Now, you can link your client device(s) that will connect to the host over Meshnet:
+1. Download the NordVPN app for your client device.
+   - On Android, you can download NordVPN from the Play Store.
+   - On iOS, you can download NordVPN from the App Store.
+2. Log in to your Nord Account.
+3. Enable Meshnet.
+
+Upon enabling Meshnet, you should see your gaming PC in the peer device list.
+
+Finally, you can pair your gaming PC with the client device(s) inside Moonlight:
+1. From the NordVPN app, copy the Nord name of your game server.
+2. Open Moonlight.
+3. Select "Add PC manually".
+4. Paste the copied Nord name and choose OK.
+
+You should now be able to pair and connect to the host gaming PC over the Internet. Meshnet must be active for streaming over the Internet to work!
+
 ### Manual port forwarding (advanced)
 If the automatic tool doesn't work, you can try manually forwarding the following ports through your router to your host gaming PC's IP address for streaming to work over the Internet:
 * **TCP** 47984, 47989, 48010
