@@ -1,7 +1,7 @@
 NOTE: If you installed an earlier preview version of Moonlight Qt prior to v2.0.0, you must switch to the official repository to receive the update to v2.0.0 and future updates. To do so, run the the commands listed in the installation section and then those listed in the updates section.
 
 Requirements:
-- Raspberry Pi 4 (earlier Raspberry Pi models may not perform well)
+- Raspberry Pi 4 or later (earlier Raspberry Pi models may not perform well)
 - Raspberry Pi OS Buster or later (**see special Bullseye instructions below**)
 
 [![Hosted By: Cloudsmith](https://img.shields.io/badge/OSS%20hosting%20by-cloudsmith-blue?logo=cloudsmith&style=for-the-badge)](https://cloudsmith.com)
