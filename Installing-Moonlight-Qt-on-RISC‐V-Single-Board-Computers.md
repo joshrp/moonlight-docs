@@ -13,6 +13,9 @@ Requirements:
 Tested working devices:
 - VisionFive 2 (JH7110) using the [Debian image provided by StarFive](https://rvspace.org/en/project/VisionFive2_Debian_User_Guide)
 
+Tested non-working devices:
+- TH1520-based devices such as the LicheePi 4a (due to lack of V4L2 drivers for the VPU)
+
 [![Hosted By: Cloudsmith](https://img.shields.io/badge/OSS%20hosting%20by-cloudsmith-blue?logo=cloudsmith&style=for-the-badge)](https://cloudsmith.com)
 
 ## Installation
@@ -69,13 +72,11 @@ You will need to reactivate the Wave5 driver using these commands each time you 
 
 **Launching Moonlight**
 
-Finally, to launch Moonlight, you will need to use the `-platform linuxfb` option since the order that the VisionFive drivers enumerate DRI devices isn't handled properly by Qt's EGLFS support (and EGLFS UI performance is poor anyway due to non-functional OpenGL ES support on current Debian images). 
-
-Because StarFive is hardcoding `SDL_VIDEODRIVER=wayland` in `/etc/environment` and overriding SDL's default video driver detection, you will also need to override that to allow SDL to use the KMSDRM video driver required to render outside of the desktop environment.
+Finally, to launch Moonlight, you should use the `-platform linuxfb` option since EGLFS UI performance is poor anyway due to non-functional OpenGL ES support on current Debian images. 
 
 In short, to launch Moonlight on the VisionFive board _after following the above steps_, switch to a different TTY with Ctrl+Alt+F2 then run:
 ```
-SDL_VIDEODRIVER= moonlight-qt -platform linuxfb
+moonlight-qt -platform linuxfb
 ```
 
 If everything worked, you should get a GUI and no video decoder warning dialogs.
@@ -94,7 +95,7 @@ For the most part, these packages are provided without official support. We can 
 
 This most likely means your device lacks either a working DRI driver (check if a `/dev/dri/card*` device exists) or an OpenGL ES 2.0 driver (even a software one) or that your user account lacks permission to open /dev/dri devices.
 
-The error message from Qt may give you a hint as to what the problem is. You may try adding `-platform linuxfb` to the end of the `moonlight-qt` command (which will somewhat break the UI, but may allow you to get far enough to stream) or try creating a EGLFS configuration json file [as detailed here](https://doc.qt.io/qt-5/embedded-linux.html#eglfs-with-the-eglfs-kms-backend).
+The error message from Qt may give you a hint as to what the problem is. You may try adding `-platform linuxfb` to the end of the `moonlight-qt` command (which will somewhat break the UI, but may allow you to get far enough to stream).
 
 If you see an error like `Could not open DRM device /dev/dri/card0 (Permission denied)`, it's probably because your account is not a member of the `video` group. To fix this, run `sudo usermod -a -G video $USER` and reboot.
 
