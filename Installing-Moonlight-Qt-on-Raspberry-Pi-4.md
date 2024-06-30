@@ -19,6 +19,20 @@ For best performance, run Moonlight directly from a console/TTY. If you are curr
 
 **NOTE**: If you run Moonlight from a desktop environment with the Raspberry Pi 4, we recommend keeping your Raspberry Pi's display resolution set to 1080p or below. Due to GPU performance limitations on the Pi 4, streaming performance decreases significantly when the Moonlight window is scaled larger than 1080p, even if the stream resolution is 1080p or below. These restrictions do not apply when streaming directly from a console/TTY using the steps above.
 
+### Audio on Raspberry Pi OS Lite
+
+Raspberry Pi OS Lite doesn't come with any audio daemon by default, so you should install PulseAudio otherwise audio over HDMI may not work.
+
+Perform the following steps to install and configure PulseAudio:
+1. `sudo apt install pulseaudio`
+2. `sudo raspi-config`
+3. Navigate to Advanced Settings -> Audio Config and select "PulseAudio"
+4. Reboot your Pi (`sudo reboot`)
+5. `sudo raspi-config`
+6. Navigate to System Settings -> Audio and select the audio output you want to use
+
+If you want to switch audio outputs, simply follow steps 5 and 6 again.
+
 ### Updates
 To update Moonlight Qt after you've installed it, run:
 ```
@@ -94,31 +108,14 @@ To fix this, run the following command and reboot:
 sudo usermod -a -G input $USER
 ```
 
-### No audio output or crackly audio output
+### No audio output
+If you are on _Raspberry Pi OS Lite_, make sure you've followed the steps [here](https://github.com/moonlight-stream/moonlight-docs/wiki/Installing-Moonlight-Qt-on-Raspberry-Pi-4/#audio-on-raspberry-pi-os-lite) first!
 
-The Raspberry Pi OS team has [recently released an update](https://www.raspberrypi.org/blog/new-raspberry-pi-os-release-december-2020/) that switches from ALSA to PulseAudio for audio output. In response, Moonlight Qt v3.0.0 now defaults to using PulseAudio on the Raspberry Pi.
+The most common issue is simply failing to configure the default audio device properly. Use the `raspi-config` tool, navigate to System Settings -> Audio, then select the audio device you want to use.
 
-If you're running Raspberry Pi OS and experiencing audio problems with Moonlight, you should run the following commands to upgrade your OS with support for PulseAudio:
-```
-sudo apt update
-sudo apt upgrade
-sudo reboot
-```
-
-For older distros that still use ALSA, you may find that audio doesn't work correctly with Moonlight Qt v3.0.0 or later. If that's the case, you can tell Moonlight to use ALSA by running with:
-```
-PULSE_SERVER=none moonlight-qt
-```
-
-### GUI not appearing when launched from the console
-The GUI will appear on the monitor connected to the mini-HDMI port _closest to the USB-C power cable_. This is the primary display output port.
-
-Make sure your monitor is connected to the correct port if you don't see the UI appear when you start Moonlight from outside the Raspberry Pi desktop environment.
-
-If your monitor is plugged into the primary HDMI output and you still don't see the UI when you start Moonlight from the console, try starting Moonlight with the following command:
-```
-QT_QPA_EGLFS_ALWAYS_SET_MODE=1 moonlight-qt
-```
+If you've set your audio device and Moonlight still cannot output audio, you can try an alternate SDL audio driver using the following commands:
+- `SDL_AUDIODRIVER=alsa moonlight-qt`
+- `SDL_AUDIODRIVER=pulseaudio moonlight-qt`
 
 ### Decoder Errors with a 4K 60 Hz Monitor
 If your Raspberry Pi is configured for 4K 60 Hz output, you will need to increase the amount of GPU memory for the hardware video decoder to work.
