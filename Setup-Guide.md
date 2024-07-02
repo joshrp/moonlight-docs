@@ -83,7 +83,7 @@ You should use ZeroTier if you are in one of the following situations:
 
 To set it up:
 1. [Create an account](https://my.zerotier.com/login) on the ZeroTier website. The free service is perfectly fine for Moonlight.
-2. Download the Windows version for your PC from the [Downloads page](https://www.zerotier.com/download.shtml) and install it on your host gaming PC.
+2. Download the Windows version for your PC from the [Downloads page](https://www.zerotier.com/download/) and install it on your host gaming PC.
 3. Install ZeroTier on your client device.
     * If using Moonlight on a PC or Mac, download and install the appropriate version from the [Downloads page](https://www.zerotier.com/download.shtml).
     * If using Moonlight on Android or iOS, the apps are available on the [Google Play Store](https://play.google.com/store/apps/details?id=com.zerotier.one) and [Apple App Store](https://itunes.apple.com/us/app/zerotier-one/id1084101492).
