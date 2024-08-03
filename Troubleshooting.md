@@ -38,6 +38,7 @@ Look at the troubleshooting steps for each of the following issues:
 * Uninstall GeForce Experience, reboot, clean install GeForce Experience, and reboot again.
 * In an administrator command prompt, run `netsh winsock reset` and reboot your computer.
 * If your PC is running Windows Server, install the qWave service and ensure the Windows Audio service is enabled and running.
+* If you had used Microsoft Remote Desktop you will need to follow the instructions in the [Known Compatibility Issues](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting#known-application-compatibility-issues) in order to stream again.
 * Ask for help on our [Discord server](https://moonlight-stream.org/discord)
 
 ### Unable to stream at all over the Internet
@@ -91,8 +92,20 @@ Special-case issues:
 * Safing Portmaster
     * Streaming may not work until the program is fully uninstalled
 * Microsoft Remote Desktop
-    * Streaming will fail until you log back in at the physical machine after connecting via RDP
-    * Chrome Remote Desktop, TeamViewer, or VNC can be used for remote access without breaking Moonlight
+  * When using RDP, your computer is technically locked, causing streaming issues even after disconnecting. This lock prevents starting programs with Moonlight.
+  * Sunshine Hosts
+    * Log back into the computer via the "Desktop" app in Moonlight, then you can end and start another stream with the application you wanted originally.
+
+  * Geforce Experience Hosts
+      * Log into the computer physically or you may use the following script commands in a PowerShell terminal while in an RDP session:
+
+      ```powershell
+      $session = (query session | Select-String $env:USERNAME) -split " " | Where-Object { $_ } | Select-Object -Index 2
+      & tscon $session /dest:console
+      ```
+      This will terminate your RDP session but leave it unlocked, allowing you to stream again.
+
+   * Chrome Remote Desktop, TeamViewer, or VNC can be used for remote access without breaking Moonlight
 * Teamspeak Gamepad Plugin
     * The gamepad plugin may cause [extra gamepads to appear in Device Manager](https://github.com/moonlight-stream/moonlight-qt/issues/304), but streaming works normally
 * Password managers (KeePass, iCloud Keychain, and potentially others)
