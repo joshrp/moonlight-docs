@@ -42,10 +42,11 @@ WOL is not designed to work over WAN. (Wide Area Network, AKA Internet) But it c
     - A RPI (Raspberry PI) or other similar SBC.
     - A NAS. (Network Attached Storage) Basically a Server, a NAS can host a variety of servers including VPN servers. Many customer NAS devices have a baked-in VPN utility.
 - Have another device wake the system. You will need some other device that is always online and connected to the Hosts network to act as in essence a WOL relay. Depending on the device used you may need to port forward. Such devices include but are not limited to;
-    - Router WOL utility. Many routers offer a WOL utility either usable with just a router app or by port forwarding the router GUI. (If you do the latter be sure to have an EXTREMELY robust login for the router)
+    - Router WOL utility. Many routers offer a WOL utility either usable with just a router app or by port forwarding the router GUI. (If you do the latter be sure to have an EXTREMELY robust login for the router. Not recommended)
     - A RPI. https://www.instructables.com/id/Raspberry-Pi-As-Wake-on-LAN-Server/
     - A remotely accessible system such as a NAS, or similar.
     - An Arduino with a network connection. https://github.com/TullyE/ArduinoWOL/
+    - Use Home Assistant. https://www.home-assistant.io/integrations/wake_on_lan/
 - Forward and allow through the router firewall port 9 to the Host. This will only work for ~2 hours due to the way IPs work. after such time you __Will__ need to use one of the other methods mentioned above.
 
 ## WOL Alternatives
