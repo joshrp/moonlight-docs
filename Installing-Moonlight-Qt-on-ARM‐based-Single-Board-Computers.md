@@ -2,11 +2,16 @@ Beginning with Moonlight Qt v5.0.0, we are now publishing generic armhf and aarc
 
 ARM SBCs often have notoriously bad video and graphics drivers (sometimes requiring special patches to work), so your experience may vary depending on your hardware and which distro you choose.
 
-These packages are designed to be used directly from the console (not inside a desktop environment) for best performance.
+These packages are designed to be used directly from the console (not inside a desktop environment) for best performance. Newer devices with more powerful GPUs may perform fine within a desktop environment, though certain features like HDR will not work.
 
-Requirements:
+Supported distros:
+- Debian/Armbian Bullseye
+- Debian/Armbian Bookworm
+- Ubuntu 22.04 (Jammy)
+- Ubuntu 24.04 (Noble)
+
+Other requirements:
 - 32-bit ARMv7 or 64-bit ARMv8 (armhf or aarch64)
-- Debian/Armbian Bullseye or Bookworm
 - Working V4L2 H.264 or HEVC decoder (stateful or stateless)
 - Linux kernel v5.8 or later
 
