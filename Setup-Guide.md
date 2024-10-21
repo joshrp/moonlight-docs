@@ -14,6 +14,14 @@
 
 **Host Gaming PC Requirements** 
 
+For Sunshine:
+* Any modern GPU from AMD, NVIDIA and Intel
+* Windows 10 or 11 (Windows 7 and 8 are *not* supported)
+* macOS 12 and newer (experimental)
+* Linux (Debian 11, Ubuntu 22.04, Fedora 38 and newer)
+
+For GeForce Experience:
+* Windows 10 or 11 (Windows 7 and 8 *may* be supported)
 * NVIDIA GeForce GTX/RTX 600+ series GPU, or NVIDIA Quadro GPU (Kepler series or later)
 * NVIDIA GeForce Experience (GFE) 2.1.1 or higher, or NVIDIA Quadro Experience
 * 720p or higher display (or headless display dongle) connected to the NVIDIA GPU
@@ -22,6 +30,29 @@
 There are [additional host PC requirements](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#additional-requirements-for-hdr-streaming) for streaming HDR content.
 
 ## Quick Setup Instructions
+
+### Using Sunshine
+
+Detailed instructions for installing and configuring Sunshine can be found on the [Sunshine documentation](https://docs.lizardbyte.dev/projects/sunshine).
+
+1. On your gaming PC, install the latest version of Sunshine from the [setup page](https://docs.lizardbyte.dev/projects/sunshine/en/latest/about/setup.html). Your PC may need a reboot after installation to finish setup and for controller emulation to work.
+
+2. Start Sunshine and wait for the configuration page to open in your web browser. Your browser will show a "this page is not secure" error that you can safely ignore. You can access this interface manually by using the "Open Sunshine" option of the tray menu or by opening https://localhost:47990/ directly in your web browser.
+
+3. The first time Sunshine starts, it will ask you to create an account to secure access to the configuration interface. This is important, as anyone with access to this interface can add new clients to access your computer remotely.
+![Screenshot of the Sunshine account setup page](https://github.com/user-attachments/assets/e86ca34d-d102-44c2-b445-e3c1e0a90e63)
+
+4. Start Moonlight and make sure your client is connected to the same network as your PC. In most cases, your gaming PC should show up automatically in the PC list after a few seconds. You can also add a computer manually by entering its IP address if it doesn't show up automatically or you're trying to pair over the Internet.
+
+5. Click the entry in the PC list to start pairing. Sunshine should send a pairing notification on your host PC, redirecting you to the Pin page. There, enter the PIN displayed in Moonlight and submit the pairing dialog. If you get an error after submitting the PIN form, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
+![Screenshot of the Sunshine PIN pairing page](https://github.com/user-attachments/assets/70d082d4-ee40-485d-ba41-444633642202)
+
+6. Try streaming a game or app to make sure everything is working. If you encounter issues, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
+
+7. Sunshine comes pre-loaded with Steam and the Remote Desktop. You can manually add other games and apps by following Sunshine's [guide to adding apps](https://docs.lizardbyte.dev/projects/sunshine/en/latest/about/guides/app_examples.html).
+
+### Using GeForce Experience
+
 1. On your gaming PC, install the [GeForce Experience software](https://www.nvidia.com/en-us/geforce/geforce-experience/) from NVIDIA. Your PC may need a reboot after installation to finish setup.
     * If your PC has a Quadro GPU, install the [Quadro Experience software](https://www.nvidia.com/en-us/design-visualization/software/quadro-experience/) instead.
 
@@ -83,7 +114,7 @@ You should use ZeroTier if you are in one of the following situations:
 
 To set it up:
 1. [Create an account](https://my.zerotier.com/login) on the ZeroTier website. The free service is perfectly fine for Moonlight.
-2. Download the Windows version for your PC from the [Downloads page](https://www.zerotier.com/download/) and install it on your host gaming PC.
+2. Download the Windows version for your PC from the [Downloads page](https://www.zerotier.com/download.shtml) and install it on your host gaming PC.
 3. Install ZeroTier on your client device.
     * If using Moonlight on a PC or Mac, download and install the appropriate version from the [Downloads page](https://www.zerotier.com/download.shtml).
     * If using Moonlight on Android or iOS, the apps are available on the [Google Play Store](https://play.google.com/store/apps/details?id=com.zerotier.one) and [Apple App Store](https://itunes.apple.com/us/app/zerotier-one/id1084101492).
@@ -98,38 +129,6 @@ To set it up:
 To connect additional clients or host PCs, just download ZeroTier on the device, then complete steps 5-7.
 
 Don't forget to connect to your ZeroTier network when you want to stream over the Internet!
-
-### NordVPN Meshnet
-
-[Meshnet](https://nordvpn.com/meshnet/) is a feature of the NordVPN app that allows linking devices from remote networks into secure, private virtual device networks. Once the devices are linked, they connect as if they were on the same LAN.
-
-Using Meshnet for Moonlight allows you to circumvent port forwarding, overcome CGNAT limitations, and stream over the Internet from multiple gaming PCs sharing the same Internet connection.
-
-First, you need to install and enable Meshnet on your host gaming PC:
-1. Visit the [Nord Account sign-up page](https://nordaccount.com/signup) and create a free account. An active NordVPN subscription is not required.
-2. On your gaming PC, download and install the [NordVPN app](https://support.nordvpn.com/hc/en-us/articles/19472023025169-Installing-and-using-NordVPN-on-Windows-10-and-11).
-3. Log in to NordVPN using your Nord account.
-4. On the left sidebar, select the "Devices in Meshnet" tab.
-5. Turn on Meshnet using the toggle.
-
-You should now see your gaming PC's unique Nord name and Meshnet IP address. You can use either to connect to the server with Moonlight.
-
-Now, you can link your client device(s) that will connect to the host over Meshnet:
-1. Download the NordVPN app for your client device.
-   - On Android, you can download NordVPN from the [Play Store](https://play.google.com/store/apps/details?id=com.nordvpn.android).
-   - On iOS, you can download NordVPN from the [App Store](https://apps.apple.com/us/app/nordvpn-vpn-fast-secure/id905953485).
-2. Log in to your Nord Account.
-3. [Enable Meshnet](https://meshnet.nordvpn.com/getting-started/how-to-start-using-meshnet).
-
-Upon enabling Meshnet, you should see your gaming PC in the peer device list.
-
-Finally, you can pair your gaming PC with the client device(s) inside Moonlight:
-1. From the NordVPN app, copy the Nord name of your game server.
-2. Open Moonlight.
-3. Select "Add PC manually".
-4. Paste the copied Nord name and choose "OK".
-
-You should now be able to pair and connect to the host gaming PC over the Internet. Meshnet must be active for streaming over the Internet to work!
 
 ### Manual port forwarding (advanced)
 If the automatic tool doesn't work, you can try manually forwarding the following ports through your router to your host gaming PC's IP address for streaming to work over the Internet:
@@ -172,7 +171,7 @@ All officially supported Moonlight clients (iOS/tvOS, PC, Android) support strea
 If you are not able to stream when connected to the same network as your gaming PC, you may need to add firewall rules to stream successfully. First, try disabling the firewall software on your gaming PC (usually Windows Firewall or a firewall integrated into your anti-virus software) to confirm it's a firewall-related problem.
 
 ### Windows Firewall
-GeForce Experience should create rules for Windows Firewall automatically, but in the event that they don't work, you can create the rules required to host streaming by using the following steps:
+Sunshine and GeForce Experience should create rules for Windows Firewall automatically, but in the event that they don't work, you can create the rules required to host streaming by using the following steps:
 1. Open a Command Prompt or PowerShell window as administrator
 2. Run the following 2 commands:
 ```
@@ -216,6 +215,11 @@ Known issues with GameStream HDR:
 - If HDR is already enabled on your host PC when streaming starts, you may need to toggle HDR off and back on for the stream to enter HDR mode properly
 
 **Host PC requirements for HDR streaming**
+For a host using Sunshine:
+- A Windows host with NVIDIA, AMD, or Intel GPUs that support encoding HEVC Main 10
+- An HDR-capable display or EDID emulator dongle connected to your host PC
+
+For a host using GeForce Experience:
 - NVIDIA GeForce GTX/RTX 1000-series or later
 - Some newer games may require an HDR display or HDR10-compatible EDID emulator dongle connected to your host PC for HDR options to be available
 - The stream resolution in Moonlight should be set to match the host PC's display resolution to prevent video scaling artifacts
@@ -321,13 +325,19 @@ To disconnect from your PC while streaming on iOS, swipe from the left edge of t
 iCade gamepads (old iOS gamepads that fake a Bluetooth keyboard) are not supported by Moonlight.
 
 ## Adding custom programs that are not automatically found
-You can stream any almost any game or app by adding the EXE file to GFE manually (if it's not found by the automatic app scan). Open GeForce/Quadro Experience, click the **Settings (gear) button**, click **SHIELD** on the sidebar, then click the **Add button** on the right. Browse to the app or file you want to add and click OK. You can rename the app using the **Edit button**.
+You can stream almost any game or app by adding the EXE file manually to Sunshine or GeForce Experience (if it's not found by the automatic app scan).
+
+If you're using Sunshine, you can add new apps via the configuration interface, under the "Applications" page.
+
+If you're using GeForce Experience, open GeForce/Quadro Experience, click the **Settings (gear) button**, click **SHIELD** on the sidebar, then click the **Add button** on the right. Browse to the app or file you want to add and click OK. You can rename the app using the **Edit button**.
 
 The next time the client opens and displays the App List, the newly added programs and games should be displayed and ready to stream.
 
 If quitting an application doesn't stop Moonlight, press *Ctrl+Shift+Alt+Q* on Moonlight PC to quit the streaming session. On Moonlight Android and iOS, pressing the home key will switch out of the streaming session. Choose the **Quit Session** option from the App List to fully quit the streaming session. 
 
 ## Using Moonlight to stream your entire desktop
+If you're using Sunshine, you'll already have a built-in "Desktop" app. This only applies for hosts using GeForce Experience.
+
 Follow the steps above for adding a custom program, but for the path use: **C:\windows\system32\mstsc.exe**
 
 You can rename the remote desktop entry using the Edit button. When you click this entry, you will see your full desktop where you can run whatever you want.
