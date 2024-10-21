@@ -114,9 +114,9 @@ You should use ZeroTier if you are in one of the following situations:
 
 To set it up:
 1. [Create an account](https://my.zerotier.com/login) on the ZeroTier website. The free service is perfectly fine for Moonlight.
-2. Download the Windows version for your PC from the [Downloads page](https://www.zerotier.com/download.shtml) and install it on your host gaming PC.
+2. Download the Windows version for your PC from the [Downloads page](https://www.zerotier.com/download/) and install it on your host gaming PC.
 3. Install ZeroTier on your client device.
-    * If using Moonlight on a PC or Mac, download and install the appropriate version from the [Downloads page](https://www.zerotier.com/download.shtml).
+    * If using Moonlight on a PC or Mac, download and install the appropriate version from the [Downloads page](https://www.zerotier.com/download/).
     * If using Moonlight on Android or iOS, the apps are available on the [Google Play Store](https://play.google.com/store/apps/details?id=com.zerotier.one) and [Apple App Store](https://itunes.apple.com/us/app/zerotier-one/id1084101492).
 4. Go to the [Networks tab](https://my.zerotier.com/network) then create a new network.
     * Uncheck all checkboxes in the "IPv6 Auto-Assign" section (if checked)
@@ -129,6 +129,38 @@ To set it up:
 To connect additional clients or host PCs, just download ZeroTier on the device, then complete steps 5-7.
 
 Don't forget to connect to your ZeroTier network when you want to stream over the Internet!
+
+### NordVPN Meshnet
+
+[Meshnet](https://nordvpn.com/meshnet/) is a feature of the NordVPN app that allows linking devices from remote networks into secure, private virtual device networks. Once the devices are linked, they connect as if they were on the same LAN.
+
+Using Meshnet for Moonlight allows you to circumvent port forwarding, overcome CGNAT limitations, and stream over the Internet from multiple gaming PCs sharing the same Internet connection.
+
+First, you need to install and enable Meshnet on your host gaming PC:
+1. Visit the [Nord Account sign-up page](https://nordaccount.com/signup) and create a free account. An active NordVPN subscription is not required.
+2. On your gaming PC, download and install the [NordVPN app](https://support.nordvpn.com/hc/en-us/articles/19472023025169-Installing-and-using-NordVPN-on-Windows-10-and-11).
+3. Log in to NordVPN using your Nord account.
+4. On the left sidebar, select the "Devices in Meshnet" tab.
+5. Turn on Meshnet using the toggle.
+
+You should now see your gaming PC's unique Nord name and Meshnet IP address. You can use either to connect to the server with Moonlight.
+
+Now, you can link your client device(s) that will connect to the host over Meshnet:
+1. Download the NordVPN app for your client device.
+   - On Android, you can download NordVPN from the [Play Store](https://play.google.com/store/apps/details?id=com.nordvpn.android).
+   - On iOS, you can download NordVPN from the [App Store](https://apps.apple.com/us/app/nordvpn-vpn-fast-secure/id905953485).
+2. Log in to your Nord Account.
+3. [Enable Meshnet](https://meshnet.nordvpn.com/getting-started/how-to-start-using-meshnet).
+
+Upon enabling Meshnet, you should see your gaming PC in the peer device list.
+
+Finally, you can pair your gaming PC with the client device(s) inside Moonlight:
+1. From the NordVPN app, copy the Nord name of your game server.
+2. Open Moonlight.
+3. Select "Add PC manually".
+4. Paste the copied Nord name and choose "OK".
+
+You should now be able to pair and connect to the host gaming PC over the Internet. Meshnet must be active for streaming over the Internet to work!
 
 ### Manual port forwarding (advanced)
 If the automatic tool doesn't work, you can try manually forwarding the following ports through your router to your host gaming PC's IP address for streaming to work over the Internet:
