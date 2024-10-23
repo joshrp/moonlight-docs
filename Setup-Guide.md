@@ -98,7 +98,7 @@ Moonlight Internet Hosting Tool must remain installed on your host PC to maintai
 #### Having trouble?
 * Ensure UPnP is enabled in your router settings and delete any older Moonlight port forwarding entries.
 
-* Try streaming from a different network. Some corporate or public WiFi networks block streaming applications like Moonlight. If that happens, you may have success with the ZeroTier setup steps below.
+* Try streaming from a different network. Some corporate or public WiFi networks block streaming applications like Moonlight. If that happens, you may have success with the ZeroTier, Tailscale, or NordVPN Meshnet setup steps below.
 
 * Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) and ask for help on our [Discord server](https://moonlight-stream.org/discord). Be sure to have the tester log handy. 
 
