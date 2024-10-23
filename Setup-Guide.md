@@ -130,6 +130,44 @@ To connect additional clients or host PCs, just download ZeroTier on the device,
 
 Don't forget to connect to your ZeroTier network when you want to stream over the Internet!
 
+### Tailscale
+
+[Tailscale](https://tailscale.com) is a tool that helps you connect all your devices to a private network called a Tailnet. Once a device is logged into your Tailscale account, it automatically discovers the most efficient way to connect with other devices on the network using advanced [NAT traversal techniques](https://tailscale.com/blog/how-nat-traversal-works). Once a connection is established, a secure WireGuard tunnel is created between the devices, allowing them to talk directly without extra latency.
+
+1. **Create a Free Account:**
+[Sign up](https://login.tailscale.com/start) using an email address from a public service like Gmail, Microsoft, GitHub, or Apple. By doing this, you’ll be set up as a [personal user](https://tailscale.com/pricing?plan=personal), allowing you to use Tailscale for free on up to 100 devices. Using other email domains may cause your account to be categorized as a corporate account with more restrictions.
+
+2. **Install Tailscale on Your Devices:**
+[Download](https://tailscale.com/download) and install the Tailscale app on both your host (e.g., PC) and client (e.g., phone) devices. Log in to the same account on each device. Once logged in, your devices should show up on the [Machines page in the Dashboard](https://login.tailscale.com/admin/machines). Here, you can view details about each device and its network connection. Every device gets a unique `100.x.x.x` IP address, an IPv6 address, and a DNS name.
+
+3. **Test the Connection:**
+On your host machine, open a command prompt or shell and type `tailscale status` to see a list of all devices in your Tailnet. For example, let’s say you have “my-pc” and “my-phone.” Initially, since your devices haven’t communicated yet, the status will show a dash (-) in the last column.
+```sh
+> tailscale status
+100.xx.xx.xx   my-pc          email.account@ windows -
+100.xx.xx.xx   my-phone       email.account@ iOS     -
+```
+Next, type `tailscale ping my-phone` (or whatever name your device has). You’ll see some ping responses. Pay attention to both the ping times and whether the connection is a direct connection or going through a relay (DERP server). The first few pings may go through the DERP server while Tailscale works on establishing a direct connection. Ideally, after a few seconds, the devices will connect directly, and ping times should be faster. If you only receive a single ping response, the connection is already in direct mode. In the Tailscale mobile app, long press on an entry in the list of devices to find the ping function.
+
+Example of a successful direct connection:
+```sh
+> tailscale ping my-phone
+pong from my-phone (100.xx.xx.xx) via DERP(nyc) in 28ms
+pong from my-phone (100.xx.xx.xx) via DERP(nyc) in 25ms
+pong from my-phone (100.xx.xx.xx) via 192.168.2.93:57324 in 0ms
+```
+
+Rarely, a direct connection isn’t possible, and Tailscale will continue to use a relay server to help the devices communicate. If this happens, you will not be able to stream with Moonlight between these devices. Tailscale's relay servers are shared with other users and are rate-limited to prevent abuse. Don't attempt to stream lots of traffic through them; this is quite rude and will likely result in your device or account being blocked or banned.
+
+4. **Connect Using Moonlight:**
+Once the devices are connected directly, you’re ready to use Moonlight. You may need to manually add the Tailscale `100.x.x.x` IP address or the ts.net hostname (`my-phone.tail12345.ts.net`) to Moonlight. If you’re using iOS, you may need to do this step on your local LAN before trying it over the Internet. Moonlight should link this IP address to the host's existing entry and it should appear as online. If you’re streaming over a mobile network, you may want to lower the resolution and bitrate settings for smoother performance, but Tailscale won’t add any additional delay.
+
+5. **Stay Connected Anywhere:**
+Now you can securely connect to your devices from almost anywhere. However, some mobile networks may block or interfere with the WireGuard UDP packets. For instance, T-Mobile in the US has been known to cause connection issues. The developers continue to work on solutions to this problem.
+
+6. **Explore Other Features:**
+Tailscale offers many other useful features. You can set up a custom subdomain, use exit nodes (to route all your internet traffic through a specific device), or enable subnet routing. In particular, subnet routing is an option for advanced users, where another Tailscale node on your home network routes the packets between a non-Tailscale PC and an external client.
+
 ### NordVPN Meshnet
 
 [Meshnet](https://nordvpn.com/meshnet/) is a feature of the NordVPN app that allows linking devices from remote networks into secure, private virtual device networks. Once the devices are linked, they connect as if they were on the same LAN.
