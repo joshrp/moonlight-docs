@@ -33,16 +33,17 @@ In the Terminal run `ifconfig -a` and note the desired eth#.
 Install "ethtool" if not already installed, run `sudo ethtool eth#` and replace eth# with noted. Check the output, if there is a "G" next to "Supports Wake-on" then the NIC supports WOL. Run `sudo ethtool -s eth# wol g` again replace eth# with noted.
 
 ## Internet WOL
-DDNS or a static Public IP is a requirement. see https://www.noip.com/ a DDNS service.
-
 WOL is not designed to work over WAN. (Wide Area Network, AKA Internet) But it can be done in a few ways, some safer than others. The list below is in the order of recommended methods. Most methods require some other device that is always online and connected you your __Host's__ local network.
 
-- Host a VPN server. You will need some other device that is always online and connected to the Host's network to act as a VPN server. You also need the ability to port forward on your router. The WOL packet can be sent from the Moonlight client to the sleeping host via a VPN tunnel. Such devices include but are not limited to;
+DDNS or a static Public IP is a requirement for most options. see https://www.noip.com/ a DDNS service.
+
+- Host a VPN server. You will need some other device that is always online and connected to the Host's network to act as a VPN server. You also need the ability to port forward on your router. The WOL packet can be sent from the Moonlight client to the sleeping host via a VPN tunnel. Also see the WOL Tailscale container in the next section. Such devices include but are not limited to;
     - Routers, many can run a VPN server and even have a baked-in utility for hosting a VPN.
     - A RPI (Raspberry PI) or other similar SBC.
     - A NAS. (Network Attached Storage) Basically a Server, a NAS can host a variety of servers including VPN servers. Many customer NAS devices have a baked-in VPN utility.
 - Have another device wake the system. You will need some other device that is always online and connected to the Hosts network to act as in essence a WOL relay. Depending on the device used you may need to port forward. Such devices include but are not limited to;
     - Router WOL utility. Many routers offer a WOL utility either usable with just a router app or by port forwarding the router GUI. (If you do the latter be sure to have an EXTREMELY robust login for the router. Not recommended)
+    - WOL Tailscale container. This option is great if you are behind a __CGNAT__ or are __unable to port forward__. https://gist.github.com/andygrundman/c97445ab68334e387e22ab5cdbc6cc57
     - A RPI. https://www.instructables.com/id/Raspberry-Pi-As-Wake-on-LAN-Server/
     - A remotely accessible system such as a NAS, or similar.
     - An Arduino with a network connection. https://github.com/TullyE/ArduinoWOL/
@@ -52,7 +53,7 @@ WOL is not designed to work over WAN. (Wide Area Network, AKA Internet) But it c
 ## WOL Alternatives
 If your system either does not have the ability to use WOL, or you can not use the Internet WOL methods mentioned above you may be able to use the following tactics to achieve a similar effect.
 - Use a smart plug. You can set the system UEFI/BIOS to power on the system when power is lost and then restored. When you want to start the system you just turn the smart plug off and on.
-- Use an in-system KVM/Remote management board to interact with the system such as: https://geekworm.com/products/pikvm-a8?_pos=1&_sid=333b48621&_ss=r
+- Use an in-system KVM/Remote management board to interact with the system and it's internal power switch header such as: https://geekworm.com/products/pikvm-a8?_pos=1&_sid=333b48621&_ss=r
 - Set the UEFI/BIOS to wake the system at a certain time.
 
 ## Tips and Tricks
