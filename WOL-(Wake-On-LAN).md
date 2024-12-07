@@ -43,7 +43,7 @@ DDNS or a static Public IP is a requirement for most options. see https://www.no
     - A NAS. (Network Attached Storage) Basically a Server, a NAS can host a variety of servers including VPN servers. Many customer NAS devices have a baked-in VPN utility.
 - Have another device wake the system. You will need some other device that is always online and connected to the Hosts network to act as in essence a WOL relay. Depending on the device used you may need to port forward. Such devices include but are not limited to;
     - Router WOL utility. Many routers offer a WOL utility either usable with just a router app or by port forwarding the router GUI. (If you do the latter be sure to have an EXTREMELY robust login for the router. Not recommended)
-    - WOL Tailscale container. This option is great if you are behind a __CGNAT__ or are __unable to port forward__. https://gist.github.com/andygrundman/c97445ab68334e387e22ab5cdbc6cc57
+    - WOL Tailscale container. This option is great if you are behind a __CGNAT__ or are __unable to port forward__. https://github.com/andygrundman/tailscale-wakeonlan
     - A RPI. https://www.instructables.com/id/Raspberry-Pi-As-Wake-on-LAN-Server/
     - A remotely accessible system such as a NAS, or similar.
     - An Arduino with a network connection. https://github.com/TullyE/ArduinoWOL/
