@@ -35,7 +35,7 @@ There are [additional host PC requirements](https://github.com/moonlight-stream/
 
 Detailed instructions for installing and configuring Sunshine can be found on the [Sunshine documentation](https://docs.lizardbyte.dev/projects/sunshine).
 
-1. On your gaming PC, install the latest version of Sunshine from the [setup page](https://docs.lizardbyte.dev/projects/sunshine/en/latest/about/setup.html). Your PC may need a reboot after installation to finish setup and for controller emulation to work.
+1. On your gaming PC, install the latest version of Sunshine from the [setup page](https://docs.lizardbyte.dev/projects/sunshine/latest/about/setup.html). Your PC may need a reboot after installation to finish setup and for controller emulation to work.
 
 2. Start Sunshine and wait for the configuration page to open in your web browser. Your browser will show a "this page is not secure" error that you can safely ignore. You can access this interface manually by using the "Open Sunshine" option of the tray menu or by opening https://localhost:47990/ directly in your web browser.
 
@@ -49,7 +49,7 @@ Detailed instructions for installing and configuring Sunshine can be found on th
 
 6. Try streaming a game or app to make sure everything is working. If you encounter issues, try the [troubleshooting steps here](https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting).
 
-7. Sunshine comes pre-loaded with Steam and the Remote Desktop. You can manually add other games and apps by following Sunshine's [guide to adding apps](https://docs.lizardbyte.dev/projects/sunshine/en/latest/about/guides/app_examples.html).
+7. Sunshine comes pre-loaded with Steam and the Remote Desktop. You can manually add other games and apps by following Sunshine's [guide to adding apps](https://docs.lizardbyte.dev/projects/sunshine/latest/about/guides/app_examples.html).
 
 ### Using GeForce Experience
 
