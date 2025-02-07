@@ -109,7 +109,7 @@ This option also gives you the ability to stream from multiple PCs that are all 
 
 You should use ZeroTier if you are in one of the following situations:
 * The automatic tool above says you're behind a Carrier-Grade NAT, that you have two routers connected together, or otherwise doesn't work and you can't resolve it yourself.
-* You have multiple gaming PCs on your network that you'd like to stream from over the Internet.
+* You are still using GeForce Experience and you have multiple gaming PCs on your network that you'd like to stream from over the Internet.
 * Moonlight is blocked on the network you want to use for streaming.
 
 To set it up:
