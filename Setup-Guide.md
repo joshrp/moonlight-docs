@@ -81,14 +81,20 @@ Detailed instructions for installing and configuring Sunshine can be found on th
 ### Automatic configuration (recommended for most users)
 For the easiest possible setup process, we highly recommend that you **first pair Moonlight with your gaming PC while connected to your home network** before trying to use Moonlight over the Internet. For iOS and tvOS users, [you _must_ pair while connected to the same network](https://github.com/moonlight-stream/moonlight-ios/issues/417) to comply with Apple guidelines.
 
+#### Using Sunshine
+
+Sunshine comes with a built-in UPnP option that can be enabled in the Network section of the settings inside the web UI. It will automatically forward the required ports for streaming over the Internet.
+
+#### Using GeForce Experience
+
 Moonlight Internet Hosting Tool must remain installed on your host PC to maintain the ability to stream over the Internet.
 
-#### If your gaming PC is already paired with Moonlight:
+##### If your gaming PC is already paired with Moonlight:
 1. Install the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) on your gaming PC.
 2. Run "Moonlight Internet Streaming Tester" via the Start Menu to confirm it's working properly.
 3. Do not uninstall Moonlight Internet Hosting Tool, unless you no longer want to stream over the Internet. It needs to remain installed on your PC to maintain the port forwarding entries on your router.
 
-#### If your gaming PC is _not_ already paired with Moonlight:
+##### If your gaming PC is _not_ already paired with Moonlight:
 1. Install the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) on your gaming PC.
 2. Run "Moonlight Internet Streaming Tester" via the Start Menu.
 3. Type the IP address that is displayed on the tester's success dialog into the Add PC dialog of Moonlight.
