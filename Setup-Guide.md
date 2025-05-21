@@ -12,7 +12,7 @@
 
 ***
 
-**Host Gaming PC Requirements** 
+**Host Gaming PC Requirements**
 
 For Sunshine:
 * Any modern GPU from AMD, NVIDIA and Intel
@@ -106,7 +106,7 @@ Moonlight Internet Hosting Tool must remain installed on your host PC to maintai
 
 * Try streaming from a different network. Some corporate or public WiFi networks block streaming applications like Moonlight. If that happens, you may have success with the ZeroTier, Tailscale, or NordVPN Meshnet setup steps below.
 
-* Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) and ask for help on our [Discord server](https://moonlight-stream.org/discord). Be sure to have the tester log handy. 
+* Run the "Moonlight Internet Streaming Tester" found in the [Moonlight Internet Hosting Tool](https://github.com/moonlight-stream/Internet-Streaming-Helper/releases) and ask for help on our [Discord server](https://moonlight-stream.org/discord). Be sure to have the tester log handy.
 
 ### ZeroTier
 [ZeroTier](https://www.zerotier.com/) which is a service that acts similar to a VPN, but with better performance in most cases.
@@ -215,7 +215,7 @@ If your router has separate options for "internal port" and "external port", you
 
 To verify the basic port forwarding was done correctly, visit https://www.canyouseeme.org/ and test port 47984 and 47989. If port forwarding is working, they should both report "Success" when you test them. The other ports are only active during streaming, so the only way to test them is via Moonlight.
 
-If Moonlight already found your gaming PC automatically while on the same network, it should connect to your PC over the Internet without any additional steps. If you're not on the same network as your PC, go to https://www.whatsmyip.org/ from your gaming PC, then enter the IP address you get there into Moonlight. If you don't get an error, you should be all set.  
+If Moonlight already found your gaming PC automatically while on the same network, it should connect to your PC over the Internet without any additional steps. If you're not on the same network as your PC, go to https://www.whatsmyip.org/ from your gaming PC, then enter the IP address you get there into Moonlight. If you don't get an error, you should be all set.
 Also see [DHCP leasing](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide#static-dhcp-reservation).
 
 ### Static DHCP reservation
@@ -286,7 +286,7 @@ If the HDR requirements are not met, the HDR option in Moonlight may appear gray
 
 Known issues with GameStream HDR:
 - Running some games and applications may cause flashing color artifacts when HDR streaming is enabled
-- The video stream may not start until you move or click the mouse when HDR streaming is enabled 
+- The video stream may not start until you move or click the mouse when HDR streaming is enabled
 - You may see video scaling artifacts if the stream resolution doesn't match the host display resolution when HDR streaming is enabled
 - If HDR is already enabled on your host PC when streaming starts, you may need to toggle HDR off and back on for the stream to enter HDR mode properly
 
@@ -345,16 +345,23 @@ PC clients support keyboard, mouse, and touchscreen input and up to 4 game contr
 * Ctrl+Alt+Shift+Q - Quit the streaming session (leaving the game running on the host PC)
 * Ctrl+Alt+Shift+Z - Toggle mouse and keyboard capture
 * Ctrl+Alt+Shift+X - Toggle between full-screen and windowed mode
-* Ctrl+Alt+Shift+S - Open performance stats overlay (not supported on Steam Link or Raspberry Pi)
+* Ctrl+Alt+Shift+S - Open performance stats overlay (not supported on Steam Link)
 * Ctrl+Alt+Shift+M - Toggle mouse mode (pointer capture or direct control)
 * Ctrl+Alt+Shift+V - Type clipboard text on the host
 * Ctrl+Alt+Shift+D - Minimize the stream window
 * Ctrl+Alt+Shift+C - Toggle local cursor display in remote desktop mouse mode (remote cursor will always show up due to GameStream limitations)
 * Ctrl+Alt+Shift+L - Toggle locking the mouse pointer to the video area (requires "Optimize mouse for remote desktop instead of games" checkbox enabled)
 
+**Gamepads**
+
+Due to differing gamepad mappings, these buttons may not be correct. (See: https://github.com/moonlight-stream/moonlight-docs/wiki/Gamepad-Mapping). The buttons here are Xbox and Playstation.
+
+(LB / L1) + (RB / R1) + (Start / Options) + (Back / Select) = Quit the streaming session (leaving the game running on the host PC)
+(LB / L1) + (RB / R1) + (Start / Options) + (Back / Select) + (X / Square) = Open performance stats overlay (not supported on Steam Link)
+
 **Touchscreen controls**
 
-Moonlight for Android, iOS, and PC use the touch screen as a way of controlling the mouse cursor. Multi-touch devices can emulate more mouse functions than single-touch devices. There are two modes of touchscreen operation that you can choose between in Moonlight - one uses the touchscreen as a trackpad and the other emulates direct touchscreen input. 
+Moonlight for Android, iOS, and PC use the touch screen as a way of controlling the mouse cursor. Multi-touch devices can emulate more mouse functions than single-touch devices. There are two modes of touchscreen operation that you can choose between in Moonlight - one uses the touchscreen as a trackpad and the other emulates direct touchscreen input.
 
 Trackpad mode:
 * Move cursor: Swiping across the screen moves the mouse cursor in the direction of the swipe.
@@ -409,7 +416,7 @@ If you're using GeForce Experience, open GeForce/Quadro Experience, click the **
 
 The next time the client opens and displays the App List, the newly added programs and games should be displayed and ready to stream.
 
-If quitting an application doesn't stop Moonlight, press *Ctrl+Shift+Alt+Q* on Moonlight PC to quit the streaming session. On Moonlight Android and iOS, pressing the home key will switch out of the streaming session. Choose the **Quit Session** option from the App List to fully quit the streaming session. 
+If quitting an application doesn't stop Moonlight, press *Ctrl+Shift+Alt+Q* on Moonlight PC to quit the streaming session. On Moonlight Android and iOS, pressing the home key will switch out of the streaming session. Choose the **Quit Session** option from the App List to fully quit the streaming session.
 
 ## Using Moonlight to stream your entire desktop
 If you're using Sunshine, you'll already have a built-in "Desktop" app. This only applies for hosts using GeForce Experience.
